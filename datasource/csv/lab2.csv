@@ -1,0 +1,206 @@
+1,"Where they reside on your network, how they interact, and improving Penetration (Pen) Testing services is key to having a strong defensive perimeter for your organization"
+2,"IDS network security and IPS security, along with Firewall leveraging, can help provide this.
+   Cyberinfrastructures using prevention platforms require both regularly scheduled performance assessments and changing topology, etc"
+3,Most industry-standard institutes recommend even more frequent assessments
+4,It is advised to change your current devices around at a certain frequent level
+5,"If they are always static, on-going cybercriminals learn how they always sit on your perimeter and eventually hack them after long periods in scanning for weaknesses.
+   When performing pentest against your own networks, basically, you are evading your own security systems"
+6,We usually refer to these self-targeted evading activities as ethical hacking and perform the pentesting as ‘white- hats’
+7,Pentesting helps understand the danger of real attackers
+8,"If you can sneak around a blocked portmapper port using Nmap direct RPC scanning, then so can the bad guys"
+9,It is easy to make a mistake in configuring complex firewalls and other devices
+10,Many of them even come with glaring security holes that conscientious users must find and close
+11,"Regular network scanning can help find dangerous implicit rules before attackers do.
+   There are good reasons for evading IDSs as well"
+12,Product evaluation is one of the most common
+13,"If attackers can slide under the radar by simply adding an Nmap flag or two, the system does not offer much protection"
+14,Pentesting tools such as Nmap and Metasploit offer many features for evading firewall rules or sneaking past IDSs
+15,These capabilities allow ‘bad guys’ to misuse it for ‘evil’ purposes
+16,"However, from the administrator perspectives, mimicking attackers’ behaviors and actions (maybe the best that they can do) to identify security holes before attackers do"
+17,This lab is by-no-mean the utterly and eagerly promoting Nmap and Metasploit
+18,"It simply introduces the beginning level of cyber defenders to start their network security endeavors in the area of penetration testing, since we know pentesting represents the art of cybersecurity with full of creativities
+and deep understanding of the given security system.
+
+2 Pentest Goal, Setup, and Procedure
+2.1 Goals
+The goal of this pentest is to assess the firewall rule setup and IDS system"
+19,"In this pentest, we apply the white-box testing strategy, in which a white-box tester has the access and knowledge levels of the system admin, including the knowledge of iptables firewall rules and snort rules setup"
+20,"However, there are several constraints apply:
+
+1"
+21,"Goal: The goal of the pentest is to explore the configuration issues of iptables and snort, i.e., identify the system weakness due to configuration flaws"
+22,"This means that the pen tester knows the iptables and snort configurations, and networking system setup"
+23,"During the pen test, the pen tester can monitor the actions/reactions/output of iptables and snort"
+24,"The pen tester tries to explore vulnerabilities focusing on two areas:
+(a) System configurations: firewall setup such as open/close/filter/unfilter ports, reachable services or nodes, firewall performance measurements, etc.; IDS setup such as detection threshold setup, success, and missed attack scenarios, etc.
+(b) Vulnerabilities: There is one Metasploitable-2 VM running behind the firewall"
+25,"The pen tester is required to assess the security performance of the firewall and IDS on successfully stop and/or detect deployed attacks.
+2"
+26,"Location: The pen tester explores the configuration vulnerabilities from outside, i.e., on the client network.
+3"
+27,"Assessment: The pen tester needs to develop a pentest report based on the provided template, and provide suggested changes or remediation of firewall and IDS rules to maximally improve the system security"
+28,Note that the Metasploitable 2 is used for assessing the firewall and IDS
+29,Note that your pentest focus is to inspect and assess the security strength of the firewall and IDS
+30,"Please do not try to resolve any vulnerable issues running on Metasploitable 2, which is purposely designed for pentesting.
+4"
+31,"Tools: The pen tester can use various tools provided in the given client VM such as Nmap, hping3, MSF (Metasploit framework), tcpdump, etc"
+32,It should be sufficient to use these tools for this lab
+33,"However, you can use or develop your own tools and testing scripts to perform the security testing.
+
+
+Note that you need to change the parameter setup at the beginning of the rc.firewall.pentest and rc.firewall.reset based on your lab running environment, i.e.,  three  interfaces  and  IP  addresses"
+34," Also, make sure you have set up your default GW properly on each VM"
+35,"To run the script files, you can:
+
+
+rc.firewall.pentest is the firewall setup that you want to perform the pentest"
+36,"To have better under- standing of various scans, you can use rc.firewall.reset to clear the firewall rules and set it to blacklist (you need to change your scanning target directly to the Metasploitable-2 VM), and compare scanning responses with the rc.firewall.pentest firewall rules"
+37,"In this way, you can observe results w/o firewall rules to interpret the scanning outcomes.
+Nmap and Metasploit Framework are installed on both the Client and Gateway VMs"
+38,"Thus, you can also compare the scanning results on the Client vs on the Gateway, which can help you determine if the firewall successfully defend a scan/attack.
+Using tcpdump to monitor the traffic from both ingress and egress ports of the gateway is always the best approach to help you understand the actions performed on the Gateway.
+Finally, you are not restricted by the enumerated scanning approaches and provided hints"
+39,"Please jump out or the box and try to provide surprising results with your own approach and in-depth analysis, since pentest is the art of cyberdefense, and you need to be creative.
+
+
+3 Task 1 Determine Firewall Rules
+3.1 Determining Stateful or Stateless Firewall
+One helpful feature of the TCP protocol is that systems are required by RFC 793 to send a negative response to unexpected connection requests in the form of a TCP RST (reset) packet"
+40,The RST packet makes closed ports easy for Nmap to recognize
+41,"Filtering devices such as firewalls, on the other hand, tend to drop packets destined for disallowed ports"
+42,In some cases they send ICMP error messages (usually port unreachable) instead
+43,"Because dropped packets and ICMP errors are easily distinguishable from RST packets, Nmap can reliably detect filtered TCP ports from open or closed ones, and it does so automatically.
+   The ACK scan sends TCP packets with only the ACK bit set"
+44,"Whether ports are open or closed, the target is required by RFC 793 to respond with a RST packet"
+45,"Firewalls can block the probe, i.e.,
+  
+and the firewall usually makes no response or send back an ICMP destination unreachable error"
+46,This dis- tinction allows Nmap to report whether the ACK packets are being filtered
+47,The set of filtered ports reported by an Nmap ACK scan is often smaller than for an SYN scan against the same machine because ACK scans are more difficult to filter
+48,"Stateless firewall can block incoming SYN packets (without the ACK bit set) is an easy way to do this, but it still allows any ACK packets through"
+49,"Blocking those ACK packets is more difficult, because they do not tell which side started the connection.
+Run SYN scan and ACK scan and compare difference.
+
+   To block unsolicited ACK packets (as sent by the Nmap ACK scan), while allowing ACK packets belonging to legitimate connections, firewalls must statefully watch every established connection to determine whether a given ACK is appropriate.
+   Please check the provided iptables firewall rules and check where the stateful firewall policies kicked in"
+50,These stateful firewalls are usually more secure because they can be more restrictive
+51,Blocking ACK scans is one extra available restriction
+52,"The downsides are that they require more resources to function, and a stateful firewall reboot can cause a device to lose state and terminate all established connections passing through it.
+   Analysis Point 1: the key analysis point of this task is to check the feedback of Nmap scans with different scanning options to understand the implication of Nmap outputs: filtered, unfiltered, closed, open"
+53,"What are the implications of the firewall setup according to these feedback.
+
+
+3.2 Interpret Firewall Rules by Using various Scanning Approaches
+3.2.1 Standard SYN Scan
+Systems running TCP protocol is required by RFC 793 to send a negative response to unexpected connection requests in the form of a TCP RST (reset) packet.
+
+   Analysis Point 2: the key analysis point of this task is how to infer the deny-by-default firewall policy based on the scanning responses from the firewall.
+3.2.2 ACK Scan
+The ACK scan sends TCP packets with only the ACK bit set"
+54,"Whether ports are open or closed, the target is required by RFC 793 to respond with a RST packet.
+
+   Analysis Point 3: the key analysis point of this task is how to infer stateful or stateless firewall policies setup based on the scanning responses from the firewall.
+3.2.3 Compare the responding time: standard scan, SYN scan, and ACK scan
+Run the following command to observer the system responding time.
+
+   Analysis Point 4: What is your observation of the responding time of each type of scans, and what is the reason and implications?
+3.2.4 IP ID (Idle) scanning
+1"
+55,Find at least one accessible (open or closed) port of one machine on the internal network
+56,The machine chosen should have little network traffic to avoid confusing results
+57,"(Most Linux system does not work).
+2"
+58,Verify that the machine has predictable IP ID sequences
+59,"For example, targeting a Windows XP (e.g., 192.168.0.3), the Nping options request that five SYN packets be sent to port 80, one second apart.
+$ nping -c 5 --delay 1 -p 80 --tcp 192.168.0.3	
+
+
+It shows that the IP IDs are increasing by roughly 11 per second instead of one"
+60,"The target (192.168.0.3) is receiving our 10 forged packets per second and responding to each of them.
+4"
+61,Repeat step 3 using spoofed addresses that you suspect may be allowed through the firewall
+62,"Try ad- dresses behind their firewall and the RFC 1918 private networks such as 10.0.0.0/8, 192.168.0.0/16, and 172.16.0.0/12"
+63,"This technique’s result is a list of source address netblocks that are permitted through the firewall and those that are blocked.
+   Analysis Point 5: what you have done to determine if the system provides you needed setup to deploy the idle scan?
+3.2.5 UDP Scanning
+UDP is often more difficult because the protocol does not provide acknowledgment of open ports like TCP does"
+64,"Many UDP applications will ignore unexpected packets, leaving the scanner unsure whether the port is open or filtered"
+65,"Try the following command:
+
+4 Task 2: Bypassing Firewall Rules
+4.1 Use TCP flags
+Please refer to Lab CNS-20001 (Network and Security Tool: Nmap) and https://Nmap.org/book/ scan-methods.html for more details on how to use Nmap to perform port scanning.
+Try the following commands and observe their output differences:
+
+5 Task 3: Subverting Intrusion Detection Systems
+5.1 Identifying IDS from Name Convention
+
+5.2 Observe sudden firewall changes and suspicious packets
+Many intrusion detection systems have morphed into what marketing departments label intrusion prevention systems"
+66,Some can only sniff the network like a normal IDS and send triggered packet responses
+67,The best IPS systems are inline on the network to restrict packet flow when suspicious activity is detected
+68,"For example, an IPS may block any further traffic from an IP address that they believe has port scanned them or attempted a buffer overflow exploit"
+69,Attackers are likely to notice this if they port scan a system and cannot connect to the reported open ports
+70,"Attackers can confirm that they are blocked by trying to connect from another IP address.
+   Suspicious response packets can also tip-off that an IDS has flagged an attacker’s actions"
+71,"In particular, many IDSs that are not inline on the network will forge RST packets to tear down connections"
+72,Ways to determine that these packets are forged are covered in the section called “Detecting Packet Forgery by Firewall and Intrusion Detection Systems”
+73,"For example, the Linux iptables system, which offers many methods for rejecting undesired packets by using:
+--reject-with type	
+   The type given can be icmp-net-unreachable, icmp-host-unreachable, icmp-port-unreachable, icmp-proto- unreachable, icmp-net-prohibited or icmp-host-prohibited, which return the appropriate ICMP error message (port-unreachable is the default)"
+74,The option tcp-reset can be used on rules which only match the TCP protocol: this causes a TCP RST packet to be sent back
+75,"This is mainly useful for blocking ident (113/tcp) probes, which frequently occur when sending mail to broken mail hosts (which won’t accept your mail otherwise).
+   Forging RST packets by firewalls and IDS/IPS is not particularly common outside of port 113"
+76,It can be confusing to legitimate network operators and allows scanners to immediately move on to the next port without waiting on the timeout caused by dropped packets
+77,"Nevertheless, it does happen"
+78,"Such forgery can
+
+
+usually be detected by careful analysis of the RST packet compared to other packets sent by the machine"
+81,You need to check the rules specified in the given snort local.rules
+82,"Based on the following given Nmap scanning methods, design new Nmap scanning commands to avoided being detected by snort rules:
+
+5.4.1 Slow down
+Nmap offers several canned timing modes that can be selected with the -T option to accomplish this"
+83,"For example, the -T paranoid option causes Nmap to send just one probe at a time, waiting five minutes between them"
+84,"A large scan may take weeks, but at least it probably will not be detected"
+85,"The -T sneaky option is similar, but it only waits 15 seconds between probes"
+86,"Rather than specify canned timing modes such as sneaky, timing variables can be customized precisely with options such as –max-parallelism, –min-rtt-timeout, and –scan-delay.
+Issue the following command and check if you can avoid being detected by the snort.
+  $ Nmap --scan-delay TIME-Value -p1-100 10.0.0.6	
+In the above example, the TIME-Value (e.g., 1075ms) is to be determined by you to avoid being detected by snort"
+87,"For example, 1075ms is to ensure that Nmap waits 1.075 seconds between sending probes"
+88,"The intuitive
+
+
+Nmap offers the –randomize-hosts option, which splits up the target networks into blocks of 16384 IPs, then randomizes the hosts in each block.
+5.4.3 Fragment packets
+IP fragments can be a major problem for intrusion detection systems, particularly because the handling of oddities such as overlapping fragments and fragmentation assembly timeouts are ambiguous and differ substantially between platforms"
+89,"Thus, the IDS often has to guess at how the remote system will interpret a packet.
+   An Nmap scan will use tiny IP fragments if the -f is specified"
+90,"By default, Nmap will include up to eight bytes of data in each fragment, so a typical 20 or 24 byte (depending on options) TCP packet is sent in three tiny fragments"
+91,Every instance of -f adds eight to the maximum fragment data size
+92,So -f allows up to 16 data bytes within each fragment
+93,"Alternatively, you can specify the –mtu option and give the maximum data bytes as an argument"
+94,The –mtu argument must be a multiple of eight and cannot be combined with the -f option
+95,"Fragmentation is only supported for Nmap’s raw packet features, including TCP and UDP port scans (except connect scan and FTP bounce scan) and OS detection"
+96,"Features such as version detection and the Nmap Scripting Engine generally don’t support fragmentation because they rely on your host’s TCP stack to
+communicate with target services.
+
+Specify -S followed by a source IP, and Nmap will launch the requested port scan from that given source"
+97,"No useful Nmap results will be available since the target will respond to the spoofed IP, and Nmap will not see those responses"
+98,IDS alarms at the target will blame the spoofed source for the scan
+99,"This can be useful for framing innocent parties, casting doubt in the administrator’s mind about his IDS accuracy.
+5.4.6 Idle scan
+The idle scan is a clever technique that allows for spoofing the source IP address, as discussed in the previous section, while still obtaining accurate TCP port scan results"
+100,This is done by abusing the properties of the IP identification field as implemented by many systems
+101,"However, most Linux systems are immune to idle scan attacks.
+5.4.7 DNS proxying
+Nmap performs reverse-DNS resolution by default against every responsive host"
+102,These DNS lookup probes could be detected
+103,Even something as unintrusive as a list scan (-sL) could be detected this way
+104,The probes will come from the DNS server configured for the machine running Nmap
+105,The most effective way to eliminate this risk is to specify -n to disable all reverse DNS resolution
+106,"You can specify one or more of those name servers to the –dns-servers option of Nmap, and all rDNS queries will be proxied through them.
+
+"

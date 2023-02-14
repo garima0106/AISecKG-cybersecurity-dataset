@@ -1,0 +1,182 @@
+0,Nmap is an open-source tool used for network discovery and security auditing
+1,"In short, Nmap displays exposed services on a target machine along with other useful information such as the version and OS detection.
+In summary, students will do:
+Use nmap to send customized packets for network diagnostic and testing
+Use nmap to send customized packets for emulating attacks
+
+Nmap is a network mapper that has emerged as one of the most popular, free network discovery tools on the market"
+2,Nmap is now one of the core tools used by network administrators to map their networks
+3,"The program can find live hosts on a network, perform port scanning, ping sweeps, OS detection, and version detection.
+
+1.1 What is Nmap?
+Nmap is a network scanning tool that uses IP packets to identify all the devices connected to a network and provide information on the services and operating systems they are running.
+   The program is most commonly used via a command-line interface (though GUI front-ends are also avail- able)"
+4,"It is available for many different operating systems such as Linux, Free BSD, and Gentoo"
+5,Its popularity has also been bolstered by an active and enthusiastic user support community
+6,Nmap was developed for enterprise-scale networks and can scan through thousands of connected devices
+7,"Moreover, Nmap has been increasingly used to inspect IoT security"
+8,"Generally speaking, Nmap provides information on:
+1"
+9,"Every active IP so you can determine if an IP is being used by a legitimate service or an external attacker.
+2"
+10,"You network as a whole, including live hosts, open ports, and the OS of every connected device.
+3"
+11,"Vulnerabilities, scan your own server to simulate the process that a hacker would use to attack your site.
+   The primary uses of Nmap can be broken into three core processes"
+12,"First, the program gives you detailed information on every IP active on your networks, and each IP can then be scanned"
+13,"This allows administrators to check whether an IP is being used by a legitimate service or an external attacker.
+   Secondly, Nmap provides information on your network as a whole"
+14,It can be used to provide a list of live hosts and open ports and identify the OS of every connected device
+15,This makes it a valuable tool in ongoing system monitoring and a critical part of pentesting
+16,"Nmap can be used alongside the Metasploit framework, for instance, to probe and then repair network vulnerabilities.
+   Thirdly, Nmap has also become a valuable tool for users looking to protect personal and business websites"
+17,"Using Nmap to scan your own web server, particularly if you are hosting your website from home, is essentially simulating a hacker’s process to attack your site"
+18,"11Attacking” your own site in this way is a powerful way of identifying security vulnerabilities.
+
+
+   Nmap is straightforward to use, and most of the tools it provides are familiar to system admins from other programs"
+19,"Nmap’s advantage is that it brings a wide range of these tools into one program, rather than forcing you to skip between separate and discrete network monitoring tools.
+   To use Nmap, you need to be familiar with command-line interfaces"
+20,"Most advanced users can write scripts to automate common tasks, but this is unnecessary for basic network monitoring.
+
+
+2 Task 1: Nmap Scan Types
+In the following examples, we assume that the scanning target’s IP address is 192.168.0.4.
+
+2.1 TCP Full Connect (Vanilla) Scan
+TCP Connect scan completes the 3-way handshake"
+21,"If a port is open, the operating system completed the TCP three-way handshake, and the port scanner immediately closes the connection to avoid DOS"
+22,"This is ""noisy” because the services can log the sender IP address and trigger Intrusion Detection Systems.
+
+ Attempts to completes 3-way handshake with each scanned port.
+• Sends SYN and waits for ACK before sending ACK.
+• Tears down connection using FIN packets.
+If target port is closed, sender will received either no response, a RESET packet , or an ICMP Port Unreachable packet.
+• Not stealthy, the connection request can be logged.
+
+2.2 UDP Scan
+This scan checks to see if any UDP ports are listening"
+23,"Since UDP does not respond with a positive acknowl- edgment like TCP and only responds to an incoming UDP packet when the port is closed, this type of scan can sometimes show false positives"
+24,"However, it can also reveal Trojan horses running on high UDP ports and hidden RPC services"
+25,It may be quite slow since some machines intentionally slow down responses to this kind of traffic to avoid being overwhelmed
+26,"Machines running Windows OS, however, do not implement this slowdown feature, so you should use UDP to scan Windows hosts normally.
+Syntax of UDP Scan:
+$ nmap -sU target_IP	
+Nmap UDP scan example:
+$ nmap -sU 192.168.0.4	
+The UDP scan has the following features:
+• Sends a UDP packet to target ports to determine if a UDP service is listening.
+If the target system returns an ICMP Port Unreachable message, the target port is closed"
+27,"Otherwise, the target port is assumed to be open.
+• Unreliable since there may be false positives.
+  • Client program of a discovered open port is used to verify service"
+28,"The UDP scan can be very slow due to the following reasons:
+• Open and filtered ports rarely send any response, leaving Nmap to time out.
+Closed ports usually send back an ICMP port unreachable error"
+29,"But many hosts rate limit ICMP port unreachable messages by default (e.g., 1/sec).
+
+2.3 SYN Scan
+SYN scan is another form of TCP scanning"
+30,"Rather than using the operating system’s network functions, the port scanner generates raw IP packets and monitors for responses"
+31,This scan type is also known as “half-open scanning” because it never actually opens a full TCP connection
+32,The port scanner generates an SYN packet
+33,"If the target port is open, it will respond with an SYN-ACK packet"
+34,"The scanner host responds with an RST packet, closing the connection before the handshake is completed"
+35,"If the port is closed but unfiltered, the target will instantly respond with an RST packet"
+36,There is debate over which scan is less intrusive on the target host
+37,"SYN scan has the advantage that the individual services never actually receive a connection.
+
+the SYN scan has the following features:
+• Only sends the initial SYN and waits for ACK to detect open port.
+• SYN scans stop two-thirds of the way through the 3-way handshake, a.k.a., half-open scan.
+• Attacker sends a RESET (RST) after receiving an SYN-ACK response.
+• A true connection is never established; thus, the target may not log the connection.
+• Faster and stealthier than a full TCP Connect scans.
+• If the target port is closed, the destination will send a RESET or nothing.
+• SYN flood may cause accidental denial-of-service attacks if the target is slow.
+
+2.4 FIN Scan
+This is a stealthy scan, like the SYN scan, but sends a TCP FIN packet instead"
+38,"Most, but not all computers will send an RST packet back if they get this input so that the FIN scan can show false positives and negatives, but it may get under the radar of some IDS programs and other countermeasures.
+
+
+2.5 ACK Scan
+Ack scanning determines whether the port is filtered or not"
+39,This is especially good when attempting to probe for the existence of a firewall and its rulesets
+40,"Simple packet filtering will allow established connections (packets with the ACK bit set), whereas a more sophisticated stateful firewall might not.
+
+
+Full Scan.
+As shown in Figure CS-CNS-20001.3, the ACK scan has the following features:
+• Sends a packet with the ACK code bit set to each target port.
+• Allows the attacker to get past some packet filtering devices.
+Allows the attacker to determine what kind of established connections a firewall or router will allow into a network by determining which ports through a firewall allow established connection responses.
+If no response or an ICMP Port Unreachable message is returned, Nmap will label the target port as ""filtered,” meaning that a packet filter is blocking the response.
+
+2.6 NULL Scan
+Another very stealthy scan that sets all the TCP header flags to off or null"
+41,"This is not normally a valid packet, and some hosts will not know what to do with this"
+42,"Windows operating systems are in this group, and scanning them with NULL scans will produce unreliable results"
+43,"However, for non-Windows servers protected by a firewall, this can be a way to get through.
+
+2.7 XMAS Scan
+Similar to the NULL scan, except for all the flags in the TCP header is set to on"
+44,Windows machines won’t respond to this due to the way their TCP stack is implemented
+45,"Xmas scans derive their name from the set
+
+
+of flags that are turned on within a packet"
+46,"These scans are designed to manipulate the PSH, URG, and FIN flags of the TCP header.
+
+2.8 RPC Scan
+This special type of scan looks for machines answering to RPC (Remote Procedure Call) services"
+47,"RPC, which allows remote commands to be run on the machine under certain conditions, can be a dangerous service"
+48,"Since RPC services can run on many different ports, it is hard to tell from a normal scan which ones might be running RPC"
+49,This scan will probe the ports found open on a machine with commands to show the program name and version if RPC is running
+50,"It’s not a bad idea to run one of these scans every often to find out if and where you have these services running.
+
+
+Full Scan.
+As shown in Figure CS-CNS-20001.4, the RPC scan has the following features:
+Scans RPC services using all discovered open TCP/UDP ports on the target to send RPC NULL commands"
+51,"Tries to determine if an RPC program is listening at the port and identifies type of RPC program .
+
+
+2.9 IDLE Scan
+It is a super stealthy method whereby the scan packets are bounced off an external host"
+52,"You don’t need to have control over the other host, but it does have to set up and meet certain requirements"
+53,"You must input the IP address of our ""zombie” host and what port number to use"
+54,"It is one of the more controversial options in Nmap since it really only has a use for malicious attacks.
+	
+In this example, 192.168.0.1 is the zombie host"
+55,"The procedure of Idle scan is summarized as follows:
+1"
+56,Probe the zombie’s IP ID and record it
+57,"Forge an SYN packet from the zombie and send it to the desired port on the target.
+2"
+58,"Depending on the port state, the target’s reaction may or may not cause the zombie’s IP ID to be incre- mented.
+3"
+59,Probe the zombie’s IP ID again
+60,"The target port state is then determined by comparing this new IP ID with the one recorded in step 1.
+
+3 Task 2 Running Nmap Scripts
+NSE stands for Nmap Scripting Engine, and it is basically a digital library of Nmap scripts that help enhance the default Nmap features and report the results in a traditional Nmap output"
+61,"You can also write and share your own scripts, so you’re not limited to relying on the Nmap default NSE scripts"
+62,"The only requirement for you to write these scripts is that they must be coded using the Lua programming language.
+   Four different types can help us enhance the default Nmap features, depending on the target and the scanning phase in which they are run.
+1"
+63,"Prerule scripts: These types of scripts run before the rest of any scanning operation, while Nmap doesn’t have any data about the remote target.
+2"
+64,"Host scripts: Once the Nmap default scan has finished the host exploration, detection, port scanning, or software discovery, it will perform the host scripts.
+
+
+3"
+65,Service scripts: These are a particular set of Nmap scripts that are run against services on the remote host
+66,"These include HTTP service scripts, for example, which can be run against web servers.
+4"
+67,"Postrule scripts: These are run after the entire Nmap scan has finished and are often useful for parsing, formatting, and presenting the different results.
+
+
+
+
+"

@@ -1,0 +1,67 @@
+Entity,Relation,Entity,Action
+Attacks,can_expose,public  domain,
+IDS,is_a,Intrusion Detection System,means
+Snort,is_a,IDS,
+Snort,can_analyze,network attacks,detect
+Snort,implements,packet logger,
+Snort,can_analyze,traffic,
+Snort,can_analyze,data flow,
+Snort,can_analyze,protocol ,
+Snort,can_analyze,packet user rules,
+Snort Rules,has_a,language,
+Snort Rules,has_a,structure,
+Snort,can_analyze,previous attack pattern,match
+Snort,can_analyze,network behavior,
+Snort,can_analyze,bad  packet,discard
+Snort,has_a,Packet Decoder,
+Packet Decoder,has_a,packet,
+Packet Decoder,implements,protocol,determine
+Packet Decoder,implements,packet data size,determine
+Packet Decoder,can_analyze,header anomaly,finds
+Snort,has_a,Preprocessor,
+Preprocessor,part_of ,Snort,
+Preprocessor,can_analyze,HTTP anomaly,verify
+Preprocessor,can_analyze,FTP anomaly,verify
+Preprocessor,can_analyze,packet data,modify
+Snort,implements,Detection Engine,
+Detection Engine,can_analyze,intrusion,detect
+Detection Engine,has_a,rules,chains
+Snort,has_a,Log Alert system,
+Snort,has_a,Output Module,
+Output Module,has_a,output type,control
+Output Module,has_a,alerts,sends
+Snort,implements,Sniff mode,sets
+Snort,implements,Ingress,sniffs
+Snort,implements,Egress,sniffs
+Ingress,can_analyze,incoming  traffic,captures
+Snort,can_analyze,firewall traffic,sniffs
+Snort,has_a,packet logger,
+packet logger,implements,files,collects data
+Snort,implements,tcpdump pcap,can output
+Snort,implements,unified2,can output
+Wireshark,implements,tcpdump pcap,read
+Detection alert,implements,IP packet,add
+Snort rules,implements,icmp rules,edit
+Snort rules,implements,system variables,test
+system variables,implements,config files,edit
+system variables,implements,home network,set
+system variables,implements,external network,set
+Snort rules,implements,payload option,test
+payload option,implements,captured  data,shows
+Snort rules,implements,non payload option,test
+Network,implements,client gateway server,set as
+Packet  forwarding,implements,Gateway,enabled
+Firewall,implements,sniff server,set as
+Firewall,implements,testing,disabled
+Blacklist,implements,testing,enabled
+Land Attack,implements,TCP SYN Packet,spoofed
+teamDefense,uses,home network,install
+home network,can_expose,Land Attack,
+teamDefense,implements,Snort rules,
+Snort,has_a,Snort rules,
+Snort Rules,can_expose,Land Attack,detect
+teamDefense,can_analyze,TCP SYN Packet,
+attack host,can_exploit,TCP SYN Packet,
+Nmap,has_a,open source ,
+Nmap,has_a,network discovery,used for
+Nmap,has_a,security auditing,used for

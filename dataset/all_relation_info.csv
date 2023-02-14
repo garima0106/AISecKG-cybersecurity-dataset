@@ -1,0 +1,10 @@
+relation
+has_a
+can_analyze
+can_expose
+can_exploit
+implements
+uses
+is_a
+can_harm
+part_of
