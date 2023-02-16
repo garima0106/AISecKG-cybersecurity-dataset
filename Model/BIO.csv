@@ -1,0 +1,598 @@
+,sentence,tag
+1,Attacks can damage public domain,B-attack O O B-system I-system
+2,IDS means Intrusion Detection,B-tool O B-technique I-technique
+3,Snort is used for Intrusion Detection,B-tool O O O B-technique I-technique
+4,Snort can detect network attacks,B-tool O O B-attack I-attack
+5,Snort can also be used as a simple packet logger,B-tool O O O O O O O B-tool I-tool
+6,Snort can analyze real time traffic,B-tool O O O O B-data
+7,Snort can analyze real time data flow,B-tool O O O O B-feature I-feature
+8,Snort can check protocol analysis,B-tool O O B-technique I-technique
+9,Snort can detect different types of attacks,B-tool O B-technique O O O B-attack
+10,Snort checks the packet against user rules,B-tool O O B-data O B-function I-function
+11,Snort rules can be written in any language,B-function I-function O O O O O B-feature
+12,Snort rules have good structure,B-function I-function O O O
+13,Snort match previous attack pattern,B-tool O B-feature B-feature B-feature
+14,Snort checks the network behavior,B-tool O O B-feature B-feature
+15,Snort can discard the bad packet,B-tool O O O B-data I-data
+16,Snort has a Packet Decoder,B-tool O O B-tool I-tool
+17,Packet Decoder forms the packets,B-tool I-tool O O B-data
+18,Packet Decoder determines the underlying protocols,B-tool I-tool O O O B-feature
+19,Packet Decoder determines packet data size,B-tool I-tool O B-data B-feature I-feature
+20,Packet Decoder looks for header anomalies,B-tool I-tool O O B-vulnerability I-vulnerability
+21,Snort has a Preprocessor,B-tool O O B-tool
+22,Preprocessor verify HTTP anomalies,B-tool O B-vulnerability I-vulnerability
+23,Preprocessor verify FTP anomalies,B-tool O B-vulnerability I-vulnerability
+24,Preprocessor can modify packet data,B-tool  O O B-data I-data
+25,Snort has Detection Engine,B-tool O B-tool I-tool
+26,Detection Engine detects intrusion in packet,B-tool I-tool B-technique B-attack O B-data
+27,Detection Engine chains the rules,B-tool I-tool O O B-function
+28,Snort has Log Alert system,B-tool O B-tool I-tool I-tool
+29,Snort has Output Module,B-tool O B-tool I-tool
+30,Output Module controls output type,B-tool I-tool O B-feature B-feature
+31,Output Module sends alerts,B-tool I-tool O B-feature
+32,Snort set into Sniff mode,B-tool O O B-feature I-feature
+33,Snort can sniff the Ingress,B-tool O B-technique O B-feature
+34,Snort can sniff the Egress,B-tool O B-technique O B-feature
+35,Ingress captures incoming traffic,B-feature O B-data I-data
+36,Snort sniffs firewall traffic,B-tool B-technique B-data I-data
+37,Snort has packet logger,B-tool O B-tool I-tool
+38,The packet logger collects data as file,O B-tool I-tool O B-data O B-data
+39,Snort can output tcpdump pcap,B-tool O O B-data I-data
+40,Snort can output unified2,B-tool O O B-tool
+41,Wireshark can read tcpdump pcap,B-tool O O B-data I-data
+42,Detection alert is added to IP packets,B-tool I-tool O O O B-data I-data
+43,Snort rules is tested using icmp rules,B-function I-function O O O B-function I-function
+44,Snort rules is tested using system variables,B-function I-function O O O B-data I-data
+45,system variables can be edited in conf file,B-data I-data O O O O B-data I-data
+46,system variables can be set as home network,B-data I-data O O O O B-system I-system
+47,system variables can be set external network,B-data I-data O O O B-system I-system
+48,Snort rules is tested using payload options,B-function I-function O O O B-feature I-feature
+49,payload options shows captured data,B-feature I-feature O O B-data
+50,Snort rules is tested using non payload options,B-function I-function O O O B-feature I-feature I-feature
+51,Network is set as client gateway server,B-system O O O B-system I-system I-system
+52,Packet forwarding enabled on Gateway,B-feature I-feature O O B-system
+53,Firewall set to sniff server,B-tool O O B-technique B-system 
+54,Firewall disabled for testing,B-tool O O B-function
+55,Blacklist enabled for testing,B-feature O O B-function
+56,Land Attack sends spoofed TCP SYN Packets,B-attack I-attack O B-vulnerability B-data I-data I-data
+57,Nmap is an open source tool,B-tool O O B-feature I-feature B-tool
+58,Nmap is used for network discovery,B-tool O O O B-technique I-technique
+59,Nmap is used for security auditing,B-tool O O O B-technique I-technique
+60,Nmap displays exposed services on a target machine along with other useful information such as the version and OS detection,B-tool O B-vulnerability B-app O O B-system I-system O O O O B-data O O O B-technique O B-technique I-technique
+61,Use nmap to send customized packets for network diagnostic and testing,O B-tool O O O B-data O  B-technique I-technique O  B-function
+62,Use nmap to send customized packets for emulating attacks,O B-tool O O O O B-data O O B-attack 
+63,Nmap is a network mapper that has emerged as one of the most popular free network discovery tools on the market,B-tool O O B-feature I-feature O O O O O O O O O O O B-technique I-technique B-tool O O O
+64,Nmap is now one of the core tools used by network administrators to map their networks,B-tool  O O O O O O B-tool O O B-securityTeam I-securityTeam O B-function O B-system
+65,The program can find live hosts on a network perform port scanning ping sweeps OS detection and version detection,O B-function O O B-system I-system O O B-system O O B-technique I-technique O B-technique I-technique O B-technique I-technique O O B-technique I-technique O
+66,What is Nmap?,O O B-tool O
+67,Nmap is a network scanning tool that uses IP packets to identify all the devices connected to a network and provide information on the services and operating systems they are running,B-tool O O B-technique I-technique B-tool O O B-data I-data O O O O B-system O O O B-system O O B-data O O B-app O B-system I-system O O O
+68, The program is most commonly used via a command-line interface though GUI front-ends are also available,O O O O O O O O B-tool I-tool O B-tool I-tool O O O
+69,It is available for many different operating systems such as Linux Free BSD and Gentoo,O O O O O O B-system I-system O O B-system B-system I-system O B-system
+70,Nmap was developed for enterprise-scale networks and can scan through thousands of connected devices,B-tool O O O B-system I-system I-system O O B-function O O O B-system I-system
+71,Moreover Nmap has been increasingly used to inspect IoT security,O B-tool O O O O O O B-technique I-technique
+72,Nmap provides information on every active IP so you can determine if an IP is being used by a legitimate service or an external attacker,B-tool O B-data O O B-feature B-feature O O O O O O B-feature O O O O O B-feature B-app O O B-attacker I-attacker
+73,Your network as a whole including live hosts open ports and the OS of every connected device,O B-system O O O O B-system I-system B-feature I-feature O O B-system O O B-system I-system
+74,Vulnerabilities scan your own server to simulate the process that a hacker would use to attack your site,B-vulnerability B-function O O B-system O O O B-technique O O B-attacker O O O B-attack O B-system
+75,The primary uses of Nmap can be broken into three core processes,O O O O B-tool O O O O O O B-technique
+76,First the program gives you detailed information on every IP active on your networks and each IP can then be scanned,O O O O O O B-data O O B-feature B-feature O O B-system O O B-feature O O O B-function
+77,"This allows administratorsto check whether an IP is being used by a legitimate service or an external attacker",O O B-securityTeam O O O O B-feature O O O O O B-feature I-feature O O B-attacker I-attacker
+78,Secondly Nmap provides information on your network as a whole,O B-tool O B-data O O B-system O O O
+79,It can be used to provide a list of live hosts and open ports and identify the OS of every connected device,O O O O O O O O O B-system I-system O B-feature I-feature O O O B-system O O B-system I-system
+80,This makes it a valuable tool in ongoing system monitoring and a critical part of pentesting,O O O O O B-tool O O B-technique I-technique O O O O O B-technique
+81,Nmap can be used alongside the Metasploit framework for instance to probe and then repair network vulnerabilities,B-tool O O O O O B-tool I-tool O O O B-technique O On O B-vulnerability I-vulnerability
+82,Thirdly Nmap has also become a valuable tool for users looking to protect personal and business websites,O B-tool O O O O O B-tool O B-user O O O B-system O B-system I-system
+83,Using Nmap to scan your own web server particularly if you are hosting your website from home is essentially simulating a hacker process to attack your site,O B-tool O B-technique O O B-system I-system O O O O B-feature O B-system  O B-system O O O O B-attacker B-technique O B-attack O B-system
+84,Attacking your own site in this way is a powerful way of identifying security vulnerabilities,B-attack O O B-system O O O O O O O O O B-vulnerability I-vulnerability
+85,Nmap is straightforward to use and most of the tools it provides are familiar to system admins from other programs,B-tool O O O O O O O O B-tool O O O O O  B-securityTeam I-securityTeam O O B-function
+86,Nmap advantage is that it brings a wide range of these tools into one program rather than forcing you to skip between separate and discrete network monitoring tools,B-tool O O O O O O O O O O B-tool O O B-function O O O O O O O O O O B-technique I-technique B-tool
+87, To use Nmap you need to be familiar with command-line interfaces, O O B-tool O O O O O O B-tool I-tool I-tool
+88,Most advanced users can write scripts to automate common tasks but this is unnecessary for basic network monitoring,O O B-user O O B-function O B-feature O O O O O O O O B-technique I-technique
+89,TCP Full Connect Vanilla Scan,B-technique I-technique I-technique I-technique I-technique
+90,we assume that the scanning targetâs IP address ,O O O O B-technique B-system B-feature I-feature
+91,TCP Connect scan completes the 3-way handshake,B-technique I-technique I-technique O O B-technique I-technique 
+92,If a port is open the operating system completed the TCP three-way handshake and the port scanner immediately closes the connection to avoid DOS ,O O B-feature O B-feature O B-system I-system O O B-feature B-technique I-technique I-technique O O B-tool I-tool O O O B-feature O O B-attack 
+93,"This is ""noisy because the services can log the sender IP address and trigger Intrusion Detection Systems",O O B-feature O O B-feature O B-function O B-system B-feature I-feature O O B-tool I-tool I-tool
+94,the Full scan has the following features,O B-technique I-technique O O O O
+95,Attempts to completes 3-way handshake with each scanned port,O O O B-technique I-technique I-technique O O B-vulnerability B-feature
+96,Sends SYN and waits for ACK before sending ACK,B-function B-feature O O O B-feature O B-function B-feature
+97,Tears down connection using FIN packets,B-feature I-feature B-feature O B-data I-data
+98,If target port is closed sender will received either no response a RESET packet  or an ICMP Port Unreachable packet,O B-feature I-feature O B-feature O B-system O B-function O O B-feature O O B-data I-data O O On B-data I-data I-data I-data
+99,Not stealthy the connection request can be logged,O B-vulnerability O B-feature I-feature O O B-function
+100,UDP scan checks to see if any UDP ports are listening ,B-technique I-technique O O O O O B-feature I-feature O B-feature 
+101,Since UDP does not respond with a positive acknowledgment like TCP and only responds to an incoming UDP packet when the port is closed this type of scan can sometimes show false positives ,O B-feature O O B-feature O O B-feature I-feature O B-feature O O B-feature O O B-feature B-data I-data O O B-feature O B-feature O O O B-technique O O O B-feature I-feature 
+102,However it can also reveal Trojan horses running on high UDP ports and hidden RPC services,O O O O B-feature B-attack I-attack O O B-feature I-feature I-feature  O B-vulnerability I-vulnerability I-vulnerability
+103,It may be quite slow since some machines intentionally slow down responses to this kind of traffic to avoid being overwhelmed ,O O O O O O O B-system O B-feature I-feature I-feature O O O O B-data O O O O 
+104,Machines running Windows OS however do not implement this slowdown feature so you should use UDP to scan Windows hosts normally,B-system O B-system I-system O O O O O B-feature I-feature O O O O B-feature O B-technique B-system B-system  O
+105,The UDP Scan sends a UDP packet to target ports to determine if a UDP service is listening,O B-technique I-technique O O B-data I-data O B-feature I-feature O O O O B-feature I-feature O B-feature
+106,If the target system returns an ICMP Port Unreachable message the target port is closed Otherwise the target port is assumed to be open,O O B-system I-system O O B-data I-data I-data I-data O B-feature I-feature O B-feature O O B-feature I-feature O O O O B-feature
+107,UDP scan is unreliable since there may be false positives,B-technique I-technique O O O O O O B-feature I-feature
+108,The UDP scan can be very slow due to the following reasons,O B-technique I-technique O O O B-feature O O O O O
+109,Open and filtered ports rarely send any response leaving Nmap to time out,B-feature O B-feature I-feature O B-function O B-feature O B-tool O B-feature I-feature
+110,Closed ports usually send back an ICMP port unreachable error But many hosts rate limit ICMP port unreachable messages by default eg 1/sec,B-feature I-feature O O O O B-data I-data I-data I-data O O B-system B-technique I-technique B-data I-data I-data I-data O B-feature O O
+111,To speed up the UDP scan Increase host parallelism use min-hostgroup to scan multiple hosts at once,O O O O B-technique I-technique O B-feature I-feature O B-feature I-feature O B-technique O B-system O O
+112,Scan popular ports first using the -F option to scan the most common UDP ports,B-technique O B-feature O O O O O O B-technique O O O B-feature I-feature
+113,Add version-intensity 0 to version detection scans,O B-feature I-feature O O B-technique I-technique B-technique
+114,Scan from behind the firewall,B-technique O B-feature I-feature I-feature 
+115,Use host-timeout to skip slow hosts,O B-feature I-feature O O B-system I-system
+116,Use -v verbosity and chill out Nmap provides estimated time for scan completion of each host,O O B-feature O B-feature I-feature B-tool O O O O B-technique O O O B-system
+117,SYN scan is another form of TCP scanning ,B-technique I-technique O O O O B-technique I-technique 
+118,Rather than using the operating systemâs network functions the port scanner generates raw IP packets and monitors for responses ,O O O O B-system I-system  B-function I-function O B-tool I-tool O B-data I-data I-data O B-technique O B-feature 
+119,This scan type is also known as â€œhalf-open scanning because it never actually opens a full TCP connection ,O B-technique O O O O O B-technique I-technique O O O O B-feature O B-feature I-feature I-feature 
+120,The port scanner generates a SYN packet ,O B-tool I-tool O O B-data I-data 
+121,If the target port is open it will respond with an SYN-ACK packet,O O B-feature I-feature O B-feature O O B-feature O O B-data I-data 
+122,The scanner host responds with an RST packet closing the connection before the handshake is completed,O B-tool B-system B-feature O O B-data I-data B-feature O B-feature O O B-technique O O
+123,If the port is closed but unfiltered the target will instantly respond with an RST packet ,O O B-feature O B-feature O B-feature O B-system O O B-feature O O B-data I-data 
+124,There is debate over which scan is less intrusive on the target host ,O O O O O B-technique O O B-attack O O B-system I-system
+125,SYN scan has the advantage that the individual services never actually receive a connection,B-technique I-technique O O O O O O B-feature O O B-function O B-feature
+126,Only sends the initial SYN and waits for ACK to detect open port,O O O O B-feature O O O B-feature O B-technique B-feature I-feature
+127,SYN scans stop two-thirds of the way through the 3-way handshake aka half-open scan,B-technique I-technique O O O O O O O B-technique I-technique O B-technique  I-technique
+128,Attacker sends a RESET RST after receiving an SYN-ACK response,B-attacker O O B-feature I-feature O B-feature O B-feature I-feature 
+129,A true connection is never established thus the target may not log the connection,O O B-feature O O B-feature O O B-system O O B-function O B-feature
+130,Faster and stealthier than a full TCP Connect scans,O O B-vulnerability O O B-technique I-technique I-technique I-technique
+131,If the target port is closed the destination will send a RESET or nothing,O O B-feature I-feature O B-feature O B-system O O O B-feature O O
+132,SYN flood may cause accidental denial-of-service attacks if the target is slow,B-attack I-attack O O B-attack B-attack I-attack O O B-system O B-feature
+133,FIN scan is a stealthy scan like the SYN scan but sends a TCP FIN packet instead ,B-technique I-technique O O B-technique I-technique O O B-technique I-technique O B-function O B-data I-data I-data O
+134,Most but not all computers will send an RST packet back if they get this input so that the FIN scan can show false positives and negatives but it may get under the radar of some IDS programs and other countermeasures,O O O O O O O O B-data I-data O O O O O B-feature O O O B-technique I-technique O O B-feature I-feature O B-feature O O O O O O O O O B-tool B-function O O O
+135,Ack scanning determines whether the port is filtered or not ,B-technique I-technique O O O B-feature O B-feature O O 
+136,This is especially good when attempting to probe for the existence of a firewall and its rulesets ,O O O O O O O B-technique O O O O O B-tool O O B-function 
+137,Simple packet filtering will allow established connections packets with the ACK bit set whereas a more sophisticated stateful firewall might not,O B-technique I-technique O O B-feature I-feature B-data O O I-data I-data O O O O O B-feature B-tool O O
+138,ACK scan Sends a packet with the ACK code bit set to each target port,B-technique I-technique O O B-data O O B-data I-data I-data I-data O O B-feature I-feature
+139,Allows the attacker to get past some packet filtering devices,O O B-attacker O O O O B-technique I-technique B-system 
+140,Allows the attacker to determine what kind of established connections a firewall or router will allow into a network by determining which ports through a firewall allow established connection responses,O O B-attacker O O O O O B-feature I-feature O B-tool O B-system O O O O B-system O O O B-feature O O B-tool O B-feature I-feature B-feature
+141,"If no response or an ICMP Port Unreachable message is returned Nmap will label the target port as ""filtered meaning that a packet filter is blocking the response",O O B-feature O O B-data I-data I-data I-data O O B-tool O O O B-feature I-feature O B-feature O O O B-technique I-technique O B-feature O B-feature
+142,Another very stealthy scan that sets all the TCP header flags to off or null ,O O B-technique I-technique O O O O B-feature I-feature I-feature O O O O 
+143,This is not normally a valid packet and some hosts will not know what to do with this,O O O O O O B-data O O B-system  O O O O O O O O
+144,Windows operating systems are in this group and scanning them with NULL scans will produce unreliable results ,B-system I-system I-system O O O O O B-technique O O B-technique I-technique O O O O 
+145,However for non-Windows servers protected by a firewall this can be a way to get through,O O B-system I-system O O O B-tool O O O O O O O O
+146,XMAS scan is similar to the NULL scan except for all the flags in the TCP header is set to on ,B-technique I-technique O O O O B-technique I-technique O O O O B-feature O O B-feature I-feature O O O O 
+147,Windows machines wonât respond to this due to the way their TCP stack is implemented ,B-system I-system O B-feature O O O O O O Oir B-feature I-feature O O 
+148,"Xmas scans derive their name from the set of flags that are turned on within a packet ",O O O O O O O O O B-feature O O O O O O B-data 
+149,These scans are designed to manipulate the PSH URG and FIN flags of the TCP header,O B-technique O O O O O B-feature B-feature O B-feature I-feature O O B-feature I-feature
+150,RPC scan is special type of scan looks for machines answering to RPC Remote Procedure Call services ,B-technique I-technique O O O O B-technique O O B-system O O B-function B-function I-function I-function B-apps 
+151,RPC which allows remote commands to be run on the machine under certain conditions can be a dangerous service,B-function O O B-function I-function O O O O O B-system  O O O O O O O B-feature
+152,Since RPC services can run on many different ports it is hard to tell from a normal scan which ones might be running RPC ,O B-app I-app O O O O O B-feature O O O O O O O O B-technique O O O O O B-function
+153,This scan will probe the ports found open on a machine with commands to show the program name and version if RPC is running ,O B-technique O B-technique O B-feature O B-feature O O B-system O B-function O O O B-function B-feature O B-feature O B-function O O 
+154,Itâs not a bad idea to run one of these scans every often to find out if and where you have these services running,O O O O O O B-function O O O B-technique O O O O O O O O O O O B-feature B-function
+155,Scans RPC services using all discovered open TCP/UDP ports on the target to send RPC NULL commands ,B-technique B-app I-app O O O B-feature B-feature I-feature O O B-system O O B-function I-function I-function
+156,Tries to determine if an RPC program is listening at the port and identifies type of RPC program,O O O O O B-function B-function O B-feature O O B-feature O O O O B-function B-function
+157,IDLE scan is a super stealthy method whereby the scan packets are bounced off an external host,B-technique I-technique O O O B-technique I-technique O O B-technique B-data O O O O B-system I-system
+158,You donât need to have control over the other host but it does have to set up and meet certain requirements ,O O O O O O O O O B-system O O O O O O O O O O B-feature 
+159,"You must input the IP address of our ""zombie host and what port number to use",O O O O B-feature I-feature O O B-system I-system O O B-feature I-feature O O
+160,It is one of the more controversial options in Nmap since it really only has a use for malicious attacks,O O O O O O O O O B-tool O O O O O O O O B-attack I-attack
+161,Probe the zombieâs IP ID and record it Forge an SYN packet from the zombie and send it to the desired port on the target,B-technique O B-system B-feature I-feature O O O B-vulnerability O B-data I-data O O B-system O O O O O O B-feature O O B-system
+162,Depending on the port state the targetâs reaction may or may not cause the zombieâs IP ID to be incre- mented,O O O B-feature I-feature O B-system O O O O O O O B-system B-feature I-feature O O O
+163,Probe the zombieâs IP ID again The target port state is then determined by comparing this new IP ID ,B-technique O B-system B-feature I-feature O O B-system B-feature I-feature O O O O O O O B-feature I-feature
+164,NSE stands for Nmap Scripting Engine,B-tool O O B-tool I-tool I-tool
+165,and it is basically a digital library of Nmap scripts that help enhance the default Nmap features and report the results in a traditional Nmap output,O O O O O O O O B-function I-function O O O O B-feature B-tool B-feature O O O O O O O B-tool B-feature
+166,You can also write and share your own scripts so youâre not limited to relying on the Nmap default NSE scripts,O O O O O O O O B-function O O O O O O O O B-tool B-feature B-function I-function
+167,The only requirement for you to write these scripts is that they must be coded using the Lua programming language,O O O O O O O O B-function O O O O O O O O B-tool I-tool I-tool
+168,Four different types can help us enhance the default Nmap features depending on the target and the scanning phase in which they are run,O O O O O O O O B-feature B-tool O O O O B-system  O O B-technique O O O O O B-function
+169,Prerule scripts are types of scripts run before the rest of any scanning operation while Nmap doesnât have any data about the remote target,B-function I-function O O O B-function O O O O O O B-technique O O B-tool O O O B-data O O B-system I-system
+170,Once the Nmap default scan has finished the host exploration detection port scanning or software discovery it will perform the host scripts,O O B-tool B-feature B-technique O O O B-system B-technique B-technique B-technique I-technique O B-technique I-technique O O O O B-function I-function
+171,Service scripts are a particular set of Nmap scripts that are run against services on the remote host,B-function I-function O O O O O B-function I-function O O B-function O B-feature O O B-system I-system
+172,These include HTTP service scriptsfor example which can be run against web servers,O O B-function I-function I-function O O O O O B-function O B-system I-system
+173,Postrule scripts are run after the entire Nmap scan has finished and are often useful for parsing formatting and presenting the different results,B-function I-function O B-function O O O B-technique I-technique O O O O O O O B-function B-function O O O O O
+174,When dealing with over 600 default Nmap scripts it is not easy to find the most popular ones by inspecting them one by one ,O O O O O B-feature B-function I-function O O O O O O O O O O O O O O O O 
+175,auth script - All sorts of authentication and user privilege scripts,B-function I-function O O O O B-technique  O B-feature I-feature B-function
+176,broadcast script - Network discovery scripts that use broadcast petitions for intel gathering,B-function I-function  O B-technique I-technique B-function O O B-feature O O B-system O
+177,brute script - Set of scripts for performing brute force attacks to guess access credentials,B-function I-function O O O B-function O O B-attack I-attack I-attack O O B-feature I-feature
+178,default script - The most popular Nmap scripts using -sC by default,B-function I-function O O O O B-function I-function O O O B-feature
+179,discovery script  - Scripts related to network discovery service discovery and host discovery,B-function I-function  O  B-function O O B-technique I-technique B-technique I-technique O B-technique I-technique
+180,dos script - Denial of service attack scripts used to test and perform DOS and floods,B-function I-function O B-attack I-attack I-attack I-attack B-function O O B-function O B-function B-attack O B-attack
+181,exploit script - Used to perform service exploitation on different CVEs,B-function I-function O  O O O B-technique I-technique O O B-vulnerability
+182,external  script -  Scripts that rely on 3rd party services or data,B-function I-function O  B-function O O O B-app I-app I-app O B-data
+183,fuzzer script - Used to perform fuzzing attacks against apps services or networks,B-function I-function O O O B-function B-attack I-attack O B-app B-app O B-system
+184,intrusive script -  All the aggressiveâ scripts that cause a lot of network noise,B-function I-function O  O O B-feature B-function O O O O O B-feature I-feature
+185,malware  script - Malware detections and exploration scripts,B-function I-function O B-technique I-technique O B-technique B-function
+186,safe script - Safe and non-intrusive or noisy scripts,B-function I-function O  B-feature O B-feature O B-feature B-function
+187,version script - OS service and software detection scripts,B-function I-function O B-system O B-app O B-technique I-technique B-function
+188,vuln script - The Nmap vuln category includes vulnerability detection and exploitation scripts,B-function I-function O O B-tool B-vulnerability O O B-technique I-technique O B-technique B-function
+189,The following is the output of scanning the Metasploitable 2 host,O O O O B-feature O B-technique O B-system I-system I-system
+190,Nmap also allows you to run scripts using wildcards meaning you can target multiple scripts that finish or end up with any pattern ,B-tool O O O O B-function B-function O B-function O O O O O B-function O O O O O O O O 
+191,For example if you want to run all the scripts that begin with FTPâ you could use this syntax,O O O O O O B-function O O B-function O O O B-feature O O O O B-feature
+192,This is the perfect solution when you already know which script is going to be used ,O O O O O O O O O O B-function O O O O O 
+193,if we want to run the HTTP-brute script to perform brute force password auditing against HTTP basic digest and ntlm authentication ,O O O O O O B-function I-function O O B-function I-function B-feature B-technique O B-feature I-feature B-function O B-technique  I-technique
+194,NSE has the ability to let you write your own scripts and run those scripts locally in your operating system ,B-tool O O O O O O O Or O B-function O B-function O B-function B-feature O O B-system I-system 
+195,Firewall Intrusion Prevention Systems IPS and Intrusion Detection Systems IDS are only as robust as you configure them for your perimeter security needs,B-feature B-tool I-tool I-tool  I-tool O O B-tool I-tool I-tool I-tool O O O O O O B-function O O O B-technique I-technique O
+196,Where they reside on your network how they interact and improving Penetration Pen Testing services is key to having a strong defensive perimeter for your organization,O O O O O B-system O O O O O B-technique I-technique I-technique I-technique O O O O O O B-technique I-technique O O B-system
+197,IDS network security and IPS security along with Firewall leveraging can help provide this,B-technique I-technique I-technique O B-technique I-technique O O B-tool O O O O O
+198,Cyberinfrastructures using prevention platforms require both regularly scheduled performance assessments and changing topology etc,B-system O B-technique B-system O O O O B-technique I-technique O O B-feature O
+199,Most industry-standard institutes recommend even more frequent assessments,O O O O O O O B-technique
+200,It is advised to change your current devices around at a certain frequent level,O O O O O O O B-system O O O O O O
+201,If they are always static on-going cybercriminals learn how they always sit on your perimeter and eventually hack them after long periods in scanning for weaknesses,O O O O B-feature O B-attacker O O O O O O O O O O B-attack O O O O O B-technique O B-vulnerability
+202,When performing pentest against your own networks basically you are evading your own security systems,O O B-technique O O O B-system O O O B-technique O O B-system I-system
+203,We usually refer to these self-targeted evading activities as ethical hacking and perform the pentesting as â'white- hats',O O O O O B-technique I-technique I-technique I-technique O B-technique I-technique O O O B-technique O B-securityTeam
+204,Pentesting helps understand the danger of real attackers,B-technique O O O O O O B-attacker
+205,If you can sneak around a blocked portmapper port using Nmap direct RPC scanning then so can the bad guys,O O O O O O B-feature B-tool B-feature O B-tool O B-technique I-technique O O O O B-attacker I-attacker
+206,It is easy to make a mistake in configuring complex firewalls and other devices,O O O O O O O O B-function O B-tool O O B-system
+207,Many of them even come with glaring security holes that conscientious users must find and close,O O O O O O O B-vulnerability I-vulnerability O O B-user O O O O
+208,Regular network scanning can help find dangerous implicit rules before attackers do,O B-technique I-technique O O O O O B-function O B-attacker O
+209,There are good reasons for evading IDS as well Product evaluation is one of the most common,O O O O O B-technique B-tool O O B-technique I-technique O O O O O O
+210,If attackers can slide under the radar by simply adding an Nmap flag or two the system does not offer much protection,O B-attacker O O O O O O O O O B-tool B-feature O O O B-system  O O O O B-feature
+211,Pentesting tools such as Nmap and Metasploit offer many features for evading firewall rules or sneaking past IDSs,B-tool I-tool O O B-tool O B-tool O O O O B-technique B-function I-function O B-technique I-technique B-tool
+212,These capabilities allow bad guysâ to misuse it for evilâ purposes,O O O B-attacker I-attacker O O O O O O
+213,However from the administrator perspectives mimicking attackersâ behaviors and actions maybe the best that they can do toidentify security holes before attackers do,O O O B-securityTeam O O B-attacker O O O O O O O Oy O O O O B-vulnerability I-vulnerability O B-attacker O
+214,This lab is by-no-mean the utterly and eagerly promoting Nmap and Metasploit,O O O O O O O O O B-tool O B-tool
+215,It simply introduces the beginning level of cyber defenders,O O O O O O O  B-securityTeam I-securityTeam
+216,to start their network security endeavors in the area of penetration testing,O O O B-technique I-technique O O O O O B-technique I-technique
+217,since we know pentesting represents the art of cybersecurity,O O O B-technique O O O O B-technique
+218,deep understanding of the given security system,O O O O O B-system I-system
+219,The goal of this pentest is to assess the firewall rule setup and IDS system ,O O O O B-technique O O B-technique O B-function I-function B-system O B-tool I-tool 
+220,In this pentest we apply the white-box testing strategy in which a white-box tester has the access and knowledge levels of the system admin including the knowledge of iptables firewall rules and snort rules setup,O O B-technique O O O B-technique I-technique I-technique O O O  B-securityTeam I-securityTeam O O O O O O O O  B-securityTeam I-securityTeam O O O O B-feature B-function I-function O B-function I-function B-system
+221,The goal of the pentest is to explore the configuration issues of iptables and snort ie identify the system weakness due to configuration flaws ,O O O O B-technique O O O O B-feature O O B-feature O B-tool O O O B-system B-vulnerability O O B-vulnerability I-vulnerability 
+222,This means that the pen tester knows the iptables and snort configurations and networking system setup,O O O O  B-securityTeam I-securityTeam O O B-app O B-tool B-feature O B-system I-system I-system
+223,During the pen test the pen tester can monitor the actions or output of iptables and snort,O O B-technique I-technique O B-securityTeam I-securityTeam O B-technique O O O B-feature O B-feature O B-tool
+224,The pen tester tries to explore vulnerabilities focusing on two areas,O B-securityTeam I-securityTeam O O B-technique B-vulnerability O O O O
+225,System configurations - firewall setup such as open close filter unfilter ports reachable services or nodes firewall performance measurements etc,B-feature I-feature O B-tool B-system O O B-feature B-feature B-feature  B-feature B-feature O B-app O B-system B-tool B-technique I-technique O
+226,IDS setup such as detection threshold setup success and missed attack scenarios etc,B-tool B-system O O B-feature I-feature I-feature O O O B-attack I-attack O
+227,Vulnerabilities There is one Metasploitable-2 VM running behind the firewall,B-vulnerability O O O B-system B-system B-function O O B-tool 
+228,The pen tester is required to assess the security performance of the firewall and IDS on successfully stop and/or detect deployed attacks,O B-securityTeam I-securityTeam O O O B-technique O B-technique I-technique O O B-tool O B-tool O O O O B-technique B-function B-attack
+229,Location: The pen tester explores the configuration vulnerabilities from outside ie on the client network,O O  B-securityTeam I-securityTeam O O B-vulnerability I-vulnerability O O O O O B-system I-system
+230,Assessment: The pen tester needs to develop a pentest report based on the provided template and provide suggested changes or remediation of firewall and IDS rules to maximally improve the system security ,B-technique O O  B-securityTeam I-securityTeOm O O O O B-technique O O O O O B-feature O O O chOnges O O O B-tool O B-tool B-function O O O O B-technique I-technique 
+231,Note that the Metasploitable 2 is used for assessing the firewall and IDS ,O O O B-system I-system O O O B-technique O B-tool O B-tool
+232,Note that your pentest focus is to inspect and assess the security strength of the firewall and IDS,O O O B-technique O O O B-technique O B-technique O B-technique O O O B-tool O B-tool
+233,Please do not try to resolve any vulnerable issues running on Metasploitable 2 which is purposely designed for pentesting,O O O O O B-technique O B-vulnerability I-vulnerability O O B-system I-system O O O O O B-technique
+234,Tools: The pen tester can use various tools provided in the given client VM such as Nmap hping3 MSF Metasploit framework tcpdump etc ,O O  B-securityTeam I-securityTeam O O O O O O O O B-system I-system O O B-tool B-tool B-tool I-tool I-tool B-tool O 
+235,It should be sufficient to use these tools for this lab,O O O O O O O B-tool O O O
+236,However you can use or develop your own tools and testing scripts to perform the security testing,O O O O O O Or O B-tool O B-function B-function O B-function O B-technique I-technique
+237,You should perform your pentesting tasks on the client machine,O O O O B-technique O O O B-system I-system
+238,You can run various tools such as ping traceroute nmap hpings msfconsole etc on the client node,O O O O B-tool O O B-tool B-tool B-tool B-tool B-tool O O O B-system I-system
+239,Gateway Node Ubuntu 1804 You need to run iptables firewall and snort to protect the server node based on provided iptables and snort configuration files,B-system I-system B-system I-system O O O B-function B-app B-tool O B-tool O B-feature O B-system I-system O O O B-app O B-tool B-data I-data
+240,You can download the iptables configuration files and snort rule files using the following commands,O O O O O B-app B-data I-data O B-function I-function B-data O O O B-function
+241,They are shell scripts ,O O B-function I-function 
+242,To make them executable you can change their permission,O O O O O O O O B-feature
+243,you need to change the parameter setup at the beginning of the pentest and reset based on your lab running environment ie  three  interfaces  and  IP addresses,O O O O O B-feature I-feature O O O O O B-technique O B-feature O O O O O O O  O B-app O B-feature I-feature
+244,make sure you have set up your default GW properly on each VM,O O O O O O O B-feature O  O O O B-system O
+245,Server Node Metastploitable 2,B-system I-system B-system I-system
+246,details on Metasploitable 2 especially the vulnerable services running on it ,O O B-system I-system O O B-vulnerability B-app O O O 
+247,You do not need to make any changes or adjustments on the provided Metasploitable 2 virtual machine in this lab,O O O O O O O O O O O O O B-system I-system B-system I-system O O O
+248,In this lab iptables snort Nmap and Metasploit are four major security services and tools that you will use ,O O O B-feature B-tool B-tool O B-tool O O O B-app I-app O B-tool O O O O 
+249,Iptables firewall Snort IDS ,B-feature B-tool B-tool I-tool
+250,demonstrate how to successfully deploy attacks through the firewall ,O O O O B-function B-attack O O B-tool 
+251,you need to successfully exploit at least two vulnerabilities to compromise the targeted service or application,O O O O B-function O O O B-vulnerability O O O B-app I-app O B-app
+252,stop the service gain access to the command shell modify data or service parameters steal critical data modify system configuration or setup ,O O B-app O B-feature O O B-tool I-tool O B-data O B-app B-feature B-technique B-feature B-data O B-feature I-feature O B-system 
+253,How to identify the vulnerability,O O B-technique O B-vulnerability
+254,The steps of using Metasploit to explore the vulnerability,O O O O B-tool O B-technique O B-vulnerability
+255,Suggest the countermeasure or mitigation solutions based on given firewall rules ,O O B-technique O B-technique I-technique O O O B-function I-function
+256,Detecting and Subverting Firewalls and Intrusion Detection Systems,B-technique O B-technique B-tool O B-tool I-tool I-tool 
+257,firewall setup that you want to perform the pentest,B-tool B-system O O O O B-function O B-technique
+258,To have better understanding of various scans you can use firewall reset to clear the firewall rules and set it to blacklist ,O O O O O O B-technique O O O B-tool B-function O O O B-function I-function O O O O B-feature
+259,change your scanning target directly to the Metasploitable-2 VM,O O B-technique B-system O O O B-system I-system B-system
+260,compare scanning responses with the firewall rules,O B-technique B-feature O O B-function I-function
+261,you can observe results w/o firewall rules to interpret the scanning outcomes,O O O O O B-function I-function O O O B-technique O
+262,Nmap and Metasploit Framework are installed on both the Client and Gateway VMs ,B-tool O B-tool I-tool O O O O O B-system O B-system I-system 
+263,Thus you can also compare the scanning results on the Client vs on the Gateway which can help you determine if the firewall successfully defend a scan or attack,O O O O O O B-technique O O O B-system O O O B-system O O O O O O O B-tool O B-technique O B-technique O B-attack
+264,Using tcpdump to monitor the traffic from both ingress and egress ports of the gateway is always the best approach to help you understand the actions performed on the Gateway,O B-tool O B-technique O B-data O O B-feature O B-feature B-feature O O B-system O O O O O O O O O O O O O O B-system
+265,you are not restricted by the enumerated scanning approaches and provided hints ,O O O O O O O B-technique O O O O 
+266,pentest is the art of cyberdefense and you need to be creative,B-technique O O O O B-technique O O O O O O
+267,One helpful feature of the TCP protocol is that systems are required by RFC 793 to send a negative response to unexpected connection requests in the form of a TCP RST reset packet ,O O O O O B-feature I-feature O O B-system O O O B-feature I-feature O O O B-feature I-feature O O B-feature I-feature O O O O O B-data I-data I-data I-data 
+268,The RST packet makes closed ports easy for Nmap to recognize,O B-data I-data O B-feature B-feature O O B-tool O O
+269,Filtering devices such as firewalls on the other hand tend to drop packets destined for disallowed ports,B-feature B-system O O B-tool O O oOr O O O O B-data O O O B-feature
+270,In some cases they send ICMP error messages usually port unreachable instead,O O O O O B-data I-data I-data O B-feature I-feature O
+271,Because dropped packets and ICMP errors are easily distinguishable from RST packets Nmap can reliably detect filtered TCP ports from open or closed ones and it does so automatically,O B-data I-data O B-data I-data O O O O B-data I-data B-tool O B-feature B-technique B-feature B-feature I-feature O B-feature O B-feature O O O O O O
+272,The ACK scan sends TCP packets with only the ACK bit set ,O B-technique I-technique O B-data I-data O O O B-data I-data I-data O 
+273,Whether ports are open or closed the target is required by RFC 793 to respond with a RST packet,O B-feature O B-feature O B-feature O B-system O O O B-feature I-feature O B-feature O O B-data I-data
+274,Firewalls can block the probe,B-tool O B-feature O B-technique
+275,the firewall usually makes no response or send back an ICMP destination unreachable error ,O B-tool O O O B-feature O O O O B-data I-data I-data I-data
+276,This distinction allows Nmap to report whether the ACK packets are being filtered,O O O B-tool O O O O B-data I-data O O B-feature
+277,The set of filtered ports reported by an Nmap ACK scan is often smaller than for an SYN scan against the same machine because ACK scans are more difficult to filter,O O O B-feature I-feature O O O B-tool B-technique I-technique O O O O O O B-technique I-technique O O O B-system O B-technique I-technique O O O O B-feature
+278,Stateless firewall can block incoming SYN packets without the ACK bit set is an easy way to do this but it still allows any ACK packets through ,B-feature B-tool O B-feature B-feature B-data I-data O O B-data I-data I-data O O O O O O O O O O O O B-data I-data O 
+279,Blocking those ACK packets is more difficult because they do not tell which side started the connection,B-feature O B-data I-data O O O O O O O O O O O O B-feature
+280,Run SYN scan and ACK scan and compare difference,O B-technique I-technique O B-technique I-technique O O O
+281,To block unsolicited ACK packets as sent by the Nmap ACK scan while allowing ACK packets belonging to legitimate connections ,O B-feature B-attack B-data I-data O O O O B-tool B-technique I-technique O O B-data I-data O O B-feature B-feature
+282,firewalls must statefully watch every established connection to determine whether a given ACK is appropriate,B-tool O B-feature O O B-feature I-feature O O O O O B-feature O O
+283,Please check the provided iptables firewall rules and check where the stateful firewall policies kicked in ,O O O O B-feature B-tool B-function O O O O B-feature B-tool O O O 
+284,These stateful firewalls are usually more secure because they can be more restrictive,O B-feature B-tool O O O B-feature O O O O O O
+285,Blocking ACK scans is one extra available restriction ,B-feature B-technique I-technique O O O O O 
+286,The downsides are that they require more resources to function and a stateful firewall reboot can cause a device to lose state and terminate all established connections passing through it,O O O O O O O O O O O O B-feature B-tool B-function O O O B-system O O B-feature O O O B-feature I-feature O O O
+287,the key analysis point of this task is to check the feedback of Nmap scans with different scanning options to understand the implication of Nmap outputs: filtered unfiltered closed open ,O O O O O O O O O O O O O B-tool B-technique O O B-technique O O O O O O B-tool B-feature: B-feature B-feature B-feature B-feature 
+288,What are the implications of the firewall setup according to these feedback,O O O O O O B-tool B-system O O O O
+289,Systems running TCP protocol is required by RFC 793 to send a negative response to unexpected connection requests in the form of a TCP RST reset packet,B-system O B-feature I-feature O O O B-feature I-feature O O O B-feature I-feature O O B-feature I-feature O O O O O B-data I-data I-data I-data
+290,the key analysis point of this task is how to infer the deny-by-default firewall policy based on the scanning responses from the firewall,O O O O O O O O O O O O B-feature B-tool B-feature O O O B-technique B-feature O O B-tool
+291,The ACK scan sends TCP packets with only the ACK bit set Whether ports are open or closed the target is required by RFC 793 to respond with a RST packet,O B-feature I-feature O B-data I-data O O O B-data I-data I-data O B-feature O B-feature O B-feature O B-system O O O B-feature I-feature O O O O B-data I-data
+292,the key analysis point of this task is how to infer stateful or stateless firewall policies setup based on the scanning responses from the firewall,O O O O O O O O O O O B-feature O B-feature B-tool B-feature B-system O O O B-technique B-feature O O B-tool
+293,What is your observation of the responding time of each type of scans and what is the reason and implications?,O O O O O O O O O O O O B-technique O O O O O O O
+294,Find at least one accessible open or closed port of one machine on the internal network ,O O O O O B-feature O B-feature B-feature O O B-system O O O B-system 
+295,The machine chosen should have little network traffic to avoid confusing results ,O B-system O O O O B-data I-data O O O O 
+296,Most Linux system does not work,O B-system I-system O O O
+297,Verify that the machine has predictable IP ID sequences ,O O O B-system O O B-feature I-feature O 
+298,targeting a Windows XP the Nping options request that five SYN packets be sent to port 80 one second apart,O O B-system I-system O B-tool O O O O B-data I-data O O O B-feature I-feature O O O
+299,Start a flooding to a chosen host ,O O B-attack O O O B-system
+300,Do not use any of the address from the nping node,O O O O O O B-feature O O B-tool B-system
+301,It shows that the IP IDs are increasing by roughly 11 per second instead of one ,O O O O B-feature I-feature O O O O O O O O O O 
+302,The target 19216803 is receiving our 10 forged packets per second and responding to each of them,O B-system O O O O O B-attack I-attack O O O O O O O O
+303,Repeat step 3 using spoofed addresses that you suspect may be allowed through the firewall ,O O O O B-vulnerability B-feature O O O O O O O O B-tool 
+304,This techniqueâs result is a list of source address netblocks that are permitted through the firewall and those that are blocked,O O O O O O O B-system B-feature B-technique O O O O O B-tool O O O O B-feature
+305,UDP is often more difficult because the protocol does not provide acknowledgment of open ports like TCP does ,B-feature O O O O O O B-feature O O O O O B-feature I-feature O B-feature O 
+306,Many UDP applications will ignore unexpected packets leaving the scanner unsure whether the port is open or filtered ,O B-feature B-app O O O B-data O O B-tool O O O B-feature O B-feature O B-feature 
+307,what is the implication of open or filtered states of the UDP scan,O O O O O B-feature  O B-feature O O O B-technique I-technique
+308,how to use Nmap to perform port scanning,O O O B-tool O O B-technique I-technique
+309,Based on the scanning results can you further deploy idle scan and FTP Bounce scan,O O O B-technique O O O O B-function B-technique I-technique O B-technique I-technique I-technique
+310,Nmap uses the -g and source -port options to manipulate source ports of transmitted packets,B-tool O O O O B-system  B-feature O O O B-system B-feature O B-data I-data
+311,Many intrusion detection systems have morphed into what marketing departments label intrusion prevention systems,O B-tool I-tool I-tool O O O O O O O B-tool I-tool I-tool
+312,Some can only sniff the network like a normal IDS and send triggered packet responses,O O O B-technique O B-system O O O B-tool O O B-feature I-feature I-feature
+313,The best IPS systems are inline on the network to restrict packet flow when suspicious activity is detected,O O B-tool I-tool O O O O B-system O O B-feature I-feature O B-vulnerability I-vulnerability O B-technique
+314,For example an IPS may block any further traffic from an IP address that they believe has port scanned them or attempted a buffer overflow exploit,O O O B-tool O B-feature O O B-data O O B-feature I-feature O O O O B-technique I-technique O O O B-attack I-attack I-attack
+315,Attackers are likely to notice this if they port scan a system and cannot connect to the reported open ports,B-attacker O O O O O O O B-technique I-technique O B-system O O O O O O B-feature I-feature
+316,Attackers can confirm that they are blocked by trying to connect from another IP address,B-attacker O O O O O B-feature O O O O O O B-feature I-feature
+317,Suspicious response packets can also tip-off that an IDS has flagged an attackerâs actions,B-vulnerability B-data I-data O O O O O B-tool O B-feature O B-attacker O
+318,In particular many IDSs that are not inline on the network will forge RST packets to tear down connections ,O O O B-tool O O O O O O B-system O B-vulnerability B-data I-data O O O B-feature 
+319,Ways to determine that these packets are forged are covered in the section called Detecting Packet Forgery by Firewall and Intrusion Detection Systems ,O O O O O B-data O B-vulnerability O O O O O O B-technique B-attack I-attack O B-tool O B-tool I-tool I-tool 
+320,For example the Linux iptables system which offers many methods for rejecting undesired packets by using:,O O O B-system B-app B-system O O O O O O O B-data O O
+321,The type given can be icmp-net-unreachable icmp-host-unreachable icmp-port-unreachable icmp-proto-unreachable icmp-net-prohibited or icmp-host-prohibited which return the appropriate ICMP error message port-unreachable is the default ,O O O O O B-feature B-feature B-featureB-feature B-feature O B-feature O O O O B-data I-data I-data B-feature O O O 
+322,The option tcp-reset can be used on rules which only match the TCP protocol,O O B-feature O O O O B-function O O O O B-feature I-feature
+323,this causes a TCP RST packet to be sent back,O O O B-data I-data I-data O O O O
+324,This is mainly useful for blocking ident 113/tcp probes which frequently occur when sending mail to broken mail hosts which wonât accept your mail otherwise,O O O O O B-featureB-feature I-feature B-technique O O O O O O O B-feature B-system I-system O O O O O O
+325,Forging RST packets by firewalls and IDS or IPS is not particularly common outside of port 113,B-attack B-data I-data O B-tool O B-tool O B-tool O O O O O O B-feature I-feature
+326,It can be confusing to legitimate network operators and allows scanners to immediately move on to the next port without waiting on the timeout caused by dropped packets ,O O O O O B-feature B-securityTeam I-securityTeam O O B-tool O O O O O O O B-feature O O O O B-feature O O B-data I-data 
+327,"Such forgery canusually be detected by careful analysis of the RST packet compared to other packets sent by the machine ","O B-attack O
+O O B-technique O O B-technique O O B-data I-data O O O B-data O O O B-system "
+328,you can purposely alter some iptables rules and observe the difference and how the changes can impact your inferences about the firewall setup,O O O O O B-app B-function O O O O O O O O O O O O O O B-tool B-system
+329,One way to detect certain IDSs is to watch for unexplained gaps or suspicious machines in traceroutes ,O O O B-technique O B-tool O O O O O O O B-vulnerability B-system O B-tool 
+330,While most operating systems include a traceroute command Nmap offers a faster and more effective alternative with the traceroute option,O O B-system I-system O O B-tool B-function B-tool O O O O O O O O O B-tool O
+331,This approach may only detect inline IDSs instead of those that passively sniff the network without being part of the route ,O O O O B-technique B-feature B-tool O O O O B-feature B-technique O B-system O O O O O B-function 
+332,Additionally inspect iptables rules and output from Nmap and ping and explain why the above-issued commands cannot return the path information,O B-technique B-app B-function O O O B-tool O B-function O O O O O B-function O O O O B-data
+333,The following techniques are used to avoid being detected by the IDS snort ,O O O O O O O O B-technique O O B-tool B-tool 
+334,Your snort can detect many scanning activities based on the given snort rules,O B-tool O B-technique O B-technique O O O O O B-function I-function
+335,how to configure your scanning parameters in the following given strategies,O O B-function O B-technique B-feature O O O O O
+336,from slow down to DNS proxying which ones you can deploy in our testing environment,O B-feature I-feature O B-system I-system O O O O B-function O O B-system I-system
+337,You need to check the rules specified in the given snort local rules,O O O O O B-function O O O O B-tool O B-function
+338,Based on the following given Nmap scanning methods design new Nmap scanning commands to avoided being detected by snort rules,O O O O O B-tool B-technique O O O B-tool B-technique B-function O O O B-technique O B-function I-function
+339,Nmap offers several timing modes that can be selected with the -T option to accomplish this ,B-tool O O B-feature I-feature O O O O O O O O O O O 
+340,For example the -T paranoid option causes Nmap to send just one probe at a time waiting five minutes between them ,O O O O B-feature I-feature O B-tool O O O O B-technique O O O O O O O O 
+341,A large scan may take weeks but at least it probably will not be detected ,O O B-technique O O O O O O O O O O O B-technique 
+342,The -T sneaky option is similar but it only waits 15 seconds between probes ,O O B-feature I-feature O O O O O O O O O B-technique 
+343,Scatter probes across networks rather than scanning hosts consecutively,O B-technique O B-system O O B-technique B-system O
+344,IP fragments can be a major problem for intrusion detection systems,B-feature I-feature O O O O O O B-tool I-tool I-tool
+345,particularly because the handling of oddities such as overlapping fragments and fragmentation assembly timeouts are ambiguous and differ substantially between platforms ,O O O O O O O O B-feature I-feature O B-feature I-feature I-feature O O O O O O B-system 
+346,Thus the IDS often has to guess at how the remote system will interpret a packet,O O B-tool O O O O O O O B-system I-system O O O B-data
+347,An Nmap scan will use tiny IP fragments ,O B-tool B-technique O O B-feature I-feature I-feature
+348,By default Nmap will include up to eight bytes of data in each fragment so a typical 20 or 24 byte depending on options TCP packet is sent in three tiny fragments,O O B-tool O O O O O B-data O B-data O O B-feature O O typicOl O O O B-data O O O B-data I-data O O O O B-feature I-feature
+349,Every instance of -f adds eight to the maximum fragment data size ,O O O O O O O O O B-feature B-feature I-feature 
+350,Fragmentation is only supported for Nmapâs raw packet features including TCP and UDP port scans except connect scan and FTP bounce scan and OS detection,B-technique O O O O B-tool B-data I-data O O B-feature O B-feature B-technique I-technique O B-technique I-technique O B-technique I-technique I-technique O B-technique I-technique
+351,Features such as version detection and the Nmap Scripting Engine generally donât support fragmentation ,B-feature O O B-technique I-technique O O B-tool I-tool I-tool O O O B-technique 
+352,because they rely on your hostâs TCP stack to communicate with target services,O O O O O B-system B-feature I-feature O O O B-app I-app
+353,Decoys are added with the -D option,B-technique O O O O O O
+354,The argument is a list of hosts separated by commas ,O O O O O O B-system O O O O
+355,The string ME can be used as one of the decoys to represent where the true source host should appear in the scan order ,O O O O O O O O O O B-technique O O O O O B-system I-system O O O O B-technique O 
+356,source IP and Nmap will launch the requested port scan from that given source,B-system B-feature O B-tool O O O O B-technique I-technique O O O B-system  
+357,No useful Nmap results will be available since the target will respond to the spoofed IP and Nmap will not see those responses,O O B-tool O O O O O O B-system O O O O B-vulnerability B-feature O B-tool O O O O B-feature
+358,IDS alarms at the target will blame the spoofed source for the scan,B-tool B-function O O B-system O O O B-vulnerability O O O B-technique
+359,This can be useful for framing innocent parties casting doubt in the administratorâs mind about his IDS accuracy,O O O O O O O O O O O O B-securityTeam O O O B-tool B-feature
+360,The idle scan is a clever technique that allows for spoofing the source IP address as discussed in the previous section while still obtaining accurate TCP port scan results ,O B-O I-O O O O O O O O B-vulnerability O B-system B-feature I-feature O O O O O O O O O O B-technique I-technique I-technique O 
+361,This is done by abusing the properties of the IP identification field as implemented by many systems ,O O O O O O O O O B-feature I-feature I-feature O O O O  B-system 
+362,However most Linux systems are immune to idle scan attacks,O O B-system I-system O O O B-attack I-attack I-attack
+363,Nmap performs reverse-DNS resolution by default against every responsive host ,B-tool O B-function I-function O O O O B-feature B-system 
+364,These DNS lookup probes could be detected Even something as unintrusive as a list scan -sL could be detected this way ,O B-function I-function B-technique O O B-technique O O O B-feature O O B-technique I-technique O O O B-technique O O
+365,The probes will come from the DNS server configured for the machine running Nmap,O B-technique O O O O B-system I-system B-function O O B-system O B-tool
+366,The most effective way to eliminate this risk is to specify -n to disable all reverse DNS resolution ,O O O O O O O B-feature O O O O O O O B-function I-function I-function
+367,You can specify one or more of those name servers to the dns-servers option of Nmap and all DNS queries will be proxied through them,O O O O O O O O B-system I-system O O B-system I-system O O B-tool O O B-function I-function O O B-system  O O
+368,The scanning results derived from task 1 to task 3 allows you to identify potential vulnerabilities to explore ,O B-technique O O O O O O O O O O O O O O O O B-technique 
+369,you need to use Metasploit Framework msf to deploy at least two successful attacks ,O O O O B-tool I-tool I-tool O B-function O O O O B-attack 
+370,such as stop the service gain access to the command shell modify data or service parameters steal critical data modify system configuration/setup ,O O O O B-app O B-feature O O B-tool I-tool O B-data O B-app B-feature B-technique B-feature B-data O B-feature I-feature O B-system 
+371,you will run the Metasploit Framework MSF command-line CLI for penetration testing,O O O O B-tool I-tool I-tool B-tool I-tool O B-technique I-technique
+372,You will learn how to use Metasploit to discover and identify system vulnerabilities ie running Metasploitable 2,O O O O O O B-tool O B-technique O B-technique B-vulnerability I-vulnerability O O B-system I-system
+373,Use Metasploit Framework to send vulnerability exploitation packets for vulnerability discovery,O B-tool I-tool O O B-vulnerability B-data I-data O B-technique I-technique
+374,Use Metasploit Framework to compromise a vulnerable system ie Metasploitable2,O B-tool I-tool O O O B-vulnerability B-system O B-system
+375,The Metasploit Project is a computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development ,O B-tool O O O B-technique I-technique O O O B-data O B-vulnerability I-vulnerability O O O B-technique I-technique O B-technique I-technique I-technique 
+376,Boston Massachusetts-based security company Rapid7 owns it ,O O B-technique O B-app O O 
+377,Its best-known sub-project is the open-source Metasploit Framework a tool for developing and executing exploit code against a remote target machine,O O O O O B-feature B-tool I-tool O B-tool O O O O B-function I-function O O B-system I-system I-system
+378,The Metasploit Project includes anti-forensic and evasion tools some of which are built into the Metasploit Framework ,O B-tool O O B-technique O B-technique B-tool O O O O O O O B-tool I-tool 
+379,Metasploit is pre-installed in the Kali Linux operating system ,B-tool O O O O B-system I-system I-system I-system
+380,In this lab we use the command-line only version msfconsole which runs on Ubuntu Linux,O O O O O O B-tool O B-feature B-tool O O O B-system I-system
+381,The Metasploit framework consists of the core and base many exploits payloads modules Ruby classes pluginâs scripts and multiple user interfaces ,O B-tool I-tool O O O O O O O B-function B-data B-function B-tool B-function B-tool B-function O O B-app I-app 
+382,The Metasploit framework also contains some great information- gathering tools called auxiliary modules,O B-tool I-tool O O O O B-data O B-tool O B-tool I-tool
+383,Auxiliary modules can be used for port scanning service identification password sniffing and Windows patch enumeration ,B-tool I-tool O O O O B-technique I-technique B-technique I-technique B-technique I-technique O B-technique I-technique I-technique 
+384,Metasploit is highly customizable for advanced users and can be customized the meet your custom needs by writing your own exploits modules plugins and scripts ,B-tool O O O O B-user I-user O O O O O O O O O O O O O B-function B-tool B-tool O B-function 
+385,If Metasploit does not provide the information gathering module you need by default you can simply write it yourself,O B-tool O O O O B-data O B-tool O O O B-function O O O O O O
+386,The msfconsole is the user interface known to be the most stable interface and you can use it to execute external commands like the ping command and the tab auto-completion ,O B-tool O O B-app I-app O O O O O O B-app O O O O O O O B-function I-function O O B-function I-function O O B-function I-function 
+387,A graphical user interface is available for Metasploit called Armitage which is not covered in this lab,O B-app I-app I-app O O O B-tool O B-app O O O O O thO O
+388,If you are on Kali Linux rolling edition you can start the Metasploit framework and msfconsole by clicking the Metasploit icon in the dock ,O O O O B-system I-system B-feature I-feature O O O O B-tool I-tool O B-tool O O O B-tool O O O B-app 
+389,This will start the PostgreSQL service and Metasploit service automatically,O O O O B-app I-app O B-app I-app O
+390,You can run the following command to check if Metasploit is installed in your system,O O O O O B-function O O O B-tool O B-function O O B-system
+391,If Metasploit is not installed you can follow the procedure below to install Metasploit,O B-tool O O B-function O O O O O O O B-function B-tool
+392,The use command in Metasploit is used to activate a particular module and changes the context of the msfconsole to that particular module,O B-function I-function O B-tool O O O O O O B-function O O O O O O B-tool O O O B-function
+393,The exploit name will be mentioned in red on the command line,O B-function O O O O O O O O B-tool I-tool
+394,In this example you have changed the command lineâs context to the exploit called realvnc_client ,O O O O O O O B-tool I-tool O O O B-function O B-vulnerability
+395,Then you retrieve information about this exploit set the required exploit parameters and run it against a target,O O O B-data O O B-technique O O O B-function I-function O O O O O B-system
+396,If you want to leave the exploit context and switch back to the msfconsole you can use the back command ,O O O O O O B-function O O O O O O B-tool O O O O B-function I-function 
+397,The back command will take us back to the msfconsole in the general context,O B-function I-function O O O O O O B-tool O O O O
+398,You can issue the use command again to switch to another Metasploit module,O O O O B-function I-function O O O O anoOr B-tool B-function
+399,The exit command will close the msfconsole and will take you back to the Linux terminal,O B-function I-function O O O B-tool O O O O O O O B-system I-system
+400,The help command will return a list of possible commands and a description when typed at the msfconsole ,O B-function I-function O O O O O O B-function O O O O O O O B-tool 
+401,When an active exploit is selected you can use the help command to get a list of exploit commands ,O O O B-function O O O O O O B-function I-function O O O O O B-function I-function 
+402,When an exploit is selected with the use command you can retrieve information like the name platform author available targets and a lot more by using the info command ,O O B-function O O O O B-function I-function O O O B-data O O B-feature B-app B-user O B-system O O O O O O O B-function I-function 
+403,you can use the info command on an exploit named ie_execcommand_ua,O O O O B-data B-function O O B-technique O B-vulnerability
+404,Metasploit contains over 1500 different exploits and new ones are added regularly ,B-tool O O O O B-technique O O O O O O 
+405,With this number of exploits the search function and knowing how to use it becomes very important ,O O O O B-function O B-function I-function O O O O O O O O O 
+406,The easiest way of using the search function is by issuing the command search followed by a search term for example flash to search for exploits related to Flash player ,O O O O O O B-function I-function O O O O B-function B-function O O O O O O O O O O O B-technique O O B-tool I-tool 
+407,by using the search command Metasploit will search for the given search term in the module names and description,O O O B-function I-function B-tool O O O O O O O O O B-function B-feature O B-feature
+408,As expected there are a lot of exploits related to the often vulnerable Flash player software ,O O O O O O O B-technique O O O O B-vulnerability B-app I-app I-app 
+409,For example the list includes CVE-2015- 5122 Adobe Flash opaqueBackground Use After Free zero-day which was discovered in the Hacking Team data breach,O O O O O B-vulnerability I-vulnerability I-vulnerability I-vulnerability I-vulnerability I-vulnerability I-vulnerability I-vulnerability O O O O O  B-attacker I-attacker B-attack I-attack
+410,You can use the search command with a keyword to search for a specific author an OSVDB ID or a platform ,O O O O B-function I-function O O O O O O O O B-user O B-feature I-feature O O B-app 
+411,Now you will be looking at how to show the exploit parameters and change them with the set command ,O O O O O O O O O O B-feature I-feature O O O O O B-function I-function 
+412,You will also be looking at how to show the payloads targets advanced and evasion options,O O O O O O O O O O B-data B-system B-feature O B-technique O
+413,The show options command will show you the available parameters for an exploit if used when the command line is in exploit context ,O B-function I-function I-function O O O O O B-feature O O B-function O O O O B-tool I-tool O O B-function O 
+414,The Flash exploit contains a total of 6 options from which only 2 are required,O B-vulnerability I-vulnerability O O O O O O O O O O O O
+415,Note that the show options command is returning the currently selected target below the module options,O O O B-function I-function I-function  O O O O O B-system O O B-function O
+416,The default target is 0 which is Windows for the selected exploit,O O B-system O O O O B-system O O O B-function
+417,Use the set command followed by the option name and the new value to change the default values,O O B-function I-function O O O O B-feature O O O O O O O O O
+418,By using the show options command again you can verify that the SRVHOST and SRVPORT values have been changed ,O O O B-function I-function I-function O O O O O O B-feature O B-feature O O O O 
+419,You can change Boolean values by using the set command with option name and true or false,O O O B-function O O O O B-function I-function O O O O O O O
+420,When you use the show payloads command the msfconsole will return a list of compatible payloads for this exploit,O O O O B-function I-function I-function O B-tool O O O O O O B-data O O B-function
+421,In the flash player exploit example it will return quite a few compatible payloads ,O O B-vulnerability I-vulnerability O O O O O O O O B-data
+422,To use a certain payload you need to use the set command followed by the payload name,O O O O B-data O O O O O B-function I-function O O O B-data O
+423,The show targets command will return a list of operating systems which are vulnerable to the selected exploit ,O B-function I-function I-function O O O O O B-system I-system O O B-vulnerability O O O B-function 
+424,When you run the command you get the following output for the adobe_flash_shader_drawing_fill exploit,O O O O B-function O O O O O O O B-vulnerability I-vulnerability
+425,This exploit targets both Windows and Linux operating systems ,O B-function B-system O B-system O B-system B-system I-system 
+426,Note that you can use the info command to get additional info about this exploit and targets ,O O O O O O B-data I-function O O O B-data O O B-function O B-system 
+427,To set a target you can use the command set followed by the target ID,O O O B-system O O O O B-function I-function O O O B-feature I-feature
+428,By setting the target the list of payloads will be reduced a lot because only payloads will be shown which are compatible with the target Linux,O O O B-system O O O B-data O O O O O O O B-data O O O O O O O O B-system B-system
+429,By using the show advanced command we can look at the advanced options for the exploit ,O O O B-function I-function I-function O O O O O B-feature I-feature O O B-function 
+430,Use the set command followed by the advanced parameter and the new value to change the advanced settings,O O B-function I-function O O O B-feature B-feature O O O O O O O B-feature O
+431,The show nops command will return a list of NOP generators,O B-function I-function I-function O O O O O B-function I-function
+432,A NOP is short for No Operation and is used to change the pattern of a NOP sled in order to bypass simple IDS/IPS signatures of common NOP sleds,O B-function O O O B-function I-function O O O O O O O O O B-function I-function O O O bypOss O B-tool O B-tool B-feature O O B-function I-function
+433,The NOP generators start with the CPU architecture in the name ,O B-function I-function O O O B-system I-system O O O 
+434,To use a NOP generator use the set command followed by the name of the NOP generator,O O O B-function I-function O O B-function I-function O O O O O O B-function I-function
+435,When the exploit is launched the NOP sleds will be taken from the NOP generator,O O B-function O O O B-function I-function O O O O O B-function I-function
+436,The show evasion command returns a list of available evasion techniques ,O B-function I-function I-function O O O O O B-technique I-technique 
+437,To change evasions settings use the set command followed by the evasion parameter and the new value,O O B-technique B-feature O O B-function I-function O O O B-technique B-feature O O O O
+438,When all the required options have been set for the exploit including a payload and advanced settings like a NOP generator evasion options and encoding the exploit is ready to be executed ,O O O O O O O O O O B-function O O B-data O B-feature B-feature O O B-function I-function B-technique O O B-function O B-function O O O O O 
+439,The exploit can be executed using two commands run and exploit ,O B-function O O O O O B-function B-function O B-function 
+440,Just type run or exploit in the msfconsole and the exploit will run,O O B-function O B-function O O B-tool O O B-function O O
+441,Metasploitable 2 is an intentionally vulnerable Linux machine downloaded and set up as a virtual machine in any hypervisor such as KVM VMware Player and Virtual box,B-system I-system O O O B-vulnerability B-system I-system O O O O O O B-system I-system O O B-system O O B-system B-system I-system O B-system I-system
+442,An important part of the Metasploitable 2 enumeration process is the port scanning and fingerprinting process ,O O O O O B-system I-system O O O O B-technique I-technique O B-technique I-technique 
+443,Port scanning is used to probe a server or host for open TPC and UDP ports ,B-technique I-technique O O O B-technique O B-system  O B-system O B-feature B-feature O B-feature I-feature 
+444,Fingerprinting is the process of identifying the services connected to those ports,B-technique O O O O O O B-app O O O B-feature
+445,The default username/password of Metasploitable 2 is msfadmin/msfadmin,O O B-feature O B-system I-system O B-feature
+446,When you log in to the vulnerable host you can use the ifconfig command to determine its IP address ,O O O O O O B-vulnerability B-system O O O O B-function I-function O O O B-feature I-feature 
+447,You can also use netdiscover on the Kali Linux machine to scan a range of IP addresses for the target host ,O O O O B-tool O O B-system I-system I-system  O B-technique O O O B-feature I-feature O O B-system I-system 
+448,You can use the following command to start the Nmap port scan with service and OS detection,O O O O O B-function O O O B-tool B-technique I-technique O B-app O B-technique I-technique
+449,The Nmap port scan and service scans return a lot of open ports listening services and the version of the operating system,O B-tool B-technique I-technique O B-technique I-technique O O O O B-feature I-feature O B-app O O B-feature O O B-system I-system
+450,The Metasploitable-2 host is running Linux 269 - 2633 as the operating system ,O B-system I-system O O B-system I-system I-system I-system O O B-system I-system 
+451,We can see that the host is running an SSH service using OpenSSH a telnet service an Apache 228 webserver 2 SQL servers and some more services ,O O O O O B-system O O O B-app I-app O B-tool O B-app I-app O B-system I-system I-system O B-system I-system O O O B-app 
+452,A list of running services and their running ports are given ,O O O O B-app O O O B-feature O O 
+453,Metasploitable 2 is intentionally vulnerable ,B-system I-system O O B-vulnerability 
+454,Therefore one can only suspect that most if not all of the services contain vulnerabilities backdoors etc,O O O O O O O O O O O O B-app O B-vulnerability B-attack O
+455,With user enumeration the penetrations tester sees what users have access to the server and which users exist on the network ,O B-vulnerability I-vulnerability O  B-securityTeam I-securityTeam O O B-user O O O O B-system O O B-user O O O B-system 
+456,Another purpose for user enumeration is to gain access to the machine by using brute force techniques ,O O O B-vulnerability I-vulnerability O O O O O O B-system O O B-technique I-technique I-technique 
+457,Since the username is already known to the penetration tester the only thing left to brute force is the password ,O O B-feature O O O O O B-securityTeam I-securityTeam O O O O O B-technique I-technique O O B-feature 
+458,There are multiple ways of enumerating users on a Linux system,O O O O O B-vulnerability I-vulnerability O O B-system I-system
+459,To enumerate the user accounts available on the target machine you will be using the following Nmap script,O B-function O B-feature I-feature O O O B-system I-system O O O O O O B-function I-function
+460,Rpcclient is a Linux tool used for executing client-side MS-RPC functions ,B-O O O B-system O O O O B-system B-function I-function 
+461,A null session is a connection with a samba or SMB server that does not require authentication with a password ,O B-feature I-feature O O B-feature O O B-system O B-system I-system O O O O B-technique O O B-feature 
+462,No username or password is needed to set-up the connection and therefore it is called a null session,O B-feature O B-feature O O O O O B-feature O O O O O O B-feature I-feature
+463,The allowance of null sessions was enabled by default on legacy systems but has been disabled from Windows XP SP2 and Windows Server 2003 ,O O O B-feature I-feature O O O O O B-system I-system O O O O O B-system I-system I-system O B-system I-system I-system
+464,The connection uses port 445 an open port on the out target host as weâve seen in the port scan results,O B-feature O B-feature I-feature O B-feature I-feature O O O B-system I-system O O O O O B-technique I-technique O
+465,Now you can open up a new terminal window and set up a null session with the Metasploitable 2 samba server,O O O O O O O B-system B-system O O O O B-feature I-feature O O B-system I-system B-system I-system
+466,It will ask for a password and you can press â€œenter ,O O O O O B-feature O O O O O 
+467,Then you can use the following command to enumerate all the users in the system,O O O O O O B-function O B-function O O B-user O O B-system O
+468,Enum4linux can be found on Kali Linux ,B-tool O O O O B-system I-system 
+469,It is used to enumerate Windows and Samba hosts and is written in Perl ,O O O O B-function B-system O B-system B-system  O O O O B-tool 
+470,The tool is basically a wrapper for smbclient rpcclient net and nmblookup ,O O O O O B-function O B-system B-system O O B-tool
+471,Letâs have a look at how to use enum4linux and run it on Metasploitable 2 ,O O O O O O O O B-tool O O O O B-system I-system 
+472,Below are the most common options used in enum4linux ,O O O O O O O O B-tool 
+473,In the Metasploit console you can gather information such as target IP address Operating System ports opened and vulnerability,O O B-tool B-tool O O O B-data O O B-system B-feature I-feature B-system I-system B-feature B-feature O B-vulnerability
+474,Metasploit allows you to run Nmap directly from the console ,B-tool O O O O B-tool O O O B-tool 
+475,Nmap output contained over 600 lines therefore the output was shortened leaving relevant information to be explained,B-tool B-feature O O O O O O B-feature O O O O B-data O O O
+476,The following lines show us the initialized scans types which involve NSE ARP Ping Scan DNS resolution and an SYN Stealth Scan,O O O O O O O B-technique O O O B-tool B-technique I-technique I-technique B-function I-function O O B-technique I-technique I-technique
+477,The next extract shows what services are available at the target,O O O O O B-app O O O O B-system
+478,The following extract report NSE post scan scripts execution to find vulnerabilities,O O O O B-tool B-function I-function I-function O O O B-vulnerability
+479,As you can see Nmap already found security holes or vulnerabilities on the target FTP service it even links us exploits to hack the target,O O O O B-tool O O B-vulnerability I-vulnerability O B-vulnerability O O B-system B-app I-app O O O O B-function O B-attack O B-system
+480,Once you identified security holes on your target use Metasploit commands to find proper exploits against them ,O O O B-vulnerability I-vulnerability O Or B-system O B-tool B-function O O O B-function O O 
+481,As you saw previously one of the first vulnerabilities found was on the vsFTPD server to find proper exploits ,O O O O O O O O B-vulnerability O O O O B-system I-system O O O B-function 
+482,As you see Metasploit contains a backdoor which possibly may help us to hack our target FTP ,O O O B-tool O O B-attack O O O O O O B-attack O B-system B-feature 
+483,To use this exploit within Metasploit run,O O O B-function O B-tool O
+484,After the command shell ie the backdoor is established then you can run command â€œls in the targeting system,O O B-tool I-tool O O B-attack O O O O O O B-function B-function O O B-system I-system
+485,Syslog is one of the most important standards used in Linux as it is the key file which helps you determine the different level of logs which are getting generated and stored every second while you are working on your Linux box,B-tool O O O O O O O O O B-system O O O O O B-data O O O O O O O O B-data O O O O O O O O O O O O O O B-system I-system
+486,Syslog can be taken as â€œSystem Log Benefits of using syslog,B-tool O O O O B-data I-data O O O B-tool
+487,Helps analyze the root cause for any trouble or problem caused,O O O O O O O O O O O
+488,Reduce overall downtime helping to troubleshoot issues faster with all the logs,O O B-feature O O B-technique O O O O O B-data
+489,Improves incident management by active detection of issues,O B-technique I-technique O O B-technique O B-vulnerability
+490,Self-determination of incidents along with auto resolution,O O B-attack O O B-technique I-technique
+491,Simplified architecture with different level of severity like errorinfowarning etc,O B-system O O O O B-feature O B-data B-data B-data O
+492,The syslogconf file is the main configuration file for the syslogd which logs system messages on Unix/Linux Systems ,O B-data I-data O O O B-data I-data O O B-data O B-function B-data I-data O B-system B-system 
+493,This file specifies rules for logging,O B-data O B-function O B-function
+494,"However in this lab we use syslog terms to illustrate the basic concepts and use rsyslog as the working logging system which is the default system log on Ubuntu Linux distribution
+","O O O O O O B-tool O O O O O O O O B-tool O O O B-tool I-tool O O O O B-data I-data O B-system I-system I-system
+"
+495,When configure syslog syslogconf is the one for syslogd and rsyslog configures are set up in the /etc/rsyslogd/ folder every rule consists of two fields a selector field and an action field ,O B-function B-tool B-data O O O O B-data O B-tool B-function O O O O O B-feature B-data O B-function O O O B-feature O B-feature I-feature O O B-feature I-feature 
+496,These two fields are separated by one or more spaces or tabs ,O O B-feature O O O O O O O O O 
+497,The selector field specifies a pattern of facilities and priorities belonging to the specified action,O B-feature I-feature O O O O O O O O O O O B-feature
+498,The selector field itself again consists of two parts a facility and a priority separated by a period,O B-feature I-feature O O O O O O O B-system O O B-feature O O O O
+499,The facility is one of the following keywords: auth authpriv cron daemon kern lpr mail mark news security same as auth syslog user uucp and local0 through local7 ,O B-feature O O O O O O B-feature O B-feature O B-feature O B-tool O B-app O B-system O B-app O B-feature O B-feature O B-technique O O B-feature O B-tool O B-user O B-feature O B-feature O B-feature 
+500,The keyword security should not be used anymore and mark is only for internal use and therefore should not be used in applications,O O B-technique O O O O O O O O O O O O O O O O O O O B-app
+501,You may want to specify and redirect these messages here,O O O O O O O O B-data O
+502,The facility specifies the subsystem that produced the message ie all mail programs log with the mail facility LOG MAIL if they log using syslog ,O B-system O O B-system O O O B-data O O B-app I-app B-function O O B-app B-system B-app I-app O O B-function O B-tool 
+503,The priority is one of the following keywords in ascending order: debug info notice warning warn same as warning err error same as err crit alert emerg panic same as emerg ,O B-feature O O O O O O O O O B-technique B-data B-data B-data B-feature O O B-data B-feature B-data O O B-data B-feature B-data B-feature B-feature O O B-feature 
+504,The keywords error warn and panic are deprecated and should not be used anymore,O O B-data B-feature O B-feature O O O O O O O O
+505,The priority defines the severity of the message,O B-feature O O B-feature O O B-data
+506,Multiple selectors may be specified for a single action using the semicolon â€œ separator ,O B-feature O O O O O O O O O O O O
+507,The following presented modifications provide network support to the syslogd facility ,O O O O O B-technique I-technique O O B-data B-system 
+508,For examples if we want to log all the critical events on your Linux machine in a separate log file inside /var/log with a name of criticallog ,O O O O O O B-function O O B-feature O O O B-system I-system O O O B-data I-data O B-feature O O O O B-data
+509,Log all the kernel related messages in separate log file,B-function O O B-app O B-data O O B-data I-data
+510,Redirect all the error logs to a remote user on their terminals,O O O B-data B-data O O B-feature B-user O O B-system
+511,Log all the firewall warning level messages,B-function O O B-tool B-data O B-data
+512,Network support means that messages can be forwarded from one node running syslogd to another node running syslogd where they will be actually logged to a disk file,B-technique I-technique O O B-data O O O O O B-system O B-data O O B-system O B-data O O O O O B-function O O B-data I-data
+513,The strategy is to have syslogd listen on a Unix/Linux domain socket for locally generated log messages ,O O O O O B-data O O O B-system B-feature I-feature O O O B-data I-data 
+514,This behavior will allow syslogd to inter-operate with the syslog found in the standard C library ,O O O O B-data O O O O B-tool O O O B-app I-app I-app 
+515,At the same time syslogd listens on the standard syslog port for messages forwarded from other hosts ,O O O O B-data O O O O B-app B-feature O B-data O O O B-system 
+516,If this entry is missing syslogd neither can receive remote messages nor send them because the UDP port cannot be opened ,O O O O O B-data O O O B-feature B-data O O O O O B-feature I-feature O O O 
+517,Instead syslogd will die immediately blowing out an error message ,O B-app O O O O O O B-data I-data 
+518,For example to forward ALL messages to a remote host uses the following syslogconf entry,O O O O O B-data O O O O O O O O O
+519,To forward all kernel messages to a remote host the configuration file,O O O B-app B-data O O B-system I-system O B-data I-data
+520,The implementation of syslog on Ubuntu is rsyslogd ,O O O B-app O B-system O B-data
+521,To determine if rsyslogd is installed on Ubuntu,O O O B-data O O O B-system 
+522,A common rsyslogd status checking reply ,O O B-data O O O 
+523,How to modify the iptables rules to let it log at the appropriate level,O O O O B-app B-function O O O O O O O O
+524,How to configure syslog to log the iptables messages to a different log file,O O B-function B-data O B-function O B-app B-data O O O B-data I-data
+525,To stop iptables messages to get logged into /var/log/messages ,O O B-app B-data O O B-function O B-feature
+526,Assume that you are currently logging all the firewall warning level messages ,O O O O O B-function O O B-tool B-data O B-data
+527,Restart the rsyslog and make sure that there are no errors,B-function O B-tool O O O O O O O B-data
+528,Make sure the iptables rule is logging at the appropriate level ,O O O B-app B-function O B-function O O O O 
+529,This can be done by using the log-level switch ,O O O O O O O B-function I-function 
+530,Run ssh and ping to test your firewall logs ,O B-function O B-function O O O B-tool B-data
+531,If you want to print your iptables logs on your monitoring console,O O O O B-function Or B-app B-data O O B-technique B-tool
+532,Assume that you are currently logging all the kernel related messages in separate log file ,O O O O O B-function O O B-app O B-data O O B-data I-data
+533,In ubuntu distribution rsyslogd is the default system log implementation compared to its precursor syslogd ,O B-system I-system B-data O O O B-data I-data O O O O O B-data 
+534,In this lab you will learn and practice on how to setup rsyslog forwarding from a client to a centralized server ,O O O O O O O O O O O B-system B-tool B-feature O O B-system O O B-system I-system 
+535,The syslog basics are presented in the Syslog syslogd Local Logging on Linux Since rsyslog is a successor of syslog the basic concepts of log facilities actions and priority are the same,O B-tool O O O O O B-tool B-data B-feature B-function O B-system O B-tool O O O O B-tool O O O O B-data B-system B-feature O B-feature O O O
+536,On Ubuntu system instead of using syslogconf rsyslog uses rsyslog as it configuration file,O B-system I-system O O O B-data I-data B-tool O B-tool O O B-data I-data
+537,Detailed rsyslog configuration files are maintained under /etc/rsyslogd/ folder ,O B-tool B-data I-data O O O B-feature B-data 
+538,Default rsyslog setup configurations are maintained in the file 50-defaultconf which is similar to syslogconf using syslogd ,B-feature B-tool B-feature I-feature O O O O B-data B-data O O O O B-data O B-data 
+539,"In the following sections Selectors Facility and Severity Levels we use the same descriptions
+","O O O O B-feature B-system O B-feature I-feature O O O O B-feature
+"
+540,Logs are stored at /var/log/ on the Linux filesystem ,B-data O O O B-feature O O B-system B-system 
+541,At this location you should see multiple log files each one having a name describing what they actually store ,O O B-system O O O O O B-data I-data O O O O O O O O O O O 
+542,In this example you have dedicated log files for authentication purposes or for kernel related logs ,O O O O O O B-data I-data O B-technique O O O B-app O B-data 
+543,The folder /var/log does not contain only files but it also contain dedicated folders that vendors create when the application is installed,O B-data B-feature O O O O B-data O O O O O B-data O B-user O O O B-app O B-function
+544,Suppose that three machines are sending logs to the log server each machine is going to have its own own authlog kernlog or dpkglog files,O O O B-system O O B-data O O B-system I-system O B-system O O O O O O B-data B-data O B-data B-data
+545,Each machine ie a client wants to write logs via rsyslog To this end each machine is configured as client-server syslog instances ,O B-system O O B-system O O O B-data O B-tool O O O O B-system O B-function O B-system B-tool B-system 
+546,They can create logs and store logs locally in their file system In the centralized logging architecture client machines will be configured to use rsyslog as a client and they will forward every single log to a remote rsyslog server,O O O B-data O O B-data O O O B-system I-system O O B-system I-system I-system B-system I-system O O B-function O O B-tool O O B-system O O O B-feature O O B-data O O B-system I-system I-system
+547,which is the central server,O O O B-system I-system
+548,Compared to syslog rsyslog tries to address the following improved features,O O B-tool B-tool O O O O O O O
+549,Secure transmitted log data implement TLS to protect data transmission,B-feature B-feature B-data I-data O B-technique O B-feature B-feature I-feature
+550,Increase the reliability: implement a memory caching module to address when the network is down,O O B-technique: O O B-technique I-technique B-function O O O O B-system O B-feature
+551,Using the centralized logging architecture we can achieve the following benefits,O O B-system I-system I-system O O O O O O
+552,Inspect all your logs from a single place instead of accessing individual machine,B-technique O O B-data O O O O O O O O B-system
+553,Access to logs without access privilege to individual machines,B-feature O B-data O B-feature I-feature O O B-system
+554,Set up a complete log monitoring infrastructure in one place to improve the network management capability,O O O O B-technique I-technique B-system O O O O O O B-technique I-technique O
+555,The downside of using centralized logging server,O O O O B-system I-system I-system
+556,The syslog server can be overloaded: with this architecture you are pushing logs to a remote server ,O B-system I-system O O O O O B-system O O O B-data O O B-system I-system 
+557,if one machine starts sending excessive amount of log data it may overload the log server,O O B-system O O O O O B-data I-data O O O O B-system I-system
+558,The centralized system suffers single-point failure ,O B-system I-system O B-feature I-feature 
+559,If the log server goes down then the ability to look at all the logs sent by the clients is lost ,O O B-system I-system O O O O O O O O O O B-data O O O B-system O O 
+560,Moreover if the server goes down clients will start storing messages locally until the server is available again thus it may fill up disk space on the client side,O O O B-system O O B-system O O O B-data B-feature O O B-system O O O O O O O O B-system I-system O O B-system I-system
+561,The implementation of syslog on Ubuntu is rsyslogd ,O O O B-tool O B-system O B-data
+562,To determine if rsyslogd is installed on Ubuntu,O O O B-data O O O B-system
+563,First of all you have to configure your rsyslog server for it to accept incoming logs on port 514 ,O O O O O O B-function Or B-system I-system O O O O O B-data O B-feature I-feature 
+564,We are going to use TCP for log transmission ,O O O O O B-feature O B-feature I-feature 
+565,You can use UDP if the network reliability is not a big concern ,O O O B-feature O O B-technique I-technique O O O O O 
+566,This is the directory that stores templates as well as files that contain the rsyslog rules,O O O B-data O O B-feature O O O B-data O O O B-function I-function
+567,In this directory there is a 50-defaultconf file ,O O B-data O O O B-data I-data
+568,You are going to create your own configuration file prefixing it with a number lower than the configuration file one ,O O O O O O O B-data I-data O O O O O O O O B-data I-data O 
+569,In this way your configuration file takes priority over the default one,O O O O B-data I-data O O O O B-feature O
+570,Remote Server means to send for every facility and every severity to the remote server template,B-system I-system O O O O O B-system O O B-feature O O B-system I-system B-feature
+571,rsyslog properties and they together identify the path where data will be stored on the remote server,B-tool O O O O O O B-feature O B-data O O O O O B-system I-system
+572,With this syntax log files will be grouped by hostname aka the computer name sending the log and then by syslog facility kern user auth etc ,O O O B-data I-data O O O O B-feature O O B-feature I-feature O O B-data O O O B-tool B-system  B-app B-user B-feature O 
+573,Now you can restart the rsyslog server and make sure that it is now listening on the port 514 for TCP,O O O B-function O B-system I-system O O O O O O O B-feature O O B-feature I-feature O B-feature
+574,With this configuration file server logs are no longer directly stored  ,O O B-data I-data B-system B-data O O O O O  
+575,hostname being the current name of the host ,B-feature O O O O O O B-system
+576,Now letâs configure rsyslog as a client and on the client machine,O O B-function B-tool O O B-system O O O B-system I-system
+577,Similarly to the procedure done on the server-side ,O O O O O O O B-system
+578,Restart the rsyslog server and make sure that there are no errors on the client-side,B-function O B-system I-system O O O O O O O B-data O O B-system
+579,Now on the server side folder is created for the client with the hostname ubuntu ,O O O B-system I-system B-data O O O O B-system O O B-feature B-system 
+580,You are successfully received the log file from the client,O O O O O B-data I-data O O B-system
+581,Now you can practice a customized logging service for one of your client ,O O O O O O B-app I-app O O O O B-system 
+582,In this task we assume that you want to send a subset of logs captured on your client to the log server ,O O O O O O O O O O O O O B-data O O O B-system O O B-system I-system 
+583,Assume that you are currently logging all the kernel related messages in separate log file ,O O O O O B-function O O B-app O B-data O O B-data I-data
+584,Assume that you are currently logging all the firewall warning level messages ,O O O O O B-function O O B-tool B-data O B-data
+585,Restart the rsyslog server and make sure that there are no errors on the client-side,B-function O B-system I-system O O O O O O O B-data O O B-system
+586,How to modify the iptables rules to let it log at the appropriate level,O O O O B-app B-function O O O B-function O O O O
+587,How to configure syslog to log the iptables messages to a different log file,O O B-function B-tool O B-function O B-app B-data O O O B-data I-data
+588,To stop iptables messages to get logged into a remote server,O O B-app B-data O O B-function O O B-system I-system
+589,Make sure the iptables rule is logging at the appropriate level ,O O O B-app B-function O B-function O O O O 
+590,This can be done by using the log-level switch ,O O O O O O O B-function I-function 
+591,Default log-level is warning ,B-feature B-feature O B-data 
+592,Now you can run ssh and ping to test your firewall logs received at the server side,O O O B-function B-function O B-function O B-function O B-tool B-data O O O B-system I-system

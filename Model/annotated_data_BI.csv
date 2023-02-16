@@ -1,0 +1,600 @@
+sentence,entity
+Attacks can damage public domain.,B-attack can damage B-system I-system.
+IDS means Intrusion Detection,B-tool means B-technique I-technique
+Snort is used for Intrusion Detection,B-tool is used for B-technique I-technique
+Snort can detect network attacks.,B-tool can detect B-attack I-attack.
+Snort can also be used as a simple packet logger.,B-tool can also be used as a simple B-tool I-tool.
+Snort can analyze real time traffic,B-tool can analyze real time B-data
+Snort can analyze real time data flow.,B-tool can analyze real time B-feature I-feature.
+Snort can check protocol analysis,B-tool can check B-technique I-technique
+Snort can detect different types of attacks,B-tool can B-technique different types of B-attack
+Snort checks the packet against user rules,B-tool checks the B-data against B-function I-function
+Snort rules can be written in any language,B-function I-function can be written in any B-feature
+Snort rules have good structure,B-function I-function have good structure
+Snort match previous attack pattern,B-tool match B-feature B-feature B-feature
+Snort checks the network behavior,B-tool checks the B-feature B-feature
+Snort can discard the bad packet,B-tool can discard the B-data I-data
+Snort has a Packet Decoder,B-tool has a B-tool I-tool
+Packet Decoder forms the packets,B-tool I-tool forms the B-data
+Packet Decoder determines the underlying protocols,B-tool I-tool determines the underlying B-feature
+Packet Decoder determines packet data size,B-tool I-tool determines B-data B-feature I-feature
+Packet Decoder looks for header anomalies,B-tool I-tool looks for B-vulnerability I-vulnerability
+Snort has a Preprocessor,B-tool has a B-tool
+Preprocessor verify HTTP anomalies,B-tool verify B-vulnerability I-vulnerability
+Preprocessor verify FTP anomalies,B-tool verify B-vulnerability I-vulnerability
+Preprocessor can modify packet data,B-tool  can modify B-data I-data
+Snort has Detection Engine,B-tool has B-tool I-tool
+Detection Engine detects intrusion in packet,B-tool I-tool B-technique B-attack in B-data
+Detection Engine chains the rules,B-tool I-tool chains the B-function
+Snort has Log Alert system,B-tool has B-tool I-tool I-tool
+Snort has Output Module,B-tool has B-tool I-tool
+Output Module controls output type,B-tool I-tool controls B-feature B-feature
+Output Module sends alerts,B-tool I-tool sends B-feature
+Snort set into Sniff mode,B-tool set into B-feature I-feature
+Snort can sniff the Ingress,B-tool can B-technique the B-feature
+Snort can sniff the Egress.,B-tool can B-technique the B-feature
+Ingress captures incoming traffic,B-feature captures B-data I-data
+Snort sniffs firewall traffic,B-tool B-technique B-data I-data
+Snort has packet logger,B-tool has B-tool I-tool
+The packet logger collects data as file,The B-tool I-tool collects B-data as B-data
+Snort can output tcpdump pcap,B-tool can output B-data I-data
+Snort can output unified2,B-tool can output B-tool
+Wireshark can read tcpdump pcap,B-tool can read B-data I-data
+Detection alert is added to IP packets,B-tool I-tool is added to B-data I-data
+Snort rules is tested using icmp rules,B-function I-function is tested using B-function I-function
+Snort rules is tested using system variables,B-function I-function is tested using B-data I-data
+system variables can be edited in conf file,B-data I-data can be edited in B-data I-data
+system variables can be set as home network,B-data I-data can be set as B-system I-system
+system variables can be set external network,B-data I-data can be set B-system I-system
+Snort rules is tested using payload options,B-function I-function is tested using B-feature I-feature
+payload options shows captured data,B-feature I-feature shows captured B-data
+Snort rules is tested using non payload options,B-function I-function is tested using B-feature I-feature I-feature
+Network is set as client gateway server,B-system is set as B-system I-system I-system
+Packet forwarding enabled on Gateway,B-feature I-feature enabled on B-system
+Firewall set to sniff server,B-tool set to B-technique B-system 
+Firewall disabled for testing,B-tool disabled for B-function
+Blacklist enabled for testing,B-feature enabled for B-function
+Land Attack sends spoofed TCP SYN Packets,B-attack I-attack sends B-vulnerability B-data I-data I-data
+Nmap is an open source tool,B-tool O O B-feature I-feature B-tool
+Nmap is used for network discovery,B-tool O O O B-technique I-technique
+Nmap is used for security auditing,B-tool O O O B-technique I-technique
+Nmap displays exposed services on a target machine along with other useful information such as the version and OS detection.,B-tool O B-vulnerability B-app O O B-system I-system O O O O B-data O O O B-technique O B-technique I-technique.
+Use nmap to send customized packets for network diagnostic and testing,O B-tool O O O B-data O  B-technique I-technique O  B-function
+Use nmap to send customized packets for emulating attacks,O B-tool O O send O B-data O O B-attack 
+"Nmap is a network mapper that has emerged as one of the most popular, free network discovery tools on the market",B-tool O O B-feature I-feature O O O O O O O O O O O B-technique I-technique B-tool O O O
+Nmap is now one of the core tools used by network administrators to map their networks,B-tool  O O O O O O B-tool O O B-securityTeam I-securityTeam O B-function O B-system
+"The program can find live hosts on a network, perform port scanning, ping sweeps, OS detection, and version detection.",O B-function O O B-system I-system O O B-system O O B-techniqueI-technique O B-technique I-technique O B-technique I-technique O O B-technique I-technique O
+What is Nmap?,O O B-tool O
+Nmap is a network scanning tool that uses IP packets to identify all the devices connected to a network and provide information on the services and operating systems they are running,B-tool O O B-technique I-technique B-tool O O B-data I-data O O O O B-system O O O B-system O O B-data O O B-app O B-system I-system O O O
+ The program is most commonly used via a command-line interface (though GUI front-ends are also available),The program is most commonly used via a B-tool I-tool (though B-tool I-tool are also available)
+"It is available for many different operating systems such as Linux, Free BSD, and Gentoo","It is available for many different B-system I-system such as B-system, B-system I-system, and B-system"
+Nmap was developed for enterprise-scale networks and can scan through thousands of connected devices,B-tool was developed for B-system I-system I-system and can B-function through thousands of B-system I-system
+"Moreover, Nmap has been increasingly used to inspect IoT security","Moreover, B-tool has been increasingly used to inspect B-technique I-technique"
+Nmap provides information on every active IP so you can determine if an IP is being used by a legitimate service or an external attacker.,B-tool provides B-data on every B-feature B-feature so you can determine if an B-feature is being used by a B-feature B-app or an B-attacker I-attacker.
+"Your network as a whole, including live hosts, open ports, and the OS of every connected device.","Your B-system as a whole, including B-system I-system, B-feature I-feature, and the B-system of every B-system I-system."
+"Vulnerabilities, scan your own server to simulate the process that a hacker would use to attack your site.","B-vulnerability, B-function your own B-system to simulate the B-technique that a B-attacker would use to B-attack your B-system"
+The primary uses of Nmap can be broken into three core processes,The primary uses of B-tool can be broken into three core B-technique
+"First, the program gives you detailed information on every IP active on your networks, and each IP can then be scanned","First, the program gives you detailed B-data on every B-feature B-feature on your B-system, and each B-feature can then be B-function"
+"This allows administratorsto check whether an IP is being used by a legitimate service or an external attacker.",This allows B-securityTeam to check whether an B-feature is being used by a B-feature I-feature or an B-attacker I-attacker
+"Secondly, Nmap provides information on your network as a whole","Secondly, B-tool provides B-data on your B-system as a whole"
+It can be used to provide a list of live hosts and open ports and identify the OS of every connected device,It can be used to provide a list of B-system I-system and B-feature I-feature and identify the B-system of every B-system I-system
+This makes it a valuable tool in ongoing system monitoring and a critical part of pentesting,This makes it a valuable B-tool in ongoing B-technique I-technique and a critical part of B-technique
+"Nmap can be used alongside the Metasploit framework, for instance, to probe and then repair network vulnerabilities.","B-tool can be used alongside the B-tool I-tool, for instance, to B-technique and then repair B-vulnerability I-vulnerability."
+"Thirdly, Nmap has also become a valuable tool for users looking to protect personal and business websites","Thirdly, B-tool has also become a valuable B-tool for B-user looking to protect B-system and B-system I-system"
+"Using Nmap to scan your own web server, particularly if you are hosting your website from home, is essentially simulating a hacker process to attack your site","Using B-tool to B-technique your own B-system I-system, particularly if you are B-feature your B-system  from B-system, is essentially simulating a B-attacker B-technique to B-attack your B-system"
+Attacking your own site in this way is a powerful way of identifying security vulnerabilities,B-attack your own B-system in this way is a powerful way of identifying B-vulnerability I-vulnerability
+"Nmap is straightforward to use, and most of the tools it provides are familiar to system admins from other programs","B-tool is straightforward to use, and most of the B-tool it provides are familiar to  B-securityTeam I-securityTeam from other B-function"
+"Nmap advantage is that it brings a wide range of these tools into one program, rather than forcing you to skip between separate and discrete network monitoring tools.","B-tool advantage is that it brings a wide range of these B-tool into one B-function, rather than forcing you to skip between separate and discrete B-technique I-technique B-tool"
+" To use Nmap, you need to be familiar with command-line interfaces"," To use B-tool, you need to be familiar with B-tool I-tool I-tool"
+"Most advanced users can write scripts to automate common tasks, but this is unnecessary for basic network monitoring.","Most advanced B-user can write B-function to B-feature common tasks, but this is unnecessary for basic B-technique I-technique."
+TCP Full Connect (Vanilla) Scan,B-technique I-technique I-technique I-technique I-technique
+we assume that the scanning target’s IP address ,we assume that the B-technique B-system B-feature I-feature
+TCP Connect scan completes the 3-way handshake,B-technique I-technique I-technique completes the B-technique I-technique 
+"If a port is open, the operating system completed the TCP three-way handshake, and the port scanner immediately closes the connection to avoid DOS. ","If a B-feature is B-feature, the B-system I-system completed the B-feature B-technique I-technique I-technique, and the B-tool I-tool immediately closes the B-feature to avoid B-attack. "
+"This is ""noisy” because the services can log the sender IP address and trigger Intrusion Detection Systems",This is B-feature because the B-feature can B-function the B-system B-feature I-feature and trigger B-tool I-tool I-tool
+the Full scan has the following features,the B-technique I-technique has the following features
+Attempts to completes 3-way handshake with each scanned port,Attempts to completes B-technique I-technique I-technique with each B-vulnerability B-feature
+Sends SYN and waits for ACK before sending ACK,B-function B-feature and waits for B-feature before B-function B-feature
+Tears down connection using FIN packets,B-feature I-feature B-feature using B-data I-data
+"If target port is closed, sender will received either no response, a RESET packet , or an ICMP Port Unreachable packet.","If B-feature I-feature is B-feature, B-system will B-function either no B-feature, a B-data I-data , or an B-data I-data I-data I-data."
+"Not stealthy, the connection request can be logged","Not B-vulnerability, the B-feature I-feature can be B-function"
+UDP scan checks to see if any UDP ports are listening. ,B-technique I-technique checks to see if any B-feature I-feature are B-feature. 
+"Since UDP does not respond with a positive acknowledgment like TCP and only responds to an incoming UDP packet when the port is closed, this type of scan can sometimes show false positives. ","Since B-feature does not B-feature with a B-feature I-feature like B-feature and only B-feature to an B-feature B-data I-data when the B-feature is B-feature, this type of B-technique can sometimes show B-feature I-feature. "
+"However, it can also reveal Trojan horses running on high UDP ports and hidden RPC services.","However, it can also B-feature B-attack I-attack running on B-feature I-feature I-feature  and B-vulnerability I-vulnerability I-vulnerability."
+It may be quite slow since some machines intentionally slow down responses to this kind of traffic to avoid being overwhelmed. ,It may be quite slow since some B-system intentionally B-feature I-feature I-feature to this kind of B-data to avoid being overwhelmed. 
+"Machines running Windows OS, however, do not implement this slowdown feature, so you should use UDP to scan Windows hosts normally.","B-system running B-system I-system, however, do not implement this B-feature I-feature, so you should use B-feature to B-technique B-system B-system  normally."
+The UDP Scan sends a UDP packet to target ports to determine if a UDP service is listening.,The B-technique I-technique sends a B-data I-data to B-feature I-feature to determine if a B-feature I-feature is B-feature.
+"If the target system returns an ICMP Port Unreachable message, the target port is closed. Otherwise, the target port is assumed to be open.","If the B-system I-system returns an B-data I-data I-data I-data, the B-feature I-feature is B-feature. Otherwise, the B-feature I-feature is assumed to be B-feature."
+UDP scan is unreliable since there may be false positives,B-technique I-technique is unreliable since there may be B-feature I-feature
+The UDP scan can be very slow due to the following reasons,The B-technique I-technique can be very B-feature due to the following reasons
+"Open and filtered ports rarely send any response, leaving Nmap to time out.","B-feature and B-feature I-feature rarely B-function any B-feature, leaving B-tool to B-feature I-feature"
+"Closed ports usually send back an ICMP port unreachable error. But many hosts rate limit ICMP port unreachable messages by default (e.g., 1/sec)","B-feature I-feature usually send back an B-data I-data I-data I-data. But many B-system B-technique I-technique B-data I-data I-data I-data by B-feature (e.g., 1/sec)"
+"To speed up the UDP scan Increase host parallelism, use min-hostgroup to scan multiple hosts at once","To speed up the B-technique I-technique Increase B-feature I-feature, use B-feature I-feature to B-technique multiple B-system at once"
+Scan popular ports first using the -F option to scan the most common UDP ports,B-technique popular B-feature first using the -F option to B-technique the most common B-feature I-feature
+Add –version-intensity 0 to version detection scans,Add B-feature I-feature 0 to B-technique I-technique B-technique
+Scan from behind the firewall,B-technique from B-feature I-feature I-feature 
+Use host-timeout to skip slow hosts,Use B-feature I-feature to skip B-system I-system
+"Use -v (verbosity) and chill out, Nmap provides estimated time for scan completion of each host.","Use -v (B-feature) and B-feature I-feature, B-tool provides estimated time for B-technique completion of each B-system."
+SYN scan is another form of TCP scanning. ,B-technique I-technique is another form of B-technique I-technique. 
+"Rather than using the operating system’s network functions, the port scanner generates raw IP packets and monitors for responses. ","Rather than using the B-system I-system  B-function I-function, the B-tool I-tool generates B-data I-data I-data and B-technique for B-feature. "
+This scan type is also known as “half-open scanning” because it never actually opens a full TCP connection. ,This B-technique type is also known as B-technique I-technique because it never actually B-feature a B-feature I-feature I-feature. 
+The port scanner generates a SYN packet. ,The B-tool I-tool generates a B-data I-data. 
+"If the target port is open, it will respond with an SYN-ACK packet","If the B-feature I-feature is B-feature, it will B-feature with an B-data I-data "
+"The scanner host responds with an RST packet, closing the connection before the handshake is completed.","The B-tool B-system B-feature with an B-data I-data, B-feature the B-feature before the B-technique is completed."
+"If the port is closed but unfiltered, the target will instantly respond with an RST packet. ","If the B-feature is B-feature but B-feature, the B-system will instantly B-feature with an B-data I-data. "
+There is debate over which scan is less intrusive on the target host. ,There is debate over which B-technique is less B-attack on the B-system I-system
+SYN scan has the advantage that the individual services never actually receive a connection.,B-technique I-technique has the advantage that the individual B-feature never actually B-function a B-feature
+Only sends the initial SYN and waits for ACK to detect open port,Only sends the initial B-feature and waits for B-feature to B-technique B-feature I-feature
+"SYN scans stop two-thirds of the way through the 3-way handshake, a.k.a., half-open scan","B-technique I-technique stop two-thirds of the way through the B-technique I-technique, a.k.a., B-technique  I-technique"
+Attacker sends a RESET (RST) after receiving an SYN-ACK response,B-attacker sends a B-feature I-feature after B-feature an B-feature I-feature 
+"A true connection is never established; thus, the target may not log the connection","A true B-feature is never B-feature; thus, the B-system may not B-function the B-feature"
+Faster and stealthier than a full TCP Connect scans,Faster and B-vulnerability than a B-technique I-technique I-technique I-technique
+"If the target port is closed, the destination will send a RESET or nothing","If the B-feature I-feature is B-feature, the B-system will send a B-feature or nothing"
+SYN flood may cause accidental denial-of-service attacks if the target is slow,B-attack I-attack may cause B-attack B-attack I-attack if the B-system is B-feature
+"FIN scan is a stealthy scan, like the SYN scan, but sends a TCP FIN packet instead. ","B-technique I-technique is a B-technique I-technique, like the B-technique I-technique, but B-function a B-data I-data I-data instead. "
+"Most, but not all computers will send an RST packet back if they get this input so that the FIN scan can show false positives and negatives, but it may get under the radar of some IDS programs and other countermeasures.","Most, but not all computers will send an B-data I-data back if they get this B-feature so that the B-technique I-technique can show B-feature I-feature and B-feature, but it may get under the radar of some B-tool B-function and other countermeasures."
+Ack scanning determines whether the port is filtered or not. ,B-technique I-technique determines whether the B-feature is B-feature or not. 
+This is especially good when attempting to probe for the existence of a firewall and its rulesets. ,This is especially good when attempting to B-technique for the existence of a B-tool and its B-function. 
+"Simple packet filtering will allow established connections (packets with the ACK bit set), whereas a more sophisticated stateful firewall might not.","Simple B-technique I-technique will allow B-feature I-feature (B-data with the I-data I-data ), whereas a more sophisticated B-feature B-tool might not."
+ACK scan Sends a packet with the ACK code bit set to each target port,B-technique I-technique sends a B-data with the B-data I-data I-data I-data to each B-feature I-feature
+Allows the attacker to get past some packet filtering devices,Allows the B-attacker to get past some B-technique I-technique B-system 
+Allows the attacker to determine what kind of established connections a firewall or router will allow into a network by determining which ports through a firewall allow established connection responses,Allows the B-attacker to determine what kind of B-feature I-feature a B-tool or B-system will allow into a B-system by determining which B-feature through a B-tool allow B-feature I-feature B-feature
+"If no response or an ICMP Port Unreachable message is returned, Nmap will label the target port as ""filtered,” meaning that a packet filter is blocking the response.","If no B-feature or an B-data I-data I-data I-data is returned, B-tool will label the B-feature I-feature as B-feature, meaning that a B-technique I-technique is B-feature the B-feature."
+Another very stealthy scan that sets all the TCP header flags to off or null. ,Another very B-technique I-technique that sets all the B-feature I-feature I-feature to off or null. 
+"This is not normally a valid packet, and some hosts will not know what to do with this.","This is not normally a valid B-data, and some B-system  will not know what to do with this."
+"Windows operating systems are in this group, and scanning them with NULL scans will produce unreliable results. ","B-system I-system I-system are in this group, and B-technique them with B-technique I-technique will produce unreliable results. "
+"However, for non-Windows servers protected by a firewall, this can be a way to get through.","However, for B-system I-system protected by a B-tool, this can be a way to get through."
+"XMAS scan is similar to the NULL scan, except for all the flags in the TCP header is set to on. ","B-technique I-technique is similar to the B-technique I-technique, except for all the B-feature in the B-feature I-feature is set to on. "
+Windows machines won’t respond to this due to the way their TCP stack is implemented. ,B-system I-system won’t B-feature to this due to the way their B-feature I-feature is implemented. 
+"Xmas scans derive their name from the set of flags that are turned on within a packet. ",Xmas scans derive their name from the set of B-feature that are turned on within a B-data 
+"These scans are designed to manipulate the PSH, URG, and FIN flags of the TCP header.","These B-technique are designed to manipulate the B-feature, B-feature, and B-feature I-feature of the B-feature I-feature."
+RPC scan is special type of scan looks for machines answering to RPC (Remote Procedure Call) services. ,B-technique I-technique is special type of B-technique looks for B-system answering to B-function (B-function I-function I-function) B-apps. 
+"RPC, which allows remote commands to be run on the machine under certain conditions, can be a dangerous service.","B-function, which allows B-function I-function to be run on the B-system  under certain conditions, can be a dangerous B-feature."
+"Since RPC services can run on many different ports, it is hard to tell from a normal scan which ones might be running RPC. ","Since B-app I-app can run on many different B-feature, it is hard to tell from a normal B-technique which ones might be running B-function"
+This scan will probe the ports found open on a machine with commands to show the program name and version if RPC is running. ,This B-technique will B-technique the B-feature found B-feature on a B-system with B-function to show the B-function B-feature and B-feature if B-function is running. 
+It’s not a bad idea to run one of these scans every often to find out if and where you have these services running.,It’s not a bad idea to B-function one of these B-technique every often to find out if and where you have these B-feature B-function.
+Scans RPC services using all discovered open TCP/UDP ports on the target to send RPC NULL commands. ,B-technique B-app I-app using all discovered B-feature B-feature I-feature on the B-system to send B-function I-function I-function. 
+Tries to determine if an RPC program is listening at the port and identifies type of RPC program,Tries to determine if an B-function B-function is B-feature at the B-feature and identifies type of B-function B-function
+IDLE scan is a super stealthy method whereby the scan packets are bounced off an external host,B-technique I-technique is a super B-technique I-technique whereby the B-technique B-data are bounced off an B-system I-system
+"You don’t need to have control over the other host, but it does have to set up and meet certain requirements. ","You don’t need to have control over the other B-system, but it does have to set up and meet certain B-feature. "
+"You must input the IP address of our ""zombie” host and what port number to use.",You must input the B-feature I-feature of our B-system I-system and what B-feature I-feature to use.
+It is one of the more controversial options in Nmap since it really only has a use for malicious attacks.,It is one of the more controversial options in B-tool since it really only has a use for B-attack I-attack.
+Probe the zombie’s IP ID and record it. Forge an SYN packet from the zombie and send it to the desired port on the target.,B-technique the B-system B-feature I-feature and record it. B-vulnerability an B-data I-data from the B-system and send it to the desired B-feature on the B-system.
+"Depending on the port state, the target’s reaction may or may not cause the zombie’s IP ID to be incre- mented.","Depending on the B-feature I-feature, the B-system reaction may or may not cause the B-system B-feature I-feature to be incremented."
+Probe the zombie’s IP ID again. The target port state is then determined by comparing this new IP ID ,B-technique the B-system B-feature I-feature again. The B-system B-feature I-feature is then determined by comparing this new B-feature I-feature
+"NSE stands for Nmap Scripting Engine,","B-tool stands for B-tool I-tool I-tool,"
+and it is basically a digital library of Nmap scripts that help enhance the default Nmap features and report the results in a traditional Nmap output,and it is basically a digital library of B-function I-function that help enhance the B-feature B-tool B-feature and report the results in a traditional B-tool B-feature
+"You can also write and share your own scripts, so you’re not limited to relying on the Nmap default NSE scripts.","You can also write and share your own B-function, so you’re not limited to relying on the B-tool B-feature B-function I-function."
+The only requirement for you to write these scripts is that they must be coded using the Lua programming language.,The only requirement for you to write these B-function is that they must be coded using the B-tool I-tool I-tool.
+"Four different types can help us enhance the default Nmap features, depending on the target and the scanning phase in which they are run.","Four different types can help us enhance the B-feature B-tool features, depending on the B-system  and the B-technique phase in which they are B-function."
+"Prerule scripts are types of scripts run before the rest of any scanning operation, while Nmap doesn’t have any data about the remote target.","B-function I-function are types of B-function run before the rest of any B-technique operation, while B-tool doesn’t have any B-data about the B-system I-system."
+"Once the Nmap default scan has finished the host exploration, detection, port scanning, or software discovery, it will perform the host scripts","Once the B-tool B-feature B-technique has finished the B-system B-technique, B-technique, B-technique I-technique, or B-technique I-technique, it will perform the B-function I-function"
+Service scripts are a particular set of Nmap scripts that are run against services on the remote host.,B-function I-function are a particular set of B-function I-function that are B-function against B-feature on the B-system I-system.
+"These include HTTP service scripts,for example, which can be run against web servers.","These include B-function I-function I-function, for example, which can be B-function against B-system I-system."
+"Postrule scripts are run after the entire Nmap scan has finished and are often useful for parsing, formatting, and presenting the different results.","B-function I-function are B-function after the entire B-technique I-technique has finished and are often useful for B-function, B-function, and presenting the different results."
+"When dealing with over 600 default Nmap scripts, it is not easy to find the most popular ones by inspecting them one by one. ","When dealing with over 600 B-feature B-function I-function, it is not easy to find the most popular ones by inspecting them one by one. "
+auth script - All sorts of authentication and user privilege scripts,B-function I-function - All sorts of B-technique  and B-feature I-feature B-function
+broadcast script - Network discovery scripts that use broadcast petitions for intel gathering,B-function I-function  - B-technique I-technique B-function that use B-feature petitions for B-system gathering
+brute script - Set of scripts for performing brute force attacks to guess access credentials,B-function I-function - Set of B-function for performing B-attack I-attack I-attack to guess B-feature I-feature
+"default script - The most popular Nmap scripts, using -sC by default","B-function I-function - The most popular B-function I-function, using -sC by B-feature"
+"discovery script  - Scripts related to network discovery, service discovery and host discovery","B-function I-function  -  B-function related to B-technique I-technique, B-technique I-technique and B-technique I-technique"
+dos script - Denial of service attack scripts used to test and perform DOS and floods,B-function I-function   - B-attack I-attack I-attack I-attack B-function used to B-function and B-function B-attack and B-attack
+exploit script - Used to perform service exploitation on different CVEs,B-function I-function -  Used to perform B-technique I-technique on different B-vulnerability
+external  script -  Scripts that rely on 3rd party services or data,B-function I-function -  B-function that rely on B-app I-app I-app or B-data
+"fuzzer script - Used to perform fuzzing attacks against apps, services or networks","B-function I-function - Used to B-function B-attack I-attack against B-app, B-app or B-system"
+intrusive script -  All the ’aggressive’ scripts that cause a lot of network noise,B-function I-function -  All the B-feature B-function that cause a lot of B-feature I-feature
+malware  script - Malware detections and exploration scripts,B-function I-function - B-technique I-technique and B-technique B-function
+safe script - Safe and non-intrusive or noisy scripts,B-function I-function -  B-feature and B-feature or B-feature B-function
+"version script - OS, service and software detection scripts","B-function I-function - B-system , B-app and B-technique I-technique B-function"
+vuln script - The Nmap vuln category includes vulnerability detection and exploitation scripts,B-function I-function - The B-tool B-vulnerability category includes B-technique I-technique and B-technique B-function
+The following is the output of scanning the Metasploitable 2 host.,The following is the B-feature of B-technique the B-system I-system I-system.
+"Nmap also allows you to run scripts using wildcards, meaning you can target multiple scripts that finish or end up with any pattern. ","B-tool also allows you to B-function B-function using B-function, meaning you can target multiple B-function that finish or end up with any pattern. "
+"For example, if you want to run all the scripts that begin with ’FTP’, you could use this syntax","For example, if you want to B-function all the B-function that begin with B-feature, you could use this B-feature"
+This is the perfect solution when you already know which script is going to be used. ,This is the perfect solution when you already know which B-function is going to be used. 
+"if we want to run the HTTP-brute script to perform brute force password auditing against HTTP basic, digest, and ntlm authentication, ","if we want to run the B-function I-function to perform B-function I-function B-feature B-technique against B-feature I-feature, B-function, and B-technique  I-technique,"
+NSE has the ability to let you write your own scripts and run those scripts locally in your operating system. ,B-tool has the ability to let you write your own B-function and B-function those B-function B-feature in your B-system I-system. 
+"Firewall, Intrusion Prevention Systems (IPS), and Intrusion Detection Systems (IDS) are only as robust as you configure them for your perimeter security needs.","B-feature, B-tool I-tool I-tool  I-tool , and B-tool I-tool I-tool I-tool are only as robust as you B-function them for your B-technique I-technique needs."
+"Where they reside on your network, how they interact, and improving Penetration (Pen) Testing services is key to having a strong defensive perimeter for your organization.","Where they reside on your B-system, how they interact, and improving B-technique I-technique I-technique I-technique is key to having a strong B-technique I-technique for your B-system."
+"IDS network security and IPS security, along with Firewall leveraging, can help provide this.","B-technique I-technique I-technique and B-technique I-technique, along with B-tool leveraging, can help provide this."
+"Cyberinfrastructures using prevention platforms require both regularly scheduled performance assessments and changing topology, etc.","B-system using B-technique B-system require both regularly scheduled B-technique I-technique and changing B-feature, etc."
+Most industry-standard institutes recommend even more frequent assessments.,Most industry-standard institutes recommend even more frequent B-technique.
+It is advised to change your current devices around at a certain frequent level.,It is advised to change your current B-system around at a certain frequent level.
+"If they are always static, on-going cybercriminals learn how they always sit on your perimeter and eventually hack them after long periods in scanning for weaknesses.","If they are always B-feature, on-going B-attacker learn how they always sit on your perimeter and eventually B-attack them after long periods in B-technique for B-vulnerability."
+"When performing pentest against your own networks, basically, you are evading your own security systems.","When performing B-technique against your own B-system, basically, you are B-technique your own B-system I-system."
+We usually refer to these self-targeted evading activities as ethical hacking and perform the pentesting as ‘white- hats’.,We usually refer to these B-technique I-technique I-technique I-technique as B-technique I-technique and perform the B-technique as B-securityTeam.
+Pentesting helps understand the danger of real attackers.,B-technique helps understand the danger of real B-attacker.
+"If you can sneak around a blocked portmapper port using Nmap direct RPC scanning, then so can the bad guys.","If you can sneak around a B-feature B-tool B-feature using B-tool direct B-technique I-technique, then so can the B-attacker I-attacker."
+It is easy to make a mistake in configuring complex firewalls and other devices.,It is easy to make a mistake in B-function complex B-tool and other B-system.
+Many of them even come with glaring security holes that conscientious users must find and close.,Many of them even come with glaring B-vulnerability I-vulnerability that conscientious B-user must find and close.
+Regular network scanning can help find dangerous implicit rules before attackers do.,Regular B-technique I-technique can help find dangerous implicit B-function before B-attacker do.
+There are good reasons for evading IDS as well. Product evaluation is one of the most common.,There are good reasons for B-technique B-tool as well. B-technique I-technique is one of the most common.
+"If attackers can slide under the radar by simply adding an Nmap flag or two, the system does not offer much protection.","If B-attacker can slide under the radar by simply adding an B-tool B-feature or two, the B-system  does not offer much B-feature."
+Pentesting tools such as Nmap and Metasploit offer many features for evading firewall rules or sneaking past IDSs.,B-tool I-tool such as B-tool and B-tool offer many features for B-technique B-function I-function or B-technique I-technique B-tool.
+These capabilities allow ‘bad guys’ to misuse it for ‘evil’ purposes.,These capabilities allow B-attacker I-attacker to misuse it for ‘evil’ purposes.
+"However, from the administrator perspectives, mimicking attackers’ behaviors and actions (maybe the best that they can do) toidentify security holes before attackers do.","However, from the B-securityTeam perspectives, mimicking B-attacker behaviors and actions (maybe the best that they can do) to identify B-vulnerability I-vulnerability before B-attacker do."
+This lab is by-no-mean the utterly and eagerly promoting Nmap and Metasploit.,This lab is by-no-mean the utterly and eagerly promoting B-tool and B-tool.
+It simply introduces the beginning level of cyber defenders,It simply introduces the beginning level of  B-securityTeam I-securityTeam
+to start their network security endeavors in the area of penetration testing,to start their B-technique I-technique endeavors in the area of B-technique I-technique
+since we know pentesting represents the art of cybersecurity,since we know B-technique represents the art of B-technique
+deep understanding of the given security system,deep understanding of the given B-system I-system
+The goal of this pentest is to assess the firewall rule setup and IDS system. ,The goal of this B-technique is to B-technique the B-function I-function B-system and B-tool I-tool. 
+"In this pentest, we apply the white-box testing strategy, in which a white-box tester has the access and knowledge levels of the system admin, including the knowledge of iptables firewall rules and snort rules setup.","In this B-technique, we apply the B-technique I-technique I-technique, in which a  B-securityTeam I-securityTeam has the access and knowledge levels of the  B-securityTeam I-securityTeam, including the knowledge of B-feature B-function I-function and B-function I-function B-system."
+"The goal of the pentest is to explore the configuration issues of iptables and snort, i.e., identify the system weakness due to configuration flaws. ","The goal of the B-technique is to explore the B-feature issues of B-feature and B-tool, i.e., identify the B-system B-vulnerability due to B-vulnerability I-vulnerability. "
+"This means that the pen tester knows the iptables and snort configurations, and networking system setup.","This means that the  B-securityTeam I-securityTeam knows the B-app and B-tool B-feature, and B-system I-system I-system."
+"During the pen test, the pen tester can monitor the actions or output of iptables and snort.","During the B-technique I-technique, the  B-securityTeam I-securityTeam can B-technique the actions or B-feature of B-feature and B-tool."
+The pen tester tries to explore vulnerabilities focusing on two areas,The  B-securityTeam I-securityTeam tries to B-technique B-vulnerability focusing on two areas
+"System configurations - firewall setup such as open, close, filter, unfilter ports, reachable services or nodes, firewall performance measurements, etc.","B-feature I-feature - B-tool B-system such as B-feature, B-feature, B-feature,  B-feature B-feature, reachable B-app or B-system, B-tool B-technique I-technique, etc."
+"IDS setup such as detection threshold setup, success, and missed attack scenarios, etc.","B-tool B-system such as B-feature I-feature I-feature, success, and missed B-attack I-attack, etc."
+Vulnerabilities: There is one Metasploitable-2 VM running behind the firewall,B-vulnerability: There is one B-system B-system B-function behind the B-tool 
+The pen tester is required to assess the security performance of the firewall and IDS on successfully stop and/or detect deployed attacks.,The  B-securityTeam I-securityTeam is required to B-technique the B-technique I-technique of the B-tool and B-tool on successfully stop and/or B-technique B-function B-attack.
+"Location: The pen tester explores the configuration vulnerabilities from outside, i.e., on the client network.","Location: The  B-securityTeam I-securityTeam explores the B-vulnerability I-vulnerability from outside, i.e., on the B-system I-system."
+"Assessment: The pen tester needs to develop a pentest report based on the provided template, and provide suggested changes or remediation of firewall and IDS rules to maximally improve the system security. ","B-technique : The  B-securityTeam I-securityTeam needs to develop a B-technique report based on the provided B-feature, and provide suggested changes or remediation of B-tool and B-tool B-function to maximally improve the B-technique I-technique. "
+Note that the Metasploitable 2 is used for assessing the firewall and IDS. ,Note that the B-system I-system is used for B-technique the B-tool and B-tool
+Note that your pentest focus is to inspect and assess the security strength of the firewall and IDS.,Note that your B-technique focus is to B-technique and B-technique the B-technique strength of the B-tool and B-tool
+"Please do not try to resolve any vulnerable issues running on Metasploitable 2, which is purposely designed for pentesting.","Please do not try to B-technique any B-vulnerability I-vulnerability running on B-system I-system, which is purposely designed for B-technique."
+"Tools: The pen tester can use various tools provided in the given client VM such as Nmap, hping3, MSF (Metasploit framework), tcpdump, etc. ","Tools: The  B-securityTeam I-securityTeam can use various tools provided in the given B-system I-system such as B-tool, B-tool, B-tool I-tool I-tool, B-tool, etc. "
+It should be sufficient to use these tools for this lab.,It should be sufficient to use these B-tool for this lab.
+"However, you can use or develop your own tools and testing scripts to perform the security testing.","However, you can use or develop your own B-tool and B-function B-function to B-function the B-technique I-technique."
+You should perform your pentesting tasks on the client machine.,You should perform your B-technique tasks on the B-system I-system.
+"You can run various tools such as ping, traceroute, nmap, hpings, msfconsole, etc., on the client node.","You can run various B-tool such as B-tool, B-tool, B-tool, B-tool, B-tool, etc., on the B-system I-system."
+Gateway Node (Ubuntu 18.04): You need to run iptables firewall and snort to protect the server node based on provided iptables and snort configuration files.,B-system I-system (B-system I-system): You need to B-function B-app B-tool and B-tool to B-feature the B-system I-system based on provided B-app and B-tool B-data I-data.
+You can download the iptables configuration files and snort rule files using the following commands:,You can to download the B-app B-data I-data and B-function I-function B-data using the following B-function:
+They are shell scripts. ,They are B-function I-function. 
+"To make them executable, you can change their permission","To make them executable, you can change their B-feature"
+"you need to change the parameter setup at the beginning of the pentest and reset based on your lab running environment, i.e.,  three  interfaces  and  IP addresses.","you need to change the B-feature I-feature at the beginning of the B-technique and B-feature based on your lab running environment, i.e.,  three B-app and  B-feature I-feature"
+make sure you have set up your default GW properly on each VM.,make sure you have set up your B-feature GW  properly on each B-system .
+Server Node (Metastploitable 2),B-system I-system (B-system I-system)
+"details on Metasploitable 2, especially the vulnerable services running on it. ","details on B-system I-system, especially the B-vulnerability B-app running on it. "
+You do not need to make any changes or adjustments on the provided Metasploitable 2 virtual machine in this lab.,You do not need to make any changes or adjustments on the provided B-system I-system B-system I-system in this lab.
+"In this lab, iptables, snort, Nmap, and Metasploit are four major security services and tools that you will use. ","In this lab,B-feature, B-tool, B-tool, and B-tool are four major B-app I-app and B-tool that you will use. "
+"Iptables, firewall, Snort IDS ","B-feature, B-tool, B-tool I-tool"
+demonstrate how to successfully deploy attacks through the firewall. ,demonstrate how to successfully B-function B-attack through the B-tool. 
+you need to successfully exploit at least two vulnerabilities to compromise the targeted service or application,you need to successfully B-function at least two B-vulnerability to compromise the B-app I-app or B-app
+"stop the service, gain access to the command shell, modify data, or service parameters, steal critical data, modify system configuration or setup. ","stop the B-app, gain B-feature to the B-tool I-tool, modify B-data, or B-app B-feature, B-technique B-feature B-data, modify B-feature I-feature or B-system. "
+How to identify the vulnerability?,How to B-technique the B-vulnerability?
+The steps of using Metasploit to explore the vulnerability,The steps of using B-tool to B-technique the B-vulnerability
+Suggest the countermeasure or mitigation solutions based on given firewall rules ,Suggest the B-technique or B-technique I-technique based on given B-function I-function
+Detecting and Subverting Firewalls and Intrusion Detection Systems,B-technique and B-technique B-tool and B-tool I-tool I-tool 
+firewall setup that you want to perform the pentest,B-tool B-system that you want to B-function the B-technique
+"To have better understanding of various scans, you can use firewall reset to clear the firewall rules and set it to blacklist ","To have better understanding of various B-technique, you can use B-tool B-function to clear the B-function I-function and set it to B-feature"
+change your scanning target directly to the Metasploitable-2 VM,change your B-technique B-system directly to the B-system I-system B-system
+compare scanning responses with the firewall rules.,compare B-technique B-feature with the B-function I-function
+you can observe results w/o firewall rules to interpret the scanning outcomes.,you can observe results w/o B-function I-function to interpret the B-technique outcomes.
+Nmap and Metasploit Framework are installed on both the Client and Gateway VMs. ,B-tool and B-tool I-tool are installed on both the B-system and B-system I-system. 
+"Thus, you can also compare the scanning results on the Client vs on the Gateway, which can help you determine if the firewall successfully defend a scan or attack.","Thus, you can also compare the B-technique results on the B-system vs on the B-system, which can help you determine if the B-tool successfully B-technique a B-technique or B-attack."
+Using tcpdump to monitor the traffic from both ingress and egress ports of the gateway is always the best approach to help you understand the actions performed on the Gateway.,Using B-tool to B-technique the B-data from both B-feature and B-feature B-feature of the B-system is always the best approach to help you understand the actions performed on the B-system.
+you are not restricted by the enumerated scanning approaches and provided hints. ,you are not restricted by the enumerated B-technique approaches and provided hints. 
+"pentest is the art of cyberdefense, and you need to be creative.","B-technique is the art of B-technique, and you need to be creative."
+One helpful feature of the TCP protocol is that systems are required by RFC 793 to send a negative response to unexpected connection requests in the form of a TCP RST (reset) packet. ,One helpful feature of the B-feature I-feature is that B-system are required by B-feature I-feature to send a B-feature I-feature to unexpected B-feature I-feature in the form of a B-data I-data I-data I-data. 
+The RST packet makes closed ports easy for Nmap to recognize.,The B-data I-data makes B-feature B-feature easy for B-tool to recognize.
+"Filtering devices such as firewalls, on the other hand, tend to drop packets destined for disallowed ports.","B-feature B-system such as B-tool, on the other hand, tend to drop B-data destined for disallowed B-feature"
+In some cases they send ICMP error messages (usually port unreachable) instead.,In some cases they send B-data I-data I-data (usually B-feature I-feature) instead.
+"Because dropped packets and ICMP errors are easily distinguishable from RST packets, Nmap can reliably detect filtered TCP ports from open or closed ones, and it does so automatically.","Because B-data I-data and B-data I-data are easily distinguishable from B-data I-data, B-tool can B-feature B-technique B-feature B-feature I-feature from B-feature or B-feature ones, and it does so automatically."
+The ACK scan sends TCP packets with only the ACK bit set. ,The B-technique I-technique sends B-data I-data with only the B-data I-data I-data . 
+"Whether ports are open or closed, the target is required by RFC 793 to respond with a RST packet.","Whether B-feature are B-feature or B-feature, the B-system is required by B-feature I-feature to B-feature with a B-data I-data."
+Firewalls can block the probe,B-tool can B-feature the B-technique
+the firewall usually makes no response or send back an ICMP destination unreachable error. ,the B-tool usually makes no B-feature or send back an B-data I-data I-data I-data
+This distinction allows Nmap to report whether the ACK packets are being filtered.,This distinction allows B-tool to report whether the B-data I-data are being B-feature.
+The set of filtered ports reported by an Nmap ACK scan is often smaller than for an SYN scan against the same machine because ACK scans are more difficult to filter.,The set of B-feature I-feature reported by an B-tool B-technique I-technique is often smaller than for an B-technique I-technique against the same B-system because B-technique I-technique are more difficult to B-feature.
+"Stateless firewall can block incoming SYN packets (without the ACK bit set) is an easy way to do this, but it still allows any ACK packets through. ","B-feature B-tool can B-feature B-feature B-data I-data (without the B-data I-data I-data) is an easy way to do this, but it still allows any B-data I-data through. "
+"Blocking those ACK packets is more difficult, because they do not tell which side started the connection.","B-feature those B-data I-data is more difficult, because they do not tell which side started the B-feature."
+Run SYN scan and ACK scan and compare difference,Run B-technique I-technique and B-technique I-technique and compare difference
+"To block unsolicited ACK packets (as sent by the Nmap ACK scan), while allowing ACK packets belonging to legitimate connections, ","To B-feature B-attack B-data I-data (as sent by the B-tool B-technique I-technique), while allowing B-data I-data belonging to B-feature B-feature,"
+firewalls must statefully watch every established connection to determine whether a given ACK is appropriate.,B-tool must B-feature watch every B-feature I-feature to determine whether a given B-feature is appropriate.
+Please check the provided iptables firewall rules and check where the stateful firewall policies kicked in. ,Please check the provided B-feature B-tool B-function and check where the B-feature B-tool policies kicked in. 
+These stateful firewalls are usually more secure because they can be more restrictive.,These B-feature B-tool are usually more B-feature because they can be more restrictive.
+Blocking ACK scans is one extra available restriction. ,B-feature B-technique I-technique is one extra available restriction. 
+"The downsides are that they require more resources to function, and a stateful firewall reboot can cause a device to lose state and terminate all established connections passing through it.","The downsides are that they require more resources to function, and a B-feature B-tool B-function can cause a B-system to lose B-feature and terminate all B-feature I-feature passing through it."
+"the key analysis point of this task is to check the feedback of Nmap scans with different scanning options to understand the implication of Nmap outputs: filtered, unfiltered, closed, open. ","the key analysis point of this task is to check the feedback of B-tool B-technique with different B-technique options to understand the implication of B-tool B-feature: B-feature, B-feature, B-feature, B-feature. "
+What are the implications of the firewall setup according to these feedback.,What are the implications of the B-tool B-system according to these feedback.
+Systems running TCP protocol is required by RFC 793 to send a negative response to unexpected connection requests in the form of a TCP RST (reset) packet.,B-system running B-feature I-feature is required by B-feature I-feature to send a B-feature I-feature to unexpected B-feature I-feature in the form of a B-data I-data I-data I-data
+the key analysis point of this task is how to infer the deny-by-default firewall policy based on the scanning responses from the firewall.,the key analysis point of this task is how to infer the B-feature B-tool B-feature based on the B-technique B-feature from the B-tool.
+"The ACK scan sends TCP packets with only the ACK bit set. Whether ports are open or closed, the target is required by RFC 793 to respond with a RST packet.","The B-feature I-feature sends B-data I-data with only the B-data I-data I-data. Whether B-feature are B-feature or B-feature, the B-system is required by B-feature I-feature to respond with a B-data I-data."
+the key analysis point of this task is how to infer stateful or stateless firewall policies setup based on the scanning responses from the firewall.,the key analysis point of this task is how to infer B-feature or B-feature B-tool B-feature B-system based on the B-technique B-feature from the B-tool.
+"What is your observation of the responding time of each type of scans, and what is the reason and implications?","What is your observation of the responding time of each type of B-technique, and what is the reason and implications?"
+Find at least one accessible (open or closed) port of one machine on the internal network. ,Find at least one accessible (B-feature or B-feature) B-feature of one B-system on the internal B-system. 
+The machine chosen should have little network traffic to avoid confusing results. ,The B-system chosen should have little B-data I-data to avoid confusing results. 
+Most Linux system does not work,Most B-system I-system does not work
+Verify that the machine has predictable IP ID sequences. ,Verify that the B-system has predictable B-feature I-feature sequences. 
+"targeting a Windows XP the Nping options request that five SYN packets be sent to port 80, one second apart.","targeting a B-system I-system the B-tool options request that five B-data I-data be sent to B-feature I-feature, one second apart."
+Start a flooding to a chosen host ,Start a B-attack to a chosen B-system
+Do not use any of the address from the nping node.,Do not use any of the B-feature from the B-tool B-system.
+It shows that the IP IDs are increasing by roughly 11 per second instead of one. ,It shows that the B-feature I-feature are increasing by roughly 11 per second instead of one. 
+The target (192.168.0.3) is receiving our 10 forged packets per second and responding to each of them.,The B-system (192.168.0.3) is receiving our 10 B-attack I-attack per second and responding to each of them.
+Repeat step 3 using spoofed addresses that you suspect may be allowed through the firewall. ,Repeat step 3 using B-vulnerability B-feature that you suspect may be allowed through the B-tool. 
+This technique’s result is a list of source address netblocks that are permitted through the firewall and those that are blocked.,This technique’s result is a list of B-system B-feature B-technique that are permitted through the B-tool and those that are B-feature.
+UDP is often more difficult because the protocol does not provide acknowledgment of open ports like TCP does. ,B-feature is often more difficult because the B-feature does not provide acknowledgment of B-feature I-feature like B-feature does. 
+"Many UDP applications will ignore unexpected packets, leaving the scanner unsure whether the port is open or filtered. ","Many B-feature B-app will ignore unexpected B-data, leaving the B-tool unsure whether the B-feature is B-feature or B-feature. "
+what is the implication of “open or filtered” states of the UDP scan?,what is the implication of “B-feature  or B-feature” states of the B-technique I-technique?
+how to use Nmap to perform port scanning,how to use B-tool to perform B-technique I-technique
+"Based on the scanning results, can you further deploy idle scan and FTP Bounce scan?","Based on the B-technique results, can you further B-function B-technique I-technique and B-technique I-technique I-technique?"
+Nmap uses the -g and –source -port options to manipulate source ports of transmitted packets.,B-tool uses the -g and –B-system  B-feature options to manipulate B-system B-feature of B-data I-data.
+Many intrusion detection systems have morphed into what marketing departments label intrusion prevention systems.,Many B-tool I-tool I-tool have morphed into what marketing departments label B-tool I-tool I-tool.
+Some can only sniff the network like a normal IDS and send triggered packet responses.,Some can only B-technique the B-system like a normal B-tool and send B-feature I-feature I-feature.
+The best IPS systems are inline on the network to restrict packet flow when suspicious activity is detected.,The best B-tool I-tool are inline on the B-system to restrict B-feature I-feature when B-vulnerability I-vulnerability is B-technique.
+"For example, an IPS may block any further traffic from an IP address that they believe has port scanned them or attempted a buffer overflow exploit.","For example, an B-tool may B-feature any further B-data from an B-feature I-feature that they believe has B-technique I-techniqued them or attempted aB-attack I-attack I-attack."
+Attackers are likely to notice this if they port scan a system and cannot connect to the reported open ports.,B-attacker are likely to notice this if they B-technique I-technique a B-system and cannot connect to the reported B-feature I-feature.
+Attackers can confirm that they are blocked by trying to connect from another IP address.,B-attacker can confirm that they are B-feature by trying to connect from another B-feature I-feature
+Suspicious response packets can also tip-off that an IDS has flagged an attacker’s actions.,B-vulnerability B-data I-data can also tip-off that an B-tool has B-feature an B-attacker actions.
+"In particular, many IDSs that are not inline on the network will forge RST packets to tear down connections. ","In particular, many B-tool that are not inline on the B-system will B-vulnerability B-data I-data to tear down B-feature. "
+Ways to determine that these packets are forged are covered in the section called “Detecting Packet Forgery by Firewall and Intrusion Detection Systems”. ,Ways to determine that these B-data are B-vulnerability are covered in the section called “B-technique B-attack I-attack by B-tool and B-tool I-tool I-tool”. 
+"For example, the Linux iptables system, which offers many methods for rejecting undesired packets by using:","For example, the B-system B-app B-system, which offers many methods for rejecting undesired B-data by using:"
+"The type given can be icmp-net-unreachable, icmp-host-unreachable, icmp-port-unreachable, icmp-proto-unreachable, icmp-net-prohibited or icmp-host-prohibited, which return the appropriate ICMP error message (port-unreachable is the default). ","The type given can be B-feature, B-feature, B-feature,B-feature, iB-feature or iB-feature, which return the appropriate B-data I-data I-data (B-feature is the default). "
+The option tcp-reset can be used on rules which only match the TCP protocol: ,The option B-feature can be used on B-function which only match the B-feature I-feature: 
+this causes a TCP RST packet to be sent back.,this causes a B-data I-data I-data to be sent back.
+"This is mainly useful for blocking ident (113/tcp) probes, which frequently occur when sending mail to broken mail hosts (which won’t accept your mail otherwise).","This is mainly useful for B-featureB-feature I-feature B-technique, which frequently occur when sending mail to B-feature B-system I-system (which won’t accept your mail otherwise)."
+Forging RST packets by firewalls and IDS or IPS is not particularly common outside of port 113.,B-attack B-data I-data by B-tool and B-tool or B-tool is not particularly common outside of B-feature I-feature.
+It can be confusing to legitimate network operators and allows scanners to immediately move on to the next port without waiting on the timeout caused by dropped packets. ,It can be confusing to B-feature B-securityTeam I-securityTeam and allows B-tool to immediately move on to the next B-feature without waiting on the B-feature caused by B-data I-data 
+"Such forgery canusually be detected by careful analysis of the RST packet compared to other packets sent by the machine. ","Such B-attack can
+usually be B-technique by careful B-technique of the B-data I-data compared to other B-data sent by the B-system. "
+you can purposely alter some iptables rules and observe the difference and how the changes can impact your inferences about the firewall setup.,you can purposely alter some B-app B-function and observe the difference and how the changes can impact your inferences about the B-tool B-system.
+One way to detect certain IDSs is to watch for unexplained gaps (or suspicious machines) in traceroutes. ,One way to B-technique certain B-tool is to watch for unexplained gaps (or B-vulnerability B-system) in B-tool. 
+"While most operating systems include a traceroute command, Nmap offers a faster and more effective alternative with the traceroute option.","While most B-system I-system include a B-tool B-function, B-tool offers a faster and more effective alternative with the B-tool option."
+This approach may only detect inline IDSs instead of those that passively sniff the network without being part of the route. ,This approach may only B-technique B-feature B-tool instead of those that B-feature B-technique the B-system without being part of the B-function 
+"Additionally, inspect iptables rules and output from Nmap and ping, and explain why the above-issued commands cannot return the path information.","Additionally, B-technique B-app B-function and output from B-tool and B-function, and explain why the above-issued B-function cannot return the path B-data."
+The following techniques are used to avoid being detected by the IDS (snort). ,The following techniques are used to avoid being B-technique by the B-tool (B-tool). 
+"Your snort can detect many scanning activities, based on the given snort rules,","Your B-tool can B-technique many B-technique activities, based on the given B-function I-function,"
+how to configure your scanning parameters in the following given strategies,how to B-function your B-technique B-feature in the following given strategies
+"from slow down to DNS proxying, which ones you can deploy in our testing environment.","from B-feature I-feature to B-system I-system, which ones you can B-function in our B-system I-system."
+You need to check the rules specified in the given snort local rules.,You need to check the B-function specified in the given B-tool local B-function.
+"Based on the following given Nmap scanning methods, design new Nmap scanning commands to avoided being detected by snort rules","Based on the following given B-tool B-technique methods, design new B-tool B-technique B-function to avoided being B-technique by B-function I-function"
+Nmap offers several timing modes that can be selected with the -T option to accomplish this. ,B-tool offers several B-feature I-feature that can be selected with the -T option to accomplish this. 
+"For example, the -T paranoid option causes Nmap to send just one probe at a time, waiting five minutes between them. ","For example, the -T B-feature I-feature causes B-tool to send just one B-technique at a time, waiting five minutes between them. "
+"A large scan may take weeks, but at least it probably will not be detected. ","A large B-technique may take weeks, but at least it probably will not be B-technique. "
+"The -T sneaky option is similar, but it only waits 15 seconds between probes. ","The -T B-feature I-feature is similar, but it only waits 15 seconds between B-technique. "
+Scatter probes across networks rather than scanning hosts consecutively,Scatter B-technique across B-system rather than B-technique B-system consecutively
+IP fragments can be a major problem for intrusion detection systems,B-feature I-feature can be a major problem for B-tool I-tool I-tool
+particularly because the handling of oddities such as overlapping fragments and fragmentation assembly timeouts are ambiguous and differ substantially between platforms. ,particularly because the handling of oddities such as B-feature I-feature and B-feature I-feature I-feature are ambiguous and differ substantially between B-system. 
+"Thus, the IDS often has to guess at how the remote system will interpret a packet.","Thus, the B-tool often has to guess at how the B-system I-system will interpret a B-data"
+An Nmap scan will use tiny IP fragments ,An B-tool B-technique will use B-feature I-feature I-feature
+"By default, Nmap will include up to eight bytes of data in each fragment, so a typical 20 or 24 byte (depending on options) TCP packet is sent in three tiny fragments.","By default, B-tool will include up to eight B-data of B-data in each B-feature, so a typical 20 or 24 B-data (depending on options) B-data I-data is sent in three B-feature I-feature"
+Every instance of -f adds eight to the maximum fragment data size. ,Every instance of -f adds eight to the maximum B-feature B-feature I-feature. 
+"Fragmentation is only supported for Nmap’s raw packet features, including TCP and UDP port scans (except connect scan and FTP bounce scan) and OS detection.","B-technique is only supported for B-tool B-data I-data features, including B-feature and B-feature B-technique I-technique (except B-technique I-technique and B-technique I-technique I-technique) and B-technique I-technique."
+Features such as version detection and the Nmap Scripting Engine generally don’t support fragmentation ,B-feature such as B-technique I-technique and the B-tool I-tool I-tool generally don’t support B-technique 
+because they rely on your host’s TCP stack to communicate with target services.,because they rely on your B-system B-feature I-feature to communicate withB-app I-app
+Decoys are added with the -D option,B-technique are added with the -D option
+"The argument is a list of hosts, separated by commas. ","The argument is a list of B-system , separated by commas. "
+The string ME can be used as one of the decoys to represent where the true source host should appear in the scan order. ,The string ME can be used as one of the B-technique to represent where the true B-system I-system should appear in the B-technique order. 
+"source IP, and Nmap will launch the requested port scan from that given source","B-system B-feature, and B-tool will launch the requested B-technique I-technique from that given B-system  "
+"No useful Nmap results will be available since the target will respond to the spoofed IP, and Nmap will not see those responses.","No useful B-tool results will be available since the B-system will respond to the B-vulnerability B-feature, and B-tool will not see those B-feature."
+IDS alarms at the target will blame the spoofed source for the scan.,B-tool B-function at the B-system will blame the B-vulnerability source for the B-technique.
+"This can be useful for framing innocent parties, casting doubt in the administrator’s mind about his IDS accuracy.","This can be useful for framing innocent parties, casting doubt in the B-securityTeam mind about his B-tool B-feature."
+"The idle scan is a clever technique that allows for spoofing the source IP address, as discussed in the previous section, while still obtaining accurate TCP port scan results. ","The B-technique I-technique is a clever technique that allows for B-vulnerability the B-system B-feature I-feature, as discussed in the previous section, while still obtaining accurate B-technique I-technique I-technique results. "
+This is done by abusing the properties of the IP identification field as implemented by many systems. ,This is done by abusing the properties of the B-feature I-feature I-feature as implemented by many  B-system. 
+"However, most Linux systems are immune to idle scan attacks.","However, most B-system I-system are immune to B-attack I-attack I-attack"
+Nmap performs reverse-DNS resolution by default against every responsive host. ,B-tool performs B-function I-function by default against every B-feature B-system. 
+These DNS lookup probes could be detected. Even something as unintrusive as a list scan (-sL) could be detected this way. ,These B-function I-function B-technique could be B-technique. Even something as B-feature as a B-technique I-technique (-sL) could be B-technique this way. 
+The probes will come from the DNS server configured for the machine running Nmap.,The B-technique will come from the B-system I-system B-function for the B-system running B-tool.
+The most effective way to eliminate this risk is to specify -n to disable all reverse DNS resolution. ,The most effective way to eliminate this B-feature is to specify -n to disable all B-function I-function I-function
+"You can specify one or more of those name servers to the –dns-servers option of Nmap, and all DNS queries will be proxied through them.","You can specify one or more of those B-system I-system to the B-system I-system option of B-tool, and all B-function I-function will be B-system  through them."
+The scanning results derived from task 1 to task 3 allows you to identify potential vulnerabilities to explore. ,The B-technique results derived from task 1 to task 3 allows you to identify potential potential vulnerabilities to B-technique. 
+"you need to use Metasploit Framework (msf) to deploy at least two successful attacks, ","you need to use B-tool I-tool  I-tool to B-function at least two successful B-attack, "
+"such as stop the service, gain access to the command shell, modify data, or service parameters, steal critical data, modify system configuration/setup. ","such as stop the B-app, gain B-feature to the B-tool I-tool, modify B-data, or B-app B-feature, B-technique B-feature B-data, modify B-feature I-feature or B-system "
+you will run the Metasploit Framework (MSF) command-line (CLI) for penetration testing,you will run the B-tool I-tool  I-tool B-tool I-tool for B-technique I-technique
+"You will learn how to use Metasploit to discover and identify system vulnerabilities, i.e., running Metasploitable 2.","You will learn how to use B-tool to B-technique and B-technique B-vulnerability I-vulnerability, i.e., running B-system I-system."
+Use Metasploit Framework to send vulnerability exploitation packets for vulnerability discovery,Use B-tool I-tool to send B-vulnerability B-data I-data for B-technique I-technique
+"Use Metasploit Framework to compromise a vulnerable system, i.e., Metasploitable2.","Use B-tool I-tool to compromise a B-vulnerability B-system, i.e., B-system."
+The Metasploit Project is a computer security project that provides information about security vulnerabilities and aids in penetration testing and IDS signature development. ,The B-tool Project is a B-technique I-technique project that provides B-data about B-vulnerability I-vulnerability and aids in B-technique I-technique and B-technique I-technique I-technique. 
+"Boston, Massachusetts-based security company Rapid7 owns it. ","Boston, Massachusetts-based B-technique company B-app owns it. "
+"Its best-known sub-project is the open-source Metasploit Framework, a tool for developing and executing exploit code against a remote target machine.","Its best-known sub-project is the B-feature B-tool I-tool, a B-tool for developing and executing B-function I-function against a B-system I-system I-system."
+"The Metasploit Project includes anti-forensic and evasion tools, some of which are built into the Metasploit Framework. ","The B-tool Project includes B-technique and B-technique B-tool, some of which are built into the B-tool I-tool. "
+Metasploit is pre-installed in the Kali Linux operating system. ,B-tool is pre-installed in the B-system I-system I-system I-system
+"In this lab, we use the command-line only version, msfconsole, which runs on Ubuntu Linux.","In this lab, we use the B-tool only B-feature, B-tool, which runs on B-system I-system."
+"The Metasploit framework consists of the core and base, many exploits, payloads, modules (Ruby classes), plugin’s, scripts, and multiple user interfaces. ","The B-tool I-tool consists of the core and base, many B-function, B-data, B-function (B-tool B-function), B-tool, B-function, and multiple B-app I-app. "
+The Metasploit framework also contains some great information- gathering tools called auxiliary modules.,The B-tool I-tool also contains some great B-data gathering B-tool called B-tool I-tool.
+"Auxiliary modules can be used for port scanning, service identification, password sniffing, and Windows patch enumeration. ","B-tool I-tool can be used for B-technique I-technique, B-technique I-technique, B-technique I-technique, and B-technique I-technique I-technique. "
+"Metasploit is highly customizable for advanced users and can be customized the meet your custom needs by writing your own exploits, modules, plugins, and scripts. ","B-tool is highly customizable for B-user I-user and can be customized the meet your custom needs by writing your own B-function, B-tool, B-tool, and B-function. "
+"If Metasploit does not provide the information gathering module you need by default, you can simply write it yourself.","If B-tool does not provide the B-data gathering B-tool you need by B-function, you can simply write it yourself."
+"The msfconsole is the user interface known to be the most stable interface, and you can use it to execute external commands like the ping command and the tab auto-completion. ","The B-tool is the B-app I-app known to be the most stable B-app, and you can use it to execute B-function I-function like the B-function I-function and the B-function I-function. "
+"A graphical user interface is available for Metasploit called Armitage, which is not covered in this lab.","A B-app I-app I-app is available for B-tool called B-app, which is not covered in this lab."
+"If you are on Kali Linux rolling edition, you can start the Metasploit framework and msfconsole by clicking the Metasploit icon in the dock. ","If you are on B-system I-system B-feature I-feature, you can start the B-tool I-tool and B-tool by clicking the B-tool icon in the B-app. "
+This will start the PostgreSQL service and Metasploit service automatically.,This will start the B-app I-app and B-app I-app automatically.
+You can run the following command to check if Metasploit is installed in your system,You can run the following B-function to check if B-tool is B-function in your B-system
+"If Metasploit is not installed, you can follow the procedure below to install Metasploit:","If B-tool is not B-function, you can follow the procedure below to B-function B-tool:"
+The use command in Metasploit is used to activate a particular module and changes the context of the msfconsole to that particular module.,The B-function I-function in B-tool is used to activate a particular B-function and changes the context of the B-tool to that particular B-function
+The exploit name will be mentioned in red on the command line,The B-function name will be mentioned in red on the B-tool I-tool
+"In this example, you have changed the command line’s context to the exploit called realvnc_client. ","In this example, you have changed the B-tool I-tool context to the B-function called B-vulnerability."
+"Then, you retrieve information about this exploit, set the required exploit parameters, and run it against a target.","Then, you retrieve B-data about this B-technique, set the required B-function I-function, and run it against a B-system."
+"If you want to leave the exploit context and switch back to the msfconsole, you can use the back command. ","If you want to leave the B-function context and switch back to the B-tool, you can use the B-function I-function. "
+The back command will take us back to the msfconsole in the general context.,The B-function I-function will take us back to the B-tool in the general context.
+You can issue the use command again to switch to another Metasploit module.,You can issue the B-function I-function again to switch to another B-tool B-function.
+The exit command will close the msfconsole and will take you back to the Linux terminal.,The B-function I-function will close the B-tool and will take you back to the B-system I-system.
+The help command will return a list of possible commands and a description when typed at the msfconsole. ,The B-function I-function will return a list of possible B-function and a description when typed at the B-tool. 
+"When an active exploit is selected, you can use the help command to get a list of exploit commands. ","When an active B-function is selected, you can use the B-function I-function to get a list of B-function I-function. "
+"When an exploit is selected with the use command, you can retrieve information like the name, platform, author, available targets and a lot more by using the info command. ","When an B-function is selected with the B-function I-function, you can retrieve B-data like the B-feature, B-app, B-user, available B-system and a lot more by using the B-function I-function. "
+you can use the info command on an exploit named ie_execcommand_ua,you can use the B-data I-function on an B-function named B-vulnerability
+"Metasploit contains over 1.500 different exploits, and new ones are added regularly. ","B-tool contains over 1.500 different B-function, and new ones are added regularly. "
+"With this number of exploits, the search function and knowing how to use it becomes very important. ","With this number of B-function, the B-function I-function and knowing how to use it becomes very important. "
+"The easiest way of using the search function is by issuing the command search followed by a search term, for example, flash to search for exploits related to Flash player. ","The easiest way of using the B-function I-function is by issuing the B-function B-function followed by a search term, for example, flash to search for B-function related to B-tool I-tool. "
+"by using the search command, Metasploit will search for the given search term in the module names and description","by using the B-function I-function, B-tool will search for the given search term in the B-function B-feature and B-feature"
+"As expected, there are a lot of exploits related to the often vulnerable Flash player software. ","As expected, there are a lot of B-function related to the often B-vulnerability B-app I-app I-app. "
+"For example, the list includes CVE-2015- 5122 Adobe Flash opaqueBackground Use After Free zero-day, which was discovered in the Hacking Team data breach.","For example, the list includes B-vulnerability I-vulnerability  I-vulnerability  I-vulnerability  I-vulnerability  I-vulnerability  I-vulnerability  I-vulnerability, which was discovered in the  B-attacker I-attacker B-attack I-attack."
+"You can use the search command with a keyword to search for a specific author, an OSVDB ID, or a platform. ","You can use the B-function I-function with a keyword to search for a specific B-user, an B-feature I-feature, or a B-app. "
+"Now, you will be looking at how to show the exploit parameters and change them with the set command. ","Now, you will be looking at how to show the B-feature I-feature and change them with the B-function I-function. "
+"You will also be looking at how to show the payloads, targets, advanced, and evasion options.","You will also be looking at how to show the B-data, B-system, B-feature, and B-technique options."
+The show options command will show you the available parameters for an exploit if used when the command line is in exploit context. ,The B-function I-function I-function will show you the available B-feature for an B-function if used when the B-tool I-tool is in B-function context. 
+The Flash exploit contains a total of 6 options from which only 2 are required,The B-vulnerability I-vulnerability contains a total of 6 options from which only 2 are required
+Note that the show options command is returning the currently selected target below the module options.,Note that the B-function I-function I-function  is returning the currently selected B-system  below the B-function options.
+"The default target is 0, which is Windows for the selected exploit.","The default B-system is 0, which is B-system  for the selected B-function."
+Use the set command followed by the option name and the new value to change the default values,Use the B-function I-function followed by the option B-feature and the new value to change the default values
+"By using the show options command again, you can verify that the SRVHOST and SRVPORT values have been changed. ","By using the B-function I-function I-function again, you can verify that the B-feature and B-feature values have been changed. "
+You can change Boolean values by using the set command with option name and true or false.,You can change B-function values by using the B-function I-function with option name and true or false.
+"When you use the show payloads command, the msfconsole will return a list of compatible payloads for this exploit.","When you use the B-function I-function I-function, the B-tool will return a list of compatible B-data for this B-function."
+"In the flash player exploit example, it will return quite a few compatible payloads ","In the B-vulnerability I-vulnerability example, it will return quite a few compatible B-data"
+"To use a certain payload, you need to use the set command followed by the payload name","To use a certain B-data, you need to use the B-function I-function followed by the B-data name"
+The show targets command will return a list of operating systems which are vulnerable to the selected exploit. ,The B-function I-function I-function will return a list of B-system I-system which are B-vulnerability to the selected B-function. 
+"When you run the command, you get the following output for the adobe_flash_shader_drawing_fill exploit","When you run the B-function, you get the following output for the B-vulnerability I-vulnerability"
+This exploit targets both Windows and Linux operating systems. ,This B-function B-system both B-system and B-system B-system I-system. 
+Note that you can use the info command to get additional info about this exploit and targets. ,Note that you can use the B-data I-function to get additional B-data about this B-function and B-system. 
+"To set a target, you can use the command set followed by the target ID","To set a B-system, you can use the B-function I-function followed by the B-feature I-feature"
+"By setting the target, the list of payloads will be reduced a lot because only payloads will be shown which are compatible with the target (Linux)","By setting the B-system, the list of B-data will be reduced a lot because only B-data will be shown which are compatible with the B-system  (B-system)"
+"By using the show advanced command, we can look at the advanced options for the exploit. ","By using the B-function I-function I-function, we can look at the B-feature I-feature for the B-function. "
+"Use the set command, followed by the advanced parameter and the new value to change the advanced settings","Use the B-function I-function, followed by the B-feature B-feature and the new value to change the B-feature settings"
+The show nops command will return a list of NOP generators,The B-function I-function I-function will return a list of B-function I-function
+A NOP is short for No Operation and is used to change the pattern of a NOP sled in order to bypass simple IDS/IPS signatures of common NOP sleds.,A B-function is short for B-function I-function and is used to change the pattern of a B-function I-function in order to bypass simple B-tool / B-tool B-feature of common B-function I-function.
+The NOP generators start with the CPU architecture in the name. ,The B-function I-function start with the B-system I-system in the name. 
+"To use a NOP generator, use the set command, followed by the name of the NOP generator.","To use a B-function I-function, use the B-function I-function, followed by the name of the B-function I-function."
+"When the exploit is launched, the NOP sleds will be taken from the NOP generator.","When the B-function is launched, the B-function I-function will be taken from the B-function I-function."
+The show evasion command returns a list of available evasion techniques. ,The B-function I-function I-function returns a list of available B-technique I-technique. 
+"To change evasions settings, use the set command, followed by the evasion parameter and the new value.","To change B-technique B-feature, use the B-function I-function, followed by the B-technique B-feature and the new value."
+"When all the required options have been set for the exploit, including a payload and advanced settings like a NOP generator, evasion options, and encoding, the exploit is ready to be executed. ","When all the required options have been set for the B-function, including a B-data and B-feature B-feature like a B-function I-function, B-technique options, and B-function, the B-function is ready to be executed. "
+The exploit can be executed using two commands: run and exploit. ,The B-function can be executed using two B-function: B-function and B-function. 
+Just type run or exploit in the msfconsole and the exploit will run.,Just type B-function or B-function in the B-tool and the B-function will run.
+"Metasploitable 2 is an intentionally vulnerable Linux machine downloaded and set up as a virtual machine in any hypervisor such as KVM, VMware Player, and Virtual box.","B-system I-system is an intentionally B-vulnerability B-system I-system downloaded and set up as a B-system I-system in any B-system  such as B-system, B-system I-system, and B-system I-system."
+An important part of the Metasploitable 2 enumeration process is the port scanning and fingerprinting process. ,An important part of the B-system I-system enumeration process is the B-technique I-technique and B-technique I-technique. 
+Port scanning is used to probe a server or host for open TPC and UDP ports. ,B-technique I-technique is used to B-technique a B-system  or B-system for B-feature B-feature and B-feature I-feature. 
+Fingerprinting is the process of identifying the services connected to those ports.,B-technique is the process of identifying the B-app connected to those B-feature.
+The default username/password of Metasploitable 2 is msfadmin/msfadmin.,The default B-feature of B-system I-system is B-feature
+"When you log in to the vulnerable host, you can use the ifconfig command to determine its IP address. ","When you log in to the B-vulnerability B-system, you can use the B-function I-function to determine its B-feature I-feature. "
+You can also use netdiscover on the Kali Linux machine to scan a range of IP addresses for the target host. ,You can also use B-tool on the B-system I-system I-system  to B-technique a range of B-feature I-feature for the B-system I-system. 
+You can use the following command to start the Nmap port scan with service and OS detection,You can use the following B-function to start the B-tool B-technique I-technique with B-app and B-technique I-technique
+"The Nmap port scan and service scans return a lot of open ports, listening services, and the version of the operating system","The B-tool B-technique I-technique and B-technique I-technique return a lot of B-feature I-feature, listening B-app, and the B-feature of the B-system I-system"
+The Metasploitable-2 host is running Linux 2.6.9 - 2.6.33 as the operating system. ,The B-system I-system is running B-system I-system I-system I-system as the B-system I-system. 
+"We can see that the host is running an SSH service using OpenSSH, a telnet service, an Apache 2.2.8 webserver, 2 SQL servers, and some more services. ","We can see that the B-system is running an B-app I-app using B-tool, a B-app I-app, an B-system I-system I-system, 2 B-system I-system, and some more B-app. "
+A list of running services and their running ports are given ,A list of running B-app and their running B-feature are given 
+Metasploitable 2 is intentionally vulnerable. ,B-system I-system is intentionally B-vulnerability. 
+"Therefore, one can only suspect that most, if not all, of the services, contain vulnerabilities, backdoors, etc.","Therefore, one can only suspect that most, if not all, of the B-app, contain B-vulnerability, B-attack, etc."
+"With user enumeration, the penetrations tester sees what users have access to the server and which users exist on the network. ","With B-vulnerability I-vulnerability, the  B-securityTeam I-securityTeam sees what B-user have access to the B-system and which B-user exist on the B-system. "
+Another purpose for user enumeration is to gain access to the machine by using brute force techniques. ,Another purpose for B-vulnerability I-vulnerability is to gain access to the B-system by using B-technique I-technique I-technique. 
+"Since the username is already known to the penetration tester, the only thing left to brute force is the password. ","Since the B-feature is already known to the B-securityTeam I-securityTeam, the only thing left to B-technique I-technique is the B-feature. "
+There are multiple ways of enumerating users on a Linux system,There are multiple ways of B-vulnerability I-vulnerability on a B-system I-system
+"To enumerate the user accounts available on the target machine, you will be using the following Nmap script","To B-function the B-feature I-feature available on the B-system I-system, you will be using the following B-function I-function"
+Rpcclient is a Linux tool used for executing client-side MS-RPC functions. ,B-tool is a B-system tool used for executing B-system B-function I-function. 
+A null session is a connection with a samba or SMB server that does not require authentication with a password. ,A B-feature I-feature is a B-feature with a B-system or B-system I-system that does not require B-technique with a B-feature. 
+"No username or password is needed to set-up the connection, and therefore it is called a null session.","No B-feature or B-feature is needed to set-up the B-feature, and therefore it is called a B-feature I-feature."
+The allowance of null sessions was enabled by default on legacy systems but has been disabled from Windows XP SP2 and Windows Server 2003. ,The allowance of B-feature I-feature was enabled by default on B-system I-system but has been disabled from B-system I-system I-system and B-system I-system I-system
+"The connection uses port 445, an open port on the out target host, as we’ve seen in the port scan results","The B-feature uses B-feature I-feature, an B-feature I-feature on the out B-system I-system, as we’ve seen in the B-technique I-technique results"
+Now you can open up a new terminal window and set up a null session with the Metasploitable 2 samba server,Now you can open up a new B-system B-system and set up a B-feature I-feature with the B-system I-system B-system I-system
+"It will ask for a password, and you can press “enter”. ","It will ask for a B-feature, and you can press “enter”. "
+Then you can use the following command to enumerate all the users in the system.,Then you can use the following B-function to B-function all the B-user in the B-system .
+Enum4linux can be found on Kali Linux. ,B-tool can be found on B-system I-system. 
+It is used to enumerate Windows and Samba hosts and is written in Perl. ,It is used to B-function B-system and B-system  B-system  and is written in B-tool. 
+"The tool is basically a wrapper for smbclient, rpcclient, net, and nmblookup. ","The tool is basically a B-function for B-system, B-tool, net, and B-tool "
+Let’s have a look at how to use enum4linux and run it on Metasploitable 2. ,Let’s have a look at how to use B-tool and run it on B-system I-system 
+Below are the most common options used in enum4linux. ,Below are the most common options used in B-tool. 
+"In the Metasploit console, you can gather information, such as target IP address, Operating System, ports opened, and vulnerability.","In the B-tool B-tool, you can gather B-data, such as B-system B-feature I-feature, B-system I-system, B-feature B-feature, and B-vulnerability."
+Metasploit allows you to run Nmap directly from the console. ,B-tool allows you to run B-tool directly from the B-tool. 
+"Nmap output contained over 600 lines; therefore, the output was shortened, leaving relevant information to be explained","B-tool B-feature contained over 600 lines; therefore, the B-feature was shortened, leaving relevant B-data to be explained"
+"The following lines show us the initialized scans types, which involve NSE, ARP Ping Scan, DNS resolution, and an SYN Stealth Scan.","The following lines show us the initialized B-technique types, which involve B-tool, B-technique I-technique I-technique, B-function I-function, and an B-technique I-technique I-technique."
+The next extract shows what services are available at the target,The next extract shows what B-app are available at the B-system
+The following extract report NSE post scan scripts execution to find vulnerabilities,The following extract report B-tool B-function I-function I-function execution to find B-vulnerability
+"As you can see, Nmap already found security holes or vulnerabilities on the target FTP service, it even links us exploits to hack the target","As you can see, B-tool already found B-vulnerability I-vulnerability or B-vulnerability on the B-system B-app I-app, it even links us B-function to B-attack the B-system"
+Once you identified security holes on your target use Metasploit commands to find proper exploits against them. ,Once you identified B-vulnerability I-vulnerability on your B-system use B-tool B-function to find proper B-function against them. 
+"As you saw previously one of the first vulnerabilities found was on the vsFTPD server, to find proper exploits. ","As you saw previously one of the first B-vulnerability found was on the B-system I-system, to find proper B-function. "
+As you see Metasploit contains a backdoor which possibly may help us to hack our target FTP. ,As you see B-tool contains a B-attack which possibly may help us to B-attack our B-system B-feature. 
+"To use this exploit, within Metasploit run","To use this B-function, within B-tool run"
+"After the command shell (i.e., the backdoor) is established, then you can run command “ls” in the targeting system.","After the B-tool I-tool (i.e., the B-attack) is established, then you can run B-function B-function in the B-system I-system."
+Syslog is one of the most important standards used in Linux as it is the key file which helps you determine the different level of logs which are getting generated and stored every second while you are working on your Linux box.,B-tool is one of the most important standards used in B-system as it is the key B-data which helps you determine the different level of B-data which are getting generated and stored every second while you are working on your B-system I-system.
+Syslog can be taken as “System Log”. Benefits of using syslog,B-tool can be taken as B-data I-data. Benefits of using B-tool
+Helps analyze the root cause for any trouble or problem caused,Helps analyze the root cause for any trouble or problem caused
+Reduce overall downtime helping to troubleshoot issues faster with all the logs,Reduce overall B-feature helping to B-technique issues faster with all the B-data
+Improves incident management by active detection of issues,Improves B-technique I-technique by active B-technique of B-vulnerability
+Self-determination of incidents along with auto resolution,Self-determination of B-attack along with B-technique I-technique
+"Simplified architecture with different level of severity like error,info,warning, etc.","Simplified B-system with different level of B-feature like B-data, B-data ,B-data, etc."
+The syslog.conf file is the main configuration file for the syslogd which logs system messages on Unix/Linux Systems. ,The B-data I-data is the main B-data I-data for the B-data which B-function B-data I-data on B-system B-system. 
+This file specifies rules for logging.,This B-data specifies B-function for B-function.
+"However, in this lab, we use syslog terms to illustrate the basic concepts and use rsyslog as the working logging system, which is the default system log on Ubuntu Linux distribution.
+","However, in this lab, we use B-tool terms to illustrate the basic concepts and use B-tool as the working B-tool I-tool, which is the default B-data I-data on B-system I-system I-system.
+"
+"When configure syslog (syslog.conf is the one for syslogd and rsyslog configures are set up in the /etc/rsyslog.d/ folder), every rule consists of two fields, a selector field and an action field. ","When B-function B-tool (B-data is the one for B-data and B-tool B-function are set up in the B-feature B-data), every B-function consists of two B-feature, a B-feature I-feature and an B-feature I-feature. "
+These two fields are separated by one or more spaces or tabs. ,These two B-feature are separated by one or more spaces or tabs. 
+The selector field specifies a pattern of facilities and priorities belonging to the specified action.,The B-feature I-feature specifies a pattern of facilities and priorities belonging to the specified B-feature.
+"The selector field itself again consists of two parts, a facility and a priority, separated by a period","The B-feature I-feature itself again consists of two parts, a B-system and a B-feature, separated by a period"
+"The facility is one of the following keywords: auth, authpriv, cron, daemon, kern, lpr, mail, mark, news, security (same as auth), syslog, user, uucp and local0 through local7. ","The B-feature is one of the following keywords: B-feature, B-feature, B-feature, B-tool, B-app, B-system , B-app, B-feature, B-feature, B-technique(same as B-feature), B-tool, B-user, B-feature and B-feature through B-feature. "
+The keyword security should not be used anymore and mark is only for internal use and therefore should not be used in applications.,The keyword B-technique should not be used anymore and mark is only for internal use and therefore should not be used in B-app.
+You may want to specify and redirect these messages here,You may want to specify and redirect these B-data here
+"The facility specifies the subsystem that produced the message, i.e., all mail programs log with the mail facility (LOG MAIL) if they log using syslog. ","The B-system specifies the B-system that produced the B-data, i.e., all B-app I-app B-function with the B-app B-system (B-app I-app) if they B-function using B-tool. "
+"The priority is one of the following keywords, in ascending order: debug, info, notice, warning, warn (same as warning), err, error (same as err), crit, alert, emerg, panic (same as emerg). ","The B-feature is one of the following keywords, in ascending order: B-technique, B-data, B-data, B-data, B-feature (same as B-data), B-feature, B-data(same as B-data), B-feature, B-data, B-feature, B-feature(same as B-feature). "
+"The keywords error, warn and panic are deprecated and should not be used anymore.","The keywords B-data, B-feature and B-feature are deprecated and should not be used anymore."
+The priority defines the severity of the message,The B-feature defines the B-feature of the B-data
+Multiple selectors may be specified for a single action using the semicolon (“;”) separator. ,Multiple B-feature may be specified for a single action using the semicolon (“;”) separator. 
+The following presented modifications provide network support to the syslogd facility. ,The following presented modifications provide B-technique I-technique to the B-data B-system. 
+"For examples, if we want to log all the critical events on your Linux machine in a separate log file inside /var/log with a name of critical.log ","For examples, if we want to B-function all the B-feature events on your B-system I-system in a separate B-data I-data inside B-feature with a name of B-data"
+Log all the kernel related messages in separate log file,B-function all the B-app related B-data in separate B-data I-data
+Redirect all the error logs to a remote user on their terminals,Redirect all the B-data B-data to a B-feature B-user on their B-system
+Log all the firewall warning level messages,B-function all the B-tool B-data level B-data
+Network support means that messages can be forwarded from one node running syslogd to another node running syslogd where they will be actually logged to a disk file.,B-technique I-technique means that B-data can be forwarded from one B-system running B-data to another B-system running B-data where they will be actually B-function to a B-data I-data.
+The strategy is to have syslogd listen on a Unix/Linux domain socket for locally generated log messages. ,The strategy is to have B-data listen on a B-system B-feature I-feature for locally generated B-data I-data. 
+This behavior will allow syslogd to inter-operate with the syslog found in the standard C library. ,This behavior will allow B-data to inter-operate with the B-tool found in the B-app I-app I-app. 
+At the same time syslogd listens on the standard syslog port for messages forwarded from other hosts. ,At the same time B-data listens on the standard B-app B-feature for B-data forwarded from other B-system. 
+"If this entry is missing syslogd neither can receive remote messages nor send them, because the UDP port cannot be opened. ","If this entry is missing B-data neither can receive B-feature B-data nor send them, because the B-feature I-feature cannot be opened. "
+"Instead, syslogd will die immediately, blowing out an error message. ","Instead, B-app will die immediately, blowing out an B-data I-data. "
+"For example, to forward ALL messages to a remote host uses the following syslog.conf entry","For example, to forward ALL B-data to a remote host uses the following syslog.conf entry"
+To forward all kernel messages to a remote host the configuration file,To forward all B-app B-data to a B-system I-system the B-data I-data
+The implementation of syslog on Ubuntu is rsyslogd. ,The implementation of B-app on B-system is B-data
+To determine if rsyslogd is installed on Ubuntu,To determine if B-data is installed on B-system 
+A common rsyslogd status checking reply ,A common B-data status checking reply 
+How to modify the iptables rules to let it log at the appropriate level,How to modify the B-app B-function to let it log at the appropriate level
+How to configure syslog to log the iptables messages to a different log file?,How to B-function B-data to B-function the B-app B-data to a different B-data I-data?
+To stop iptables messages to get logged into /var/log/messages ,To stop B-app B-data to get B-function into B-feature
+Assume that you are currently logging all the firewall warning level messages ,Assume that you are currently B-function all the B-tool B-data level B-data
+"Restart the rsyslog, and make sure that there are no errors","B-function the B-tool, and make sure that there are no B-data"
+Make sure the iptables rule is logging at the appropriate level. ,Make sure the B-app B-function is B-function at the appropriate level. 
+This can be done by using the log-level switch. ,This can be done by using the B-function I-function. 
+Run ssh and ping to test your firewall logs ,Run B-function and B-function to test your B-tool B-data
+If you want to print your iptables logs on your monitoring console,If you want to B-function your B-app B-data on your B-technique B-tool
+Assume that you are currently logging all the kernel related messages in separate log file ,Assume that you are currently B-function all the B-app related B-data in separate B-data I-data
+"In ubuntu distribution, rsyslogd is the default system log implementation compared to its precursor syslogd. ","In B-system I-system, B-data is the default B-data I-data implementation compared to its precursor B-data. "
+"In this lab, you will learn and practice on how to setup rsyslog forwarding from a client to a centralized server. ","In this lab, you will learn and practice on how to B-system  B-tool B-feature from a B-system to a B-system I-system. "
+"The syslog basics are presented in the Syslog (syslogd) Local Logging on Linux. Since rsyslog is a successor of syslog, the basic concepts of log facilities, actions, and priority are the same.","The B-tool bases are presented in the B-tool (B-data) B-feature B-function on B-system. Since B-tool is a successor of B-tool, the basic concepts of B-data B-system, B-feature, and B-feature are the same."
+"On Ubuntu system, instead of using syslog.conf, rsyslog uses rsyslog as it configuration file.","On B-system I-system, instead of using B-data I-data, B-tool uses B-tool as it B-data I-data."
+Detailed rsyslog configuration files are maintained under /etc/rsyslog.d/ folder. ,Detailed B-tool B-data I-data are maintained under B-feature B-data. 
+"Default rsyslog setup configurations are maintained in the file 50-default.conf, which is similar to syslog.conf using syslogd. ","B-feature B-tool B-feature I-feature are maintained in the B-data B-data, which is similar to B-data using B-data. "
+"In the following sections Selectors, Facility, and Severity Levels, we use the same descriptions
+","In the following sections B-feature, B-system, and B-feature I-feature, we use the same B-feature
+"
+Logs are stored at /var/log/ on the Linux filesystem. ,B-data are stored at B-feature on the B-system B-system. 
+"At this location, you should see multiple log files, each one having a name describing what they actually store. ","At this B-system , you should see multiple B-data I-data, each one having a name describing what they actually store. "
+"In this example, you have dedicated log files for authentication purposes or for kernel related logs. ","In this example, you have dedicated B-data I-data for B-technique purposes or for B-app related B-data. "
+"The folder /var/log does not contain only files, but it also contain dedicated folders that vendors create when the application is installed.","The B-data B-feature does not contain only B-data, but it also contain dedicated B-data that B-user create when the B-app is B-function"
+"Suppose that three machines are sending logs to the log server, each machine is going to have its own own auth.log, kern.log or dpkg.log files.","Suppose that three B-system are sending B-data to the B-system I-system, each B-system is going to have its own B-data, B-data or B-data B-data."
+"Each machine (i.e., a client) wants to write logs via rsyslog. To this end, each machine is configured as client-server syslog instances. ","Each B-system  (i.e., a B-system) wants to write B-data via B-tool. To this end, each B-system is B-function as B-system B-tool B-system. "
+"They can create logs and store logs locally in their file system. In the centralized logging architecture, client machines will be configured to use rsyslog as a client, and they will forward every single log to a remote rsyslog server","They can create B-data and store B-data locally in their B-system I-system. In the B-system I-system I-system, B-system I-system will be B-function to use B-tool as a B-system, and they will B-feature every single B-data to a B-system I-system I-system"
+which is the central server,which is the B-system I-system
+"Compared to syslog, rsyslog tries to address the following improved features","Compared to B-tool, B-tool tries to address the following improved features"
+Secure transmitted log data: implement TLS to protect data transmission,B-feature B-feature B-data I-data: implement B-technique to B-feature B-feature I-feature
+Increase the reliability: implement a memory caching module to address when the network is down,Increase the B-technique: implement a B-technique I-technique B-function to address when the B-system is B-feature
+"Using the centralized logging architecture, we can achieve the following benefits","Using the B-system I-system I-system, we can achieve the following benefits"
+Inspect all your logs from a single place instead of accessing individual machine,B-technique all your B-data from a single place instead of accessing individual B-system
+Access to logs without access privilege to individual machines.,B-feature to B-data without B-feature I-feature to individual B-system.
+Set up a complete log monitoring infrastructure in one place to improve the network management capability,Set up a complete B-technique I-technique B-system in one place to improve the B-technique I-technique capability
+The downside of using centralized logging server,The downside of using B-system I-system I-system
+"The syslog server can be overloaded: with this architecture, you are pushing logs to a remote server. ","The B-system I-system can be overloaded: with this B-system, you are pushing B-data to a B-system I-system. "
+"if one machine starts sending excessive amount of log data, it may overload the log server.","if one B-system starts sending excessive amount of B-data I-data, it may overload the B-system I-system"
+The centralized system suffers single-point failure. ,The B-system I-system suffers B-feature I-feature. 
+"If the log server goes down, then the ability to look at all the logs sent by the clients is lost. ","If the B-system I-system goes down, then the ability to look at all the B-data sent by the B-system is lost. "
+"Moreover, if the server goes down, clients will start storing messages locally until the server is available again, thus it may fill up disk space on the client side.","Moreover, if the B-system goes down, B-system will start storing B-data B-feature until the B-system is available again, thus it may fill up B-system I-system on the B-system I-system."
+The implementation of syslog on Ubuntu is rsyslogd. ,The implementation of B-tool on B-system is B-data
+To determine if rsyslogd is installed on Ubuntu,To determine if B-data is installed on B-system
+"First of all, you have to configure your rsyslog server for it to accept incoming logs on port 514. ","First of all, you have to B-function your B-system I-system for it to accept incoming B-data on B-feature I-feature. "
+We are going to use TCP for log transmission. ,We are going to use B-feature for B-feature I-feature. 
+You can use UDP if the network reliability is not a big concern. ,You can use B-feature if the B-technique I-technique is not a big concern. 
+This is the directory that stores templates as well as files that contain the rsyslog rules.,This is the B-data that stores B-feature as well as B-data that contain the B-function I-function
+"In this directory, there is a 50-default.conf file. ",In this B-data there is a B-data I-data
+"You are going to create your own configuration file, prefixing
+it with a number lower than the configuration file one. ","You are going to create your own B-data I-data, prefixing
+it with a number lower than the B-data I-data one. "
+"In this way, your configuration file takes priority over the default one.","In this way, your B-data I-data takes priority over the B-feature one."
+"Remote Server means to send for every facility, and every severity to the remote server template","B-system I-system means to send for every B-system, and every B-feature to the B-system I-system B-feature"
+rsyslog properties and they together identify the path where data will be stored on the remote server.,B-tool properties and they together identify the B-feature where B-data will be stored on the B-system I-system.
+"With this syntax, log files will be grouped by hostname, a.k.a., the computer name sending the log, and then by syslog facility (kern, user, auth etc.). ","With this syntax, B-data I-data will be grouped by B-feature, a.k.a., the B-feature I-feature sending the B-data, and then by B-tool B-system  (B-app, B-user, B-feature etc.). "
+"Now, you can restart the rsyslog server, and make sure that it is now listening on the port 514 for TCP","Now, you can B-function the B-system I-system, and make sure that it is now B-feature on the B-feature I-feature for B-feature"
+"With this configuration file, server logs are no longer directly stored  ","With this B-data I-data, B-system B-data are no longer directly stored  "
+hostname being the current name of the host ,B-feature being the current name of the B-system
+"Now, let’s configure rsyslog as a client, and on the client machine","Now, let’s B-function B-tool as a B-system and on the B-system I-system"
+Similarly to the procedure done on the server-side ,Similarly to the procedure done on the B-system
+"Restart the rsyslog server, and make sure that there are no errors on the client-side.","B-function the B-system I-system, and make sure that there are no B-data on the B-system"
+"Now, on the server side, folder is created for the client with the hostname ”ubuntu”. ","Now, on the B-system I-system, B-data is created for the B-system with the B-feature B-system. "
+You are successfully received the log file from the client.,You are successfully received the B-data I-data from the B-system.
+"Now, you can practice a customized logging service for one of your client. ","Now, you can practice a customized B-app I-app for one of your B-system. "
+"In this task, we assume that you want to send a subset of logs captured on your client to the log server. ","In this task, we assume that you want to send a subset of B-data captured on your B-system to the B-system I-system "
+Assume that you are currently logging all the kernel related messages in separate log file ,Assume that you are currently B-function all the B-app related B-data in separate B-data I-data
+Assume that you are currently logging all the firewall warning level messages ,Assume that you are currently B-function all the B-tool B-data level B-data
+"Restart the rsyslog server, and make sure that there are no errors on the client-side.","B-function the B-system I-system, and make sure that there are no B-data on the B-system"
+How to modify the iptables rules to let it log at the appropriate level,How to modify the B-app B-function to let it B-function at the appropriate level
+How to configure syslog to log the iptables messages to a different log file?,How to B-function B-tool to B-function the B-app B-data to a different B-data I-data?
+To stop iptables messages to get logged into a remote server?,To stop B-app B-data to get B-function into a B-system I-system?
+Make sure the iptables rule is logging at the appropriate level. ,Make sure the B-app B-function is B-function at the appropriate level. 
+This can be done by using the log-level switch. ,This can be done by using the B-function I-function. 
+Default log-level is warning. ,B-feature B-feature is B-data. 
+"Now, you can run ssh and ping to test your firewall logs received at the server side.","Now, you can B-function B-function and B-function to B-function your B-tool B-data received at the B-system I-system."

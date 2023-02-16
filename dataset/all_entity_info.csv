@@ -385,7 +385,7 @@ entityID,entityName,entityType,entityCategory,entityDescription
 384,Denial of service attack,attack,concept,
 385,perform,function,concept,
 386,floods,attack,concept,
-387,exploit,function,concept,
+387,exploit,technique,concept,
 388,exploitation,technique,concept,
 389,service exploitation,technique,concept,
 390,CVE,vulnerability,concept,
