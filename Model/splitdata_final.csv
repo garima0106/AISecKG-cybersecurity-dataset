@@ -768,7 +768,7 @@ D2,instance,O
 D2,to,O
 D2,probe,B-technique
 D2,and,O
-D2,then,On
+D2,then,O
 D2,repair,O
 D2,network,B-vulnerability
 D2,vulnerabilities,I-vulnerability
@@ -1858,7 +1858,7 @@ D2,due,O
 D2,to,O
 D2,the,O
 D2,way,O
-D2,their,Oir
+D2,their,O
 D2,TCP,B-feature
 D2,stack,I-feature
 D2,is,O
@@ -1915,7 +1915,7 @@ D2,RPC,B-function
 D2,Remote,B-function
 D2,Procedure,I-function
 D2,Call,I-function
-D2,services,B-apps
+D2,services,B-app
 ,,
 D2,RPC,B-function
 D2,which,O
@@ -2712,7 +2712,7 @@ D2,to,O
 D2,let,O
 D2,you,O
 D2,write,O
-D2,your,Or
+D2,your,O
 D2,own,O
 D2,scripts,B-function
 D2,and,O
@@ -3330,7 +3330,7 @@ D3,network,I-system
 D3,Assessment,B-technique
 D3,The,O
 D3,pen,B-securityTeam
-D3,tester,I-securityTeOm
+D3,tester,I-securityTeam
 D3,needs,O
 D3,to,O
 D3,develop,O
@@ -3345,7 +3345,7 @@ D3,template,B-feature
 D3,and,O
 D3,provide,O
 D3,suggested,O
-D3,changes,chOnges
+D3,changes,O
 D3,or,O
 D3,remediation,O
 D3,of,O
@@ -3455,7 +3455,7 @@ D3,can,O
 D3,use,O
 D3,or,O
 D3,develop,O
-D3,your,Or
+D3,your,O
 D3,own,O
 D3,tools,B-tool
 D3,and,O
@@ -3963,7 +3963,7 @@ D3,as,O
 D3,firewalls,B-tool
 D3,on,O
 D3,the,O
-D3,other,oOr
+D3,other,O
 D3,hand,O
 D3,tend,O
 D3,to,O
@@ -4306,7 +4306,7 @@ D3,the,O
 D3,implication,O
 D3,of,O
 D3,Nmap,B-tool
-D3,outputs:,B-feature:
+D3,outputs,B-feature
 D3,filtered,B-feature
 D3,unfiltered,B-feature
 D3,closed,B-feature
@@ -5398,7 +5398,7 @@ D3,each,O
 D3,fragment,B-feature
 D3,so,O
 D3,a,O
-D3,typical,typicOl
+D3,typical,O
 D3,20,O
 D3,or,O
 D3,24,O
@@ -5600,8 +5600,8 @@ D3,IDS,B-tool
 D3,accuracy,B-feature
 ,,
 D3,The,O
-D3,idle,B-O
-D3,scan,I-O
+D3,idle,B-technique
+D3,scan,I-technique
 D3,is,O
 D3,a,O
 D3,clever,O
@@ -6107,7 +6107,7 @@ D4,is,O
 D4,not,O
 D4,covered,O
 D4,in,O
-D4,this,thO
+D4,this,O
 D4,lab,O
 ,,
 D4,If,O
@@ -6295,7 +6295,7 @@ D4,again,O
 D4,to,O
 D4,switch,O
 D4,to,O
-D4,another,anoOr
+D4,another,O
 D4,Metasploit,B-tool
 D4,module,B-function
 ,,
@@ -7414,7 +7414,7 @@ D4,following,O
 D4,Nmap,B-function
 D4,script,I-function
 ,,
-D4,Rpcclient,B-O
+D4,Rpcclient,B-tool
 D4,is,O
 D4,a,O
 D4,Linux,B-system
@@ -7754,7 +7754,7 @@ D4,identified,O
 D4,security,B-vulnerability
 D4,holes,I-vulnerability
 D4,on,O
-D4,your,Or
+D4,your,O
 D4,target,B-system
 D4,use,O
 D4,Metasploit,B-tool
@@ -8585,7 +8585,7 @@ D5,you,O
 D5,want,O
 D5,to,O
 D5,print,B-function
-D5,your,Or
+D5,your,O
 D5,iptables,B-app
 D5,logs,B-data
 D5,on,O
@@ -8928,7 +8928,7 @@ D5,transmission,I-feature
 ,,
 D5,Increase,O
 D5,the,O
-D5,reliability:,B-technique:
+D5,reliability:,B-technique
 D5,implement,O
 D5,a,O
 D5,memory,B-technique
@@ -9122,7 +9122,7 @@ D5,you,O
 D5,have,O
 D5,to,O
 D5,configure,B-function
-D5,your,Or
+D5,your,O
 D5,rsyslog,B-system
 D5,server,I-system
 D5,for,O

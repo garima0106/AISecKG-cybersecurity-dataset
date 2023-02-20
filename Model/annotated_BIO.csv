@@ -368,8 +368,8 @@ D3,365,The probes will come from the DNS server configured for the machine runni
 D3,366,The most effective way to eliminate this risk is to specify -n to disable all reverse DNS resolution ,O O O O O O O B-feature O O O O O O O B-function I-function I-function
 D3,367,You can specify one or more of those name servers to the dns-servers option of Nmap and all DNS queries will be proxied through them,O O O O O O O O B-system I-system O O B-system I-system O O B-tool O O B-function I-function O O B-system  O O
 D3,368,The scanning results derived from task 1 to task 3 allows you to identify potential vulnerabilities to explore ,O B-technique O O O O O O O O O O O O O O O O B-technique 
-D3,369,you need to use Metasploit Framework msf to deploy at least two successful attacks ,O O O O B-tool I-tool I-tool O B-function O O O O B-attack 
-D3,370,such as stop the service gain access to the command shell modify data or service parameters steal critical data modify system configuration/setup ,O O O O B-app O B-feature O O B-tool I-tool O B-data O B-app B-feature B-technique B-feature B-data O B-feature I-feature O B-system 
+D4,369,you need to use Metasploit Framework msf to deploy at least two successful attacks ,O O O O B-tool I-tool I-tool O B-function O O O O B-attack 
+D4,370,such as stop the service gain access to the command shell modify data or service parameters steal critical data modify system configuration/setup ,O O O O B-app O B-feature O O B-tool I-tool O B-data O B-app B-feature B-technique B-feature B-data O B-feature I-feature O B-system 
 D4,371,you will run the Metasploit Framework MSF command-line CLI for penetration testing,O O O O B-tool I-tool I-tool B-tool I-tool O B-technique I-technique
 D4,372,You will learn how to use Metasploit to discover and identify system vulnerabilities ie running Metasploitable 2,O O O O O O B-tool O B-technique O B-technique B-vulnerability I-vulnerability O O B-system I-system
 D4,373,Use Metasploit Framework to send vulnerability exploitation packets for vulnerability discovery,O B-tool I-tool O O B-vulnerability B-data I-data O B-technique I-technique
@@ -540,9 +540,7 @@ D5,535,The syslog basics are presented in the Syslog syslogd Local Logging on Li
 D5,536,On Ubuntu system instead of using syslogconf rsyslog uses rsyslog as it configuration file,O B-system I-system O O O B-data I-data B-tool O B-tool O O B-data I-data
 D5,537,Detailed rsyslog configuration files are maintained under /etc/rsyslogd/ folder ,O B-tool B-data I-data O O O B-feature B-data 
 D5,538,Default rsyslog setup configurations are maintained in the file 50-defaultconf which is similar to syslogconf using syslogd ,B-feature B-tool B-feature I-feature O O O O B-data B-data O O O O B-data O B-data 
-D5,539,"In the following sections Selectors Facility and Severity Levels we use the same descriptions
-","O O O O B-feature B-system O B-feature I-feature O O O O B-feature
-"
+D5,539,In the following sections Selectors Facility and Severity Levels we use the same descriptions,O O O O B-feature B-system O B-feature I-feature O O O O B-feature
 D5,540,Logs are stored at /var/log/ on the Linux filesystem ,B-data O O O B-feature O O B-system B-system 
 D5,541,At this location you should see multiple log files each one having a name describing what they actually store ,O O B-system O O O O O B-data I-data O O O O O O O O O O O 
 D5,542,In this example you have dedicated log files for authentication purposes or for kernel related logs ,O O O O O O B-data I-data O B-technique O O O B-app O B-data 
