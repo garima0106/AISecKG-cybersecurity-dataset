@@ -1,4 +1,4 @@
-DocNo,,sentence,tag
+DocNo,Sno,sentence,tag
 D1,1,Attacks can damage public domain,B-attack O O B-system I-system
 D1,2,IDS means Intrusion Detection,B-tool O B-technique I-technique
 D1,3,Snort is used for Intrusion Detection,B-tool O O O B-technique I-technique
@@ -64,7 +64,7 @@ D2,62,Use nmap to send customized packets for emulating attacks,O B-tool O O O O
 D2,63,Nmap is a network mapper that has emerged as one of the most popular free network discovery tools on the market,B-tool O O B-feature I-feature O O O O O O O O O O O B-technique I-technique B-tool O O O
 D2,64,Nmap is now one of the core tools used by network administrators to map their networks,B-tool  O O O O O O B-tool O O B-securityTeam I-securityTeam O B-function O B-system
 D2,65,The program can find live hosts on a network perform port scanning ping sweeps OS detection and version detection,O B-function O O B-system I-system O O B-system O O B-technique I-technique O B-technique I-technique O B-technique I-technique O O B-technique I-technique O
-D2,66,What is Nmap?,O O B-tool O
+D2,66,What is Nmap,O O B-tool
 D2,67,Nmap is a network scanning tool that uses IP packets to identify all the devices connected to a network and provide information on the services and operating systems they are running,B-tool O O B-technique I-technique B-tool O O B-data I-data O O O O B-system O O O B-system O O B-data O O B-app O B-system I-system O O O
 D2,68, The program is most commonly used via a command-line interface though GUI front-ends are also available,O O O O O O O O B-tool I-tool O B-tool I-tool O O O
 D2,69,It is available for many different operating systems such as Linux Free BSD and Gentoo,O O O O O O B-system I-system O O B-system B-system I-system O B-system
