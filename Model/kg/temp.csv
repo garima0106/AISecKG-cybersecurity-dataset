@@ -1,0 +1,20 @@
+e1,r,e2
+Nmap,uses,network discovery
+Nmap,uses,security auditing
+Nmap,has_a,network mapper
+Nmap,uses,network scanning
+network scanning,has_a,tools
+tools,can_analyze,IP packets
+networks,uses,information
+Nmap,can_analyze,networks
+scan,can_analyze,connected devices
+Nmap,can_analyze,information
+scan,can_analyze,server
+hacker,implements,attack
+attack,can_harm,site
+Nmap,is_part_of,metasploit framework
+metasploit framework,uses,probe
+probe,can_analyze,vulnerabilities
+Nmap,uses,scan
+site,can_expose,vulnerabilities
+scan,can_analyze,site
