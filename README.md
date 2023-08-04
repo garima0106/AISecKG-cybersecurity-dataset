@@ -23,3 +23,15 @@
 
 
 ![ontology_security_view](https://user-images.githubusercontent.com/54346120/223224862-d858feba-0947-4b99-97b9-6712751b2f34.png)
+
+
+# To cite:
+* [MLA] Agrawal, Garima, et al. "AISecKG: Knowledge Graph Dataset for Cybersecurity Education." AAAI-MAKE 2023: Challenges Requiring the Combination of Machine Learning 2023 (2023).
+
+* [BibTex] 
+@article{agrawal2023aiseckg,
+  title={AISecKG: Knowledge Graph Dataset for Cybersecurity Education},
+  author={Agrawal, Garima and Pal, Kuntal and Deng, Yuli and Liu, Huan and Baral, Chitta},
+  journal={AAAI-MAKE 2023: Challenges Requiring the Combination of Machine Learning 2023},
+  year={2023}
+}
