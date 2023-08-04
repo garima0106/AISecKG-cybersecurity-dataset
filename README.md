@@ -1,5 +1,5 @@
 # AISecKG-cybersecurity-dataset
-* # Refer to Paper:
+* Refer to Paper:
 * ### [AISecKG: Knowledge Graph Dataset for Cybersecurity Education](https://ceur-ws.org/Vol-3433/paper6.pdf)
   
  * Named-entity annotated data set for cybersecurity entities 
